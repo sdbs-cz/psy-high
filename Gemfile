@@ -4,13 +4,14 @@ source 'http://rubygems.org'
 
 gem 'middleman', '~>3.3.3'
 
-# Live-reloading plugin
 gem 'middleman-livereload', '~> 3.1.0'
+
+gem 'haml'
 
 # SASS plugins
 gem 'compass', '~> 1.0.0.alpha.19'
 
-gem 'normalize-scss', '~> 3.0.0.alpha.2'
+gem 'normalize-scss', '~> 3.0.0.alpha.2', require: false
 gem 'susy'
 
 # For faster file watcher updates on Windows:
