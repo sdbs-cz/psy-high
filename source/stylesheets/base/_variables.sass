@@ -1,5 +1,9 @@
-// Box model
-$border-box-sizing: true
+// Prefixer
+$prefix-for-webkit:    true
+$prefix-for-mozilla:   true
+$prefix-for-microsoft: false
+$prefix-for-opera:     false
+$prefix-for-spec:      true
 
 // Typography
 // $sans-serif: $helvetica
@@ -11,13 +15,18 @@ $base-font-weight: 300
 $header-font-weight: 400
 
 // Sizes
-$base-font-size: 1em
-$base-line-height: $base-font-size * 1.5
+$base-font-size: 1.3em // ~21px
+$base-line-height: $base-font-size * 1.35
+// Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1)
 
-// Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height: $base-font-size * 1.25
 $base-border-radius: em(3)
+
+$size-alpha: modular-scale($base-font-size, 3, $major-third)
+$size-beta: modular-scale($base-font-size, 2, $major-third)
+$size-gamma:  modular-scale($base-font-size, 1, $major-third)
+// $size-delta:
 
 // Colors
 $blue: #477dca

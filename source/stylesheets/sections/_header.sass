@@ -1,0 +1,23 @@
+@import compass/typography/text/replacement
+
+.wr-header
+  // @extend %section-wrapper
+  background: #FD716C image-url('header-bg.svg') repeat-y
+  background-position: center top
+  background-size: cover
+  color: #fff
+  min-height: 90vh
+
+.s-header
+  @extend %section
+  text-align: center
+
+.header-title
+  +replace-text("header-logo.svg")
+  background-size: contain
+  min-height: 150px
+  height: 50vh
+
+
+.header-date
+  @extend %beta
