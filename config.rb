@@ -44,6 +44,9 @@ activate :neat
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  compass_config do |config|
+    config.sass_options = {:sourcemap => true}
+  end
 end
 
 # Methods defined in the helpers block are available in templates
