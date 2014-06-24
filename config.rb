@@ -2,7 +2,11 @@
 # Compass
 ###
 
-require 'normalize-scss'
+# require 'normalize-scss'
+# require 'susy'
+
+activate :neat
+# activate :bourbon
 
 # Change Compass configuration
 # compass_config do |config|
