@@ -2,7 +2,7 @@
 
 .wr-header
   // @extend %section-wrapper
-  background: #FD716C image-url('header-bg.svg') repeat-y
+  background: #FD716C image-url('bg.jpg') repeat-y
   background-position: center top
   background-size: cover
   color: #fff
@@ -13,11 +13,11 @@
   text-align: center
 
 .header-title
-  +replace-text("header-logo.svg")
-  background-size: contain
-  min-height: 150px
-  height: 50vh
+  // +replace-text("header-logo.svg")
+  max-width: 120%
+  padding: 0
+  margin: 0
 
 
 .header-date
-  @extend %beta
+  @extend %gamma

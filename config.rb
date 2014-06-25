@@ -56,6 +56,12 @@ end
 #   end
 # end
 
+set :markdown,
+  parse_block_html: true,
+  smart_quotes: 'sbquo,lsquo,bdquo,ldquo',
+  auto_ids: false,
+  header_offset: 1
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
