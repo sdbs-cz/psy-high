@@ -1,15 +1,15 @@
-$nav-height: 2em
+$nav-height: 3em
 $nav-items: 4
-$nav-item-color: rgba(255, 255, 255, 0.5)
-.wr-nav
-  // background-color:
+// $nav-item-color: rgba(255, 255, 255, 0.5)
 
+.wr-nav
+  background: rgba($c-bg-dark, 0.9)
 .s-nav
   @extend %section
 
   a
     @include span-columns(3)
+    color: $c-fg-dark
     line-height: $nav-height
     text-align: center
     font-weight: 400
-    background-color: $nav-item-color
