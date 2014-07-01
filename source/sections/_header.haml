@@ -6,3 +6,19 @@
   &ndash;
   %time{datetime: '2014-08-24', itemprop: 'endDate'} 24. 8.
   2014
+
+.header-progress
+  .progress-min 0 €
+  .progress-bar
+    %div.progress-bar-meter{style: 'width: 60%'}
+      0&nbsp;%
+  .progress-max 4500 €
+  .header-countdown
+    Zbývá
+    %span.progress-countdown
+      30 dní
+
+.header-cta
+  = link_to 'https://www.ulule.com/', class: 'btn-cta ulule' do
+    Podpořte nás
+
