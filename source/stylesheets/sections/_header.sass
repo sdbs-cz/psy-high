@@ -1,6 +1,6 @@
 @import compass/typography/text/replacement
 
-.wr-header
+.wr--header
   // @extend %section-wrapper
   +inverse-colors
   background:
@@ -10,17 +10,21 @@
     repeat: no-repeat
   min-height: 90vh
 
-.s-header
+.se--header
   @extend %section
 
 .header-title
   // +replace-text("header-logo.svg")
-  max-width: 120%
-  padding: 0
-  margin: 0
+.header-logo
+  display: block
+  margin: 0 auto
+  +media($medium-screen-up)
+    max-height: 40vh
 
 .header-date,
 .header-cta
+  text-align: center
+
 
 .header-date
   @extend %gamma
@@ -29,3 +33,6 @@
 
 .btn-cta
   @extend %button
+  color: $c-bg-dark
+  &:hover
+    // color: $base-button-color
