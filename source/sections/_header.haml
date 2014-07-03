@@ -1,6 +1,6 @@
 
 %h1.header-title{itemprop: 'name'}
-  = image_tag 'header-logo.svg', alt: 'Psy-High'
+  = image_tag 'header-logo.svg', alt: 'Psy-High', class: 'header-logo'
 .header-date
   %time{datetime: '2014-08-22', itemprop: 'startDate'} 22. 8.
   &ndash;
@@ -8,12 +8,12 @@
   2014
 
 .header-progress
-  .progress-min 0 €
+  .progress-min.progress-limit 0&nbsp;€
   .progress-bar
-    %div.progress-bar-meter{style: 'width: 60%'}
+    %div.progress-bar-meter{style: 'width: 30%'}
       0&nbsp;%
-  .progress-max 4500 €
-  .header-countdown
+  .progress-max.progress-limit 4500&nbsp;€
+  .progress-countdown
     Zbývá
     %span.progress-countdown
       30 dní
