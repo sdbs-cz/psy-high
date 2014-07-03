@@ -1,9 +1,6 @@
 
 <div class="about-s about-intro">
-
-<div class="txt-col">
 Letos se koná druhý ročník Psy-High, DIY umělecko-kulturního festivalu všecho psychedelickýho a mystickýho, podivnýho a magickýho, co se zrovna na naší planetě děje. Oslavíme přírodu a sebe-vyjádření skrze semináře, workshopy, komunitaření a především zatraceně dobrý koncerty více než dvaceti kapel (psych, stoner, sludge, noise-rock a doom), který doprovodí malá ochutnávka konceptuálně souvisejících elektronických i instrumentálních projektů z různých dalších žánrů. Samotnou lokaci vytvarujeme do formy a podoby centra těch nejnovějších i těch vůbec nejstarších umělecko-kulturních témat včetně šamanismu, rozšiřování vědomí, meditace, práce s vůlí, neomezený kreativity a limitů lidskýho potenciálu. Dorazíte, abyste s náma pozorně vykročili směrem k realizaci našich společných snů?
-</div>
 </div>
 
 <div class="js-hide">

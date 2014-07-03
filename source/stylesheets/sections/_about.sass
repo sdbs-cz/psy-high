@@ -11,6 +11,7 @@
 
 .se--about
   .js-hide-wr
+    clear: both
     text-align: center
 
   .js-hide-expander
@@ -22,6 +23,12 @@
     +icon($icon-down)
     display: block
 
+.about-intro
+  +media($medium-screen-up)
+    padding-top: 5vh
+    +span-columns(4)
+
+
 .about-fig,
 .about-txt
 
@@ -31,7 +38,7 @@
 
 .txt-col
   +media($medium-screen-up)
-    @include columns(2 $gutter)
+    +columns(2 $gutter)
   // +media($large-screen-up)
     // @include columns(3 $gutter)
 .about-intro
