@@ -1,22 +1,39 @@
 
-.wr-about
+.wr--about
   // @extend %section-wrapper
   // min-height: 90vh
 
-.s-about
+.se--about
   @extend %section
+  // background: $c-bg-light
+  min-height: 100vh
 
-.about-s
+
+.se--about
+  .js-hide-wr
+    text-align: center
+
+  .js-hide-expander
+    @extend %gamma
+    color: $c-accent
+    background: none
+  .js-hide-expander:after
+    @extend %animation-floating
+    +icon($icon-down)
+    display: block
 
 .about-fig,
 .about-txt
 
 
-.about-txt
-  background: $c-bg-light
+.about-s h2
+  text-align: center
 
-
-
+.txt-col
+  +media($medium-screen-up)
+    @include columns(2 $gutter)
+  // +media($large-screen-up)
+    // @include columns(3 $gutter)
 .about-intro
 
 .about-expand
