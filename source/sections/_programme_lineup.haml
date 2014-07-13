@@ -1,9 +1,13 @@
 %h1 Hudba
 
-- data.bands.each do |band|
-  .lup-item
-    %h2.lup-name= band.name
-    %p.lup-byline
-      =band.genre
-      \/
-      =band.location
+.lup-wr
+  - data.bands.each do |band|
+    .lup-item
+      .lup-title
+        %h2.lup-name= band.name
+        .lup-byline
+          =band.genre
+          \/
+          =band.location
+      .lup-desc
+        %p= band.description
