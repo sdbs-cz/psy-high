@@ -23,9 +23,6 @@
   padding-top: 1rem
   margin-top: 1rem
 
-
-
-
 .lup-name, .lup-byline
   display: inline-block
   background-color: rgba($c-accent, 0.9)
@@ -39,9 +36,9 @@
 
   &:hover, &:focus
 
-.lup-det,
+.lup-desc
   background-color: rgba($c-bg-light, 0.7)
-  +pad
+  padding: 1rem
 
 .lup-det-in
   +pad
@@ -64,6 +61,13 @@
 
   .lup-item.js-active
     background: $c-accent
+
+  .lup-det-in
+    +row
+
+  .lup-desc
+    +span-columns(4)
+
 
   // .js
   //   .lup-det--1n, .lup-det--3n

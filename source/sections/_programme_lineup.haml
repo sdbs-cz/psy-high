@@ -15,7 +15,7 @@
             =band.location
       .lup-det.lup-det--1n.js-hide
         .lup-det-in{class: "lup-item--#{band.id}"}
-          %p= band.description
+          %p.lup-desc= band.description
     - if (n % 2 == 0) || band == last
       .lup-det--2n.js-hide
     - if (n % 3 == 0) || band == last
