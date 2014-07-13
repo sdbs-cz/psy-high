@@ -1,3 +1,27 @@
+- name: Zatokrev
+  genre: apocalypse sludge
+  location:  Bazilej, Švýcarsko
+  description: „Zatokrev není jen o netopýrech, kolech a cestách, které nikam nevedou. Je to o upřímné porci sludge, post-metalu s dávkou deathu a jisté agrese. Práce odvedena na jedničku.“ Takhle zněl verdikt recenzenta na Echoes Zine už loni v březnu, který reagoval na jejich zatím poslední album The Bat, The Wheel And A Long Road To Nowhere. Zatokrev už na svém kontě mají celkem tři vydaná alba, jedno splitko s Vancouver a mimo jiné taky velmi úspěšnou společnou tour s FDK. Tenhle nářez je opravdu štědrou porcí všeho toho, co bychom si od kvalitního psychedelic post-metalu či - jak kapela sama píše - apocalypse sludge mohli slibovat. Až uslyšíte švýcarskou formaci doplněnou o vokalistu s českými kořeny naživo, smete vás proud čisté energie a hudební brutality, která vám při soustředěném poslechu a ponoření se do jejích hlubin rozrezonuje každou část těla i duše.
+  id: zatokrev
+
+- name: Weedpecker
+  genre: stoner grunge
+  location:  Varšava, Polsko
+  description: Už z názvu je zřejmé, kde kapela bere inspiraci pro své kytarové riffy obalené zatuhlou špínou a zeleným dýmem. Weedpecker vystihuje atmosféra dlouho netknuté zapadlé garáže, v níž pár chlápku drtí struny oprýskaných kytar a postupně se noří do hudebních psychedelických labyrintů doplněných nakřáplými grungeovými vokály. Formace využívající ve svém názvu slovní hříčku s anglickým výrazem pro datla funguje od roku 2011     ai před rokem vydala své první dlouhohrající stejnojmenné album, které sbíralo jak od kritiky, tak do samotných posluchačů pouze kladné známky. Právě s ním se Weedpecker etablovali na předních příčkách vitální polské stoner rockové scény, a to mezi taková jména, jako jsou Dopelord nebo Ampacity.
+  id: weedpecker
+
+- name: Nod Nod
+  genre: slow-dark core, deep noise
+  location:  Tábor, Jindřichův Hradec
+  description: Už po zaznění prvních tónů jihočeských Nod Nod, kteří kombinují melodický hardcore s uhrančivým ženským vokálem, pocítíte vnitřní tíseň, znepokojení a úzkost, zároveň však strnule budete hltat každý další zvuk, který vám tahle pětičlená sestava naservíruje, a fascinovaně se nebudete schopní odtrhnout až do úplného konce. Nod Nod (vzniknuvší na troskách Veena a na základech Five Seconds to Leave) jsou skutečně vynikajícím zážitkem, který se vám nadlouho vryje pod kůži jednak svými pomalými a temnými melodiemi, ale i propracovanou hudbou a muzikantskou precizností. Na letošním Psy-High pak budete mít možnost poslechnout si i songy z nové desky, která velmi brzy spatří světlo světa ve své finální podobě.
+  id: nod-nod
+
+- name: Bird People
+  genre: Ritual ambient, dark folk
+  location:  Vídeň, Rakousko
+  description: Pozice šamana byla určena jen jednotlivcům. Není proto náhodou, že za relativně mladým projektem Bird People stojí pouze jedna osoba. Za pomoci nejrůznějších elektronických i akustických nástrojů vytváří spirituální spojení mezi hudebníkem/šamanem a posluchačem, kdy jednotlivé tóny a melodie účinkují stejně dobře jako kouř uvolňující se z lístků šalvěje. Pravděpodobně budeme mít možnost si poslechnout i věci ze zatím nejnovější desky Nightshades, která byla vydaná letos v dubnu.
+  id: bird-people
+
 - name: Enten og Eller
   genre: noise-hardcore
   location: Brno
@@ -22,10 +46,6 @@
   genre: doom metal
   location:  Praha
   description: Vzpomínáte s nostalgií na osmdesátkové doom metalové kapely, jako například Saint Vitus nebo Candlemass? Pak jsou pro vás pražští The Tower to pravé. Tahle relativně nová kapela, která vznikla v roce 2012 v sestavě dvou kytar, basy, bicích a vyřvaného vokálu, oživuje klasiky rocku a metalu od šedesátých až do devadesátých let.
-- name: Zatokrev
-  genre: apocalypse sludge
-  location:  Bazilej, Švýcarsko
-  description: “Zatokrev není jen o netopýrech, kolech a cestách, které nikam nevedou. Je to o upřímné porci sludge, post-metalu s dávkou deathu a jisté agrese. Práce odvedena na jedničku.” Takhle zněl verdikt recenzenta na Echoes Zine už loni v březnu, který reagoval na jejich zatím poslední album The Bat, The Wheel And A Long Road To Nowhere. Zatokrev už na svém kontě mají celkem tři vydaná alba, jedno splitko s Vancouver a mimo jiné taky velmi úspěšnou společnou tour s FDK. Tenhle nářez je opravdu štědrou porcí všeho toho, co bychom si od kvalitního psychedelic post-metalu či - jak kapela sama píše - apocalypse sludge mohli slibovat. Až uslyšíte švýcarskou formaci doplněnou o vokalistu s českými kořeny naživo, smete vás proud čisté energie a hudební brutality, která vám při soustředěném poslechu a ponoření se do jejích hlubin rozrezonuje každou část těla i duše.
 - name: Sunnata
   genre: psychedelic stoner-grunge
   location:  Varšava, Polsko
@@ -42,18 +62,11 @@
   genre: psychedelic-Lo-Fi
   location:  Nový Bor, Praha
   description: B4 jsou jednou z mála kapel na české scéně, která se celkem bez námitek nechává zařazovat do žánru krautrocku. Jejich rozsáhlá tvorba se postupem času rozvíjí a promněňuje - v počátcích technicky precizní, skoro až jazzově laděné harmonie vykřesané z kytary, basy a bicích, kombinované s efekty (např. song Fussbal - 2002), až do současnosti, kdy se jejich hudba stává stále více improvizovanější a mnohem dominantnější úlohu zastává vokál nebo spíš přednes (poslední album Germanium - 2014). B4 jsou naživo nezapomenutelní, nejen proto, že jejich hudba v sobě skrývá neuvěřitelnou sílu a energii, ale také kvůli už zmíněné improvizaci, která z každého koncertu činí neopakovatelný a jedinečný zážitek.
-- name: Weedpecker
-  genre: stoner grunge
-  location:  Varšava, Polsko
-  description: Už z názvu je zřejmé, kde kapela bere inspiraci pro své kytarové riffy obalené zatuhlou špínou a zeleným dýmem. Weedpecker vystihuje atmosféra dlouho netknuté zapadlé garáže, v níž pár chlápku drtí struny oprýskaných kytar a postupně se noří do hudebních psychedelických labyrintů doplněných nakřáplými grungeovými vokály. Formace využívající ve svém názvu slovní hříčku s anglickým výrazem pro datla funguje od roku 2011     ai před rokem vydala své první dlouhohrající stejnojmenné album, které sbíralo jak od kritiky, tak do samotných posluchačů pouze kladné známky. Právě s ním se Weedpecker etablovali na předních příčkách vitální polské stoner rockové scény, a to mezi taková jména, jako jsou Dopelord nebo Ampacity.
 - name: Turbine Stollprona
   genre: Progressive heavy psychedelic
   location:  Berlín, Německo
   description: Žánrově rozeklaná avantgarda, zařaditelná někam do příbuzenství škatulek stoner/post-rock/prog/heavy (v tomhle výčtu by šlo pokračovat dlouho, uslyšíte sami). Nezařaditelnost je součást jejich kouzla, protože i pro kapelu samotnou jsou zavedený hudební klišé jenom hračky, případně hromada konceptů určenejch k destrukci.
-- name: Bird People
-  genre: Ritual ambient, dark folk
-  location:  Vídeň, Rakousko
-  description: Pozice šamana byla určena jen jednotlivcům. Není proto náhodou, že za relativně mladým projektem Bird People stojí pouze jedna osoba. Za pomoci nejrůznějších elektronických i akustických nástrojů vytváří spirituální spojení mezi hudebníkem/šamanem a posluchačem, kdy jednotlivé tóny a melodie účinkují stejně dobře jako kouř uvolňující se z lístků šalvěje. Pravděpodobně budeme mít možnost si poslechnout i věci ze zatím nejnovější desky Nightshades, která byla vydaná letos v dubnu.
+
 - name: Dysis
   genre: Instrumental post-metal
   location:  Schwandorf, Německo
@@ -74,10 +87,6 @@
   genre: blues death metal
   location:  Ostrava
   description: Skrze řeku je kapela nová, ale poctivá. Jak bývá u moderních dříčů, co to berou vážně, dobrým zvykem, zavřeli se na několik let ve zkušebně a z jejich sehranosti teď lidi padají na prdel. Okouzlí už sestava - jeden kytarista metloš, druhý bluesman, bubeník zahraje všechno, hluboké zvuky tvoří synťák a mikrofon má v ruce buchta, která tě zaručeně přepije.
-- name: Nod Nod
-  genre: slow-dark core, deep noise
-  location:  Tábor, Jindřichův Hradec
-  description: Už po zaznění prvních tónů jihočeských Nod Nod, kteří kombinují melodický hardcore s uhrančivým ženským vokálem, pocítíte vnitřní tíseň, znepokojení a úzkost, zároveň však strnule budete hltat každý další zvuk, který vám tahle pětičlená sestava naservíruje, a fascinovaně se nebudete schopní odtrhnout až do úplného konce. Nod Nod (vzniknuvší na troskách Veena a na základech Five Seconds to Leave) jsou skutečně vynikajícím zážitkem, který se vám nadlouho vryje pod kůži jednak svými pomalými a temnými melodiemi, ale i propracovanou hudbou a muzikantskou precizností. Na letošním Psy-High pak budete mít možnost poslechnout si i songy z nové desky, která velmi brzy spatří světlo světa ve své finální podobě.
 - name: Kalle
   genre: slowcore duo
   location:  Tábor
