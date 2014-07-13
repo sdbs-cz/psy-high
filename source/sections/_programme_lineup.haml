@@ -1,8 +1,10 @@
 %h1 Hudba
 
 .lup-wr
+  - n = 1
+  - last = data.bands.last
   - data.bands.each do |band|
-    .lup-item
+    .lup-item{class: "lup-item--#{band.id}"}
       .lup-title
         %h2.lup-name= band.name
         .lup-byline-wr
@@ -13,3 +15,8 @@
             =band.location
       .lup-desc.js-hide
         %p= band.description
+    - if (n % 2 == 0) || band == last
+      .lup-desc--2n
+    - if (n % 3 == 0) || band == last
+      .lup-desc--3n
+    - n += 1

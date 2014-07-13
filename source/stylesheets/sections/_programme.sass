@@ -8,27 +8,17 @@
   text-align: center
 
 
-// +media($medium-screen-up)
-//   .lup-title
-//     +span-columns(4)
-//     // +omega(odd)
-//   .lup-desc
-//     +span-columns(8)
-
-//   .lup-title:nth-child(odd)
-//     float: right
 
 .lup-item
   min-height: 6.5rem
   padding-top: 1rem
   margin-bottom: 1rem
   background:
-    //image: image-url('lineup/zatokrev.jpg')
+    // image: image-url('lineup/zatokrev.jpg')
     color: $c-bg-shade
     repeat: no-repeat
     size: cover
     position: center top
-
 
 .lup-title
 
@@ -49,7 +39,31 @@
   background-color: rgba($c-bg-light, 0.7)
   +pad
 
++media($medium-screen-up)
+  .lup-item:before
+    content: '2n'
+    display: none
 
+  .lup-wr
+    +display(flex)
+    +flex-wrap(wrap)
+  .lup-item
+    +flex(0 0 48%)
+    margin-right: 2%
 
+  // .lup-desc
+    // +span-columns(8)
+
++media($large-screen-up)
+  .lup-item:before
+    content: '2n'
+    display: none
+  .lup-item
+    +flex(0 0 32%)
+    margin-right: 1%
+
+@each $file in list-files("images/lineup/*.jpg")
+  .lup-item--#{$file}
+    background-image: image-url("images/lineup/#{$file}.jpg")
 .se--extras
 
