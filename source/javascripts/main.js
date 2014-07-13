@@ -53,7 +53,7 @@
 
   forEach(lineupItems, function(i, parent){
     var clickTarget = parent.querySelector('.lup-title');
-    var lupDesc = parent.querySelector('.lup-desc');
+    var lupDesc = parent.querySelector('.lup-det');
     // var toggler = elementToggler(toggleTarget);
 
     var id = parent.id;
@@ -74,12 +74,12 @@
       // → copy description
       if (currentNth) {
         // Get closest sibling to our current element
-        var siblingSel = '#' + id + ' ~ .lup-desc--' + currentNth;
+        var siblingSel = '#' + id + ' ~ .lup-det--' + currentNth;
         var copyTarget = document.querySelector(siblingSel);
         copyTarget.innerHTML = lupDesc.innerHTML;
         currentDesc = copyTarget;
       }
-      // Target is existing .lup-desc
+      // Target is existing .lup-det
       // → toggle the active state
       else {
         currentDesc = lupDesc;

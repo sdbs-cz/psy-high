@@ -13,10 +13,11 @@
           %br
           %span.lup-byline.lup-location
             =band.location
-      .lup-desc.js-hide
-        %p= band.description
+      .lup-det.lup-det--1n.js-hide
+        .lup-det-in{class: "lup-item--#{band.id}"}
+          %p= band.description
     - if (n % 2 == 0) || band == last
-      .lup-desc--2n.js-hide
+      .lup-det--2n.js-hide
     - if (n % 3 == 0) || band == last
-      .lup-desc--3n.js-hide
+      .lup-det--3n.js-hide
     - n += 1

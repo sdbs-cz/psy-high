@@ -9,10 +9,7 @@
 
 
 
-.lup-item
-  min-height: 6.5rem
-  padding-top: 1rem
-  margin-bottom: 1rem
+%band-bg
   background:
     // image: image-url('lineup/zatokrev.jpg')
     color: $c-bg-shade
@@ -20,7 +17,14 @@
     size: cover
     position: center top
 
-.lup-title
+.lup-item
+  @extend %band-bg
+  min-height: 6.5rem
+  padding-top: 1rem
+  margin-top: 1rem
+
+
+
 
 .lup-name, .lup-byline
   display: inline-block
@@ -35,9 +39,13 @@
 
   &:hover, &:focus
 
-.lup-desc
+.lup-det,
   background-color: rgba($c-bg-light, 0.7)
   +pad
+
+.lup-det-in
+  +pad
+  @extend %band-bg
 
 +media($medium-screen-up)
   .lup-item:before
@@ -51,11 +59,14 @@
     +flex(0 0 48%)
     margin-right: 2%
 
-  .lup-desc
+  .lup-det--2n
     +flex(0 0 100%)
 
+  .lup-item.js-active
+    background: $c-accent
+
   // .js
-  //   .lup-desc--1n, .lup-desc--3n
+  //   .lup-det--1n, .lup-det--3n
   //     display: none
 
 +media($large-screen-up)
@@ -65,6 +76,8 @@
   .lup-item
     +flex(0 0 32%)
     margin-right: 1%
+  .lup-det--3n
+    +flex(0 0 100%)
   // .js
   //   .lup-desc--1n, .lup-desc--2n
   //     display: none
