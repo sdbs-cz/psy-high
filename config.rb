@@ -4,6 +4,7 @@
 
 # require 'normalize-scss'
 # require 'susy'
+require 'lib/custom_sass'
 
 activate :neat
 # activate :bourbon
