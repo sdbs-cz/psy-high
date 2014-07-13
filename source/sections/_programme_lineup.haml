@@ -4,7 +4,7 @@
   - n = 1
   - last = data.bands.last
   - data.bands.each do |band|
-    .lup-item{class: "lup-item--#{band.id}"}
+    .lup-item{class: "lup-item--#{band.id}", id: "b-#{band.id}"}
       .lup-title
         %h2.lup-name= band.name
         .lup-byline-wr
@@ -16,7 +16,7 @@
       .lup-desc.js-hide
         %p= band.description
     - if (n % 2 == 0) || band == last
-      .lup-desc--2n
+      .js-lup-desc.lup-desc--2n
     - if (n % 3 == 0) || band == last
-      .lup-desc--3n
+      .js-lup-desc.lup-desc--3n
     - n += 1
