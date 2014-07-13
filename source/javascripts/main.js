@@ -62,10 +62,11 @@
       // Media query hack:
       // we have '', '2n', '3n' on parent's :before content
       var currentNth = getPseudoContent(parent);
+      // we will hide and disable previous elements
+      var selectedSame = (activeItem == parent);
 
-      console.log(currentNth, parent, activeDesc, activeItem);
+      var currentDesc;
 
-      // either way, we will hide and disable previous elements
       hideElement(activeDesc);
       toggleActiveElement(activeItem, false);
 
@@ -76,18 +77,20 @@
         var siblingSel = '#' + id + ' ~ .lup-desc--' + currentNth;
         var copyTarget = document.querySelector(siblingSel);
         copyTarget.innerHTML = lupDesc.innerHTML;
-        activeDesc = copyTarget;
-        toggleElement(copyTarget);
+        currentDesc = copyTarget;
       }
       // Target is existing .lup-desc
       // → toggle the active state
       else {
-        toggleElement(lupDesc);
-        activeDesc = lupDesc;
+        currentDesc = lupDesc;
       }
-
-      toggleActiveElement(parent);
+      activeDesc = currentDesc;
       activeItem = parent;
+
+      if(!selectedSame) {
+        toggleElement(currentDesc);
+        toggleActiveElement(parent);
+      }
     });
   });
 

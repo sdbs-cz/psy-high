@@ -47,12 +47,16 @@
   .lup-wr
     +display(flex)
     +flex-wrap(wrap)
-  // .lup-item
-  //   +flex(0 0 48%)
-  //   margin-right: 2%
+  .lup-item
+    +flex(0 0 48%)
+    margin-right: 2%
 
-  // .lup-desc
-    // +span-columns(8)
+  .lup-desc
+    +flex(0 0 100%)
+
+  // .js
+  //   .lup-desc--1n, .lup-desc--3n
+  //     display: none
 
 +media($large-screen-up)
   .lup-item:before
@@ -61,9 +65,10 @@
   .lup-item
     +flex(0 0 32%)
     margin-right: 1%
+  // .js
+  //   .lup-desc--1n, .lup-desc--2n
+  //     display: none
 
-  .lup-desc
-    +flex(0 0 100%)
 
 @each $file in list-files("images/lineup/*.jpg")
   .lup-item--#{$file}

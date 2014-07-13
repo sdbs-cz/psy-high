@@ -16,7 +16,7 @@
       .lup-desc.js-hide
         %p= band.description
     - if (n % 2 == 0) || band == last
-      .js-lup-desc.lup-desc--2n
+      .lup-desc--2n.js-hide
     - if (n % 3 == 0) || band == last
-      .js-lup-desc.lup-desc--3n
+      .lup-desc--3n.js-hide
     - n += 1
