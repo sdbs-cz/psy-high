@@ -25,7 +25,7 @@
 
 .lup-name, .lup-byline
   display: inline-block
-  background-color: rgba($c-accent, 0.9)
+  background-color: rgba($c-accent, 0.7)
   padding: 0.2rem 0.5rem
 
 .lup-byline
@@ -37,12 +37,16 @@
   &:hover, &:focus
 
 .lup-desc
-  background-color: rgba($c-bg-light, 0.7)
+  background-color: rgba($c-bg-light, 0.8)
   padding: 1rem
 
 .lup-det-in
   +pad
   @extend %band-bg
+
+.lup-det--2n, .lup-det--3n
+  display: none
+
 
 +media($medium-screen-up)
   .lup-item:before
@@ -68,6 +72,10 @@
   .lup-desc
     +span-columns(4)
 
+  .js .lup-det--1n
+    display: none
+  .lup-det--2n
+    display: block
 
   // .js
   //   .lup-det--1n, .lup-det--3n
@@ -76,15 +84,16 @@
 +media($large-screen-up)
   .lup-item:before
     content: '3n'
-    display: none
+
   .lup-item
     +flex(0 0 32%)
     margin-right: 1%
   .lup-det--3n
     +flex(0 0 100%)
-  // .js
-  //   .lup-desc--1n, .lup-desc--2n
-  //     display: none
+  .js .lup-det--2n
+    display: none
+  .lup-det--3n
+    display: block
 
 
 @each $file in list-files("images/lineup/*.jpg")
