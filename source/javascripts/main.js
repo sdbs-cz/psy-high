@@ -41,10 +41,15 @@
 
   // Line-up expander
   var lineupItems = document.querySelectorAll('.lup-item');
-  forEach(lineupItems, function(i, el){
-    var toggler = el.querySelector('.lup-title');
-    var toggleTarget = el.querySelector('.lup-desc');
-    toggler.addEventListener('click', elementToggler(toggleTarget));
+  forEach(lineupItems, function(i, parent){
+    var togglerEl = parent.querySelector('.lup-title');
+    var toggleTarget = parent.querySelector('.lup-desc');
+    var toggler = elementToggler(toggleTarget);
+
+    togglerEl.addEventListener('click', function(){
+      toggler();
+      parent.classList.toggle(activeClass);
+    });
   });
 
 

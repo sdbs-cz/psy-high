@@ -5,9 +5,11 @@
     .lup-item
       .lup-title
         %h2.lup-name= band.name
-        .lup-byline
-          =band.genre
-          \/
-          =band.location
+        .lup-byline-wr
+          %span.lup-byline.lup-genre
+            =band.genre
+          %br
+          %span.lup-byline.lup-location
+            =band.location
       .lup-desc.js-hide
         %p= band.description

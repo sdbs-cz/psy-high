@@ -18,8 +18,37 @@
 //   .lup-title:nth-child(odd)
 //     float: right
 
+.lup-item
+  min-height: 6.5rem
+  padding-top: 1rem
+  margin-bottom: 1rem
+  background:
+    //image: image-url('lineup/zatokrev.jpg')
+    color: $c-bg-shade
+    repeat: no-repeat
+    size: cover
+    position: center top
+
+
+.lup-title
+
+.lup-name, .lup-byline
+  display: inline-block
+  background-color: rgba($c-accent, 0.9)
+  padding: 0.2rem 0.5rem
+
 .lup-byline
   font-style: italic
+
+.js .lup-title
+  cursor: pointer
+
+  &:hover, &:focus
+
+.lup-desc
+  background-color: rgba($c-bg-light, 0.7)
+  +pad
+
 
 
 .se--extras
