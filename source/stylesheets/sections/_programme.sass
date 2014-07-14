@@ -47,6 +47,11 @@
 .lup-det--2n, .lup-det--3n
   display: none
 
+.lup-item.js-active
+  background: $c-accent
+
+  .lup-det--1n
+    display: block
 
 +media($medium-screen-up)
   .lup-wr
@@ -59,17 +64,15 @@
   .lup-det--2n
     +flex(0 0 100%)
 
-  .lup-item.js-active
-    background: $c-accent
-
   .lup-det-in
     +row
 
   .lup-desc
     +span-columns(4)
 
-  .js .lup-det--1n
-    display: none
+  .js, .lup-item.js-active
+    .lup-det--1n
+      display: none
   .lup-det--2n
     display: block
 
