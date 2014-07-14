@@ -8,9 +8,11 @@
 
 .lup-item
   @extend %band-bg
+  margin-top: 1rem
+
+.lup-title
   min-height: 6.5rem
   padding-top: 1rem
-  margin-top: 1rem
 
 .lup-name, .lup-byline
   display: inline-block
@@ -33,8 +35,10 @@
   +pad
   @extend %band-bg
 
-.lup-det--2n, .lup-det--3n
+.lup-det--2n,
+.lup-det--3n
   display: none
+  border: 2px solid $c-accent
 
 .lup-item.js-active
   background: $c-accent
@@ -47,9 +51,9 @@
     &
       +display(flex)
       +flex-wrap(wrap)
+      +justify-content(space-between)
     .lup-item
-      +flex(0 0 48%)
-      margin-right: 2%
+      +flex(0 0 49%)
 
     .lup-det--2n
       +flex(0 0 100%)
@@ -63,7 +67,11 @@
     .js, .lup-item.js-active
       .lup-det--1n
         display: none
-    .lup-det--2n:not(.js-hide)
+
+    .lup-det--3n.js-show
+      display: none
+
+    .lup-det--2n.js-show
       display: block
 
     // .js
@@ -75,16 +83,22 @@
   +media($large-screen-up)
     .lup-item
       +flex(0 0 32%)
-      margin-right: 1%
     .lup-det--3n
       +flex(0 0 100%)
-    .js .lup-det--2n
+
+    .lup-det--2n.js-show
       display: none
+
     .lup-det--3n:not(.js-hide)
       display: block
 
 .lup-wr--headliners
   @extend %lineup--2n
+  .lup-title
+    padding-top: 4rem
+
+.lup-wr--major
+  @extend %lineup--3n
 
 @each $file in list-files("images/lineup/*.jpg")
   .lup-item--#{$file}
