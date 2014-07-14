@@ -1,143 +1,80 @@
 // Line-up expander
-(function(){
+
+var LineupExpander = function(rootEl) {
   var SEL_ITEM = '.lup-item',
-      SEL_TITLE = '.lup-title',
-      SEL_DETAIL = '.lup-det',
-      SEL_MQ_CONTAINER = '.lup-wr';
+    SEL_CLICK_TGT = '.lup-title',
+    SEL_DETAIL = '.lup-det',
+    SEL_MQ_CONTAINER = '.lup-wr',
+    SEL_DETAIL_TARGETS = '.js-det-tgt';
+    // SEL_DETAIL_COPY = '.lup-det--';
 
-
-  // global state
-  var lineupItems = document.querySelectorAll(SEL_ITEM);
+  var _root = rootEl;
   var _activeItem = new State();
+  var _activeDetails = new State();
 
-  var currentMq = function(src) {
-    getPseudoContent(src);
-  };
+  console.log(_root);
 
   var nextClosestSibling = function(forId, nthName) {
     var siblingSel = '#' + forId + ' ~ .lup-det--' + nthName;
     return document.querySelector(siblingSel);
   };
 
-
-  var clickHandler = function(item) {
-    var desc = item.querySelector(SEL_DETAIL),
-        id = item.id;
-
-    var copyTargets = [
-              nextClosestSibling(id, '2n'),
-              nextClosestSibling(id, '3n')
-        ];
-
-    var targetState = new State();
-    targetState.watch(function(innerHTML) {
-      console.log('state changed');
-      copyTargets.forEach(function(target) {
-        target.innerHTML = innerHTML;
-      });
+  var closestSiblings = function(forEl) {
+    var id = forEl.id;
+    var siblings = [
+      nextClosestSibling(id, '2n'),
+      nextClosestSibling(id, '3n')
+    ];
+    // Remove null
+    return siblings.filter(function(e) {
+      return e !== null;
     });
-
-    return function() {
-      /*var shouldHide = isActiveElement(item);
-      toggleActiveElement(_activeItem, false);
-      // unset active click target
-      if(shouldHide){
-        toggleActiveElement(item, false);
-      }
-      else {
-        toggleActiveElement(item, true);
-      }*/
-
-      targetState.set(desc.innerHTML);
-
-      copyTargets.forEach(function(target) {
-        toggleElement(target);
-      });
-      toggleElement(desc);
-    };
   };
 
-  var stateHandler = function(srcItem) {
-
-    var desc = srcItem.querySelector(SEL_DETAIL),
-        id = srcItem.id;
-
-    var copyTargets = [
-              nextClosestSibling(id, '2n'),
-              nextClosestSibling(id, '3n')
-        ];
-    var hideTargets = copyTargets.concat(desc);
-    return function(newItem) {
-      if(!newItem) {
-        hideElements(hideTargets);
-        return;
-      }
-
-      copyTargets.forEach(function(target) {
-        target.innerHTML = innerHTML;
-      });
-    };
-
+  var copyContents = function(from, to) {
+    forEach(to, function(target) {
+      target.innerHTML = from.innerHTML;
+    });
   };
 
-  forEach(lineupItems, function(i, item){
-    var clickTarget = item.querySelector(SEL_TITLE);
-    // var toggler = elementToggler(toggleTarget);
-
-    _activeItem.watch(function(selected){
-      var isThis = (selected === item);
-      toggleActiveElement(item, isThis);
-    });
-
-    _activeItem.watch(stateHandler(item));
+  // click handlers and state observer for individual items
+  forEach(_root.querySelectorAll(SEL_ITEM), function(item){
+    var clickTarget = item.querySelector(SEL_CLICK_TGT),
+        localDetail = item.querySelector(SEL_DETAIL),
+        copyTargets = closestSiblings(item);
+    var hideTargets = copyTargets.concat(localDetail);
 
     clickTarget.addEventListener('click', function(){
       if(isActiveElement(item)) {
         _activeItem.set(null);
+        _activeDetails.set([]);
       } else {
         _activeItem.set(item);
       }
     });
-    // clickTarget.addEventListener('click', clickHandler(item));
-      /*, function(){
-      // Media query hack:
-      // we have '', '2n', '3n' on parent's :before content
-      var currentNth = currentMq(parent);
-      // we will hide and disable previous elements
-      var selectedSame = (activeItem == parent);
 
-      var currentDesc;
+    _activeItem.watch(function(selected){
+      var isThis = (selected === item);
 
-      toggleElement(activeDesc);
-      if(selectedSame) {
-        toggleActiveElement(activeItem);
+      toggleActiveElement(item, isThis);
+      if(isThis) {
+        copyContents(localDetail, copyTargets);
+        _activeDetails.set(copyTargets);
       }
-
-      // Target is a closest sibling
-      // → copy description
-      if (currentNth) {
-        // Get closest sibling to our current element
-        var siblingSel = '#' + id + ' ~ .lup-det--' + currentNth;
-        var copyTarget = document.querySelector(siblingSel);
-        copyTarget.innerHTML = lupDesc.innerHTML;
-        currentDesc = copyTarget;
-      }
-      // Target is existing .lup-det
-      // → toggle the active state
-      else {
-        currentDesc = lupDesc;
-      }
-
-      if(!selectedSame) {
-        toggleElement(currentDesc);
-        toggleActiveElement(parent);
-      }
-
-      activeDesc = currentDesc;
-      activeItem = parent;
-    });*/
+    });
   });
 
-})();
+  // state observers for details
+  forEach(_root.querySelectorAll(SEL_DETAIL_TARGETS), function(self){
+    _activeDetails.watch(function(activeGrp){
+      var isSelf = (activeGrp.indexOf(self) !== -1);
+      toggleElement(self, isSelf);
+    });
+  });
+};
+
+forEach(document.querySelectorAll('.lup-wr'), function(lupWr) {
+  LineupExpander(lupWr);
+});
 
 

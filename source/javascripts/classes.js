@@ -8,9 +8,32 @@ var elementToggler = function(target) {
   };
 };
 
-var toggleElement = function(target) {
+var toggleElement = function(target, force) {
   if(target) {
-    toggleClasses(target, [hideClass, showClass]);
+    switch(force) {
+      case true:
+        showElement(target);
+        break;
+      case false:
+        hideElement(target);
+        break;
+      default:
+        toggleClasses(target, [hideClass, showClass]);
+    }
+  }
+};
+
+var toggleElements = function(targets, force) {
+  forEach(targets, function(target){
+    console.log(target);
+    toggleElement(target, force);
+  });
+};
+
+var showElement = function(target) {
+  if(target) {
+    target.classList.add(showClass);
+    target.classList.remove(hideClass);
   }
 };
 
