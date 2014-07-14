@@ -49,10 +49,6 @@
 
 
 +media($medium-screen-up)
-  .lup-item:before
-    content: '2n'
-    display: none
-
   .lup-wr
     +display(flex)
     +flex-wrap(wrap)
@@ -82,9 +78,6 @@
   //     display: none
 
 +media($large-screen-up)
-  .lup-item:before
-    content: '3n'
-
   .lup-item
     +flex(0 0 32%)
     margin-right: 1%

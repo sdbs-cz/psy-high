@@ -7,7 +7,8 @@
 
 
   // global state
-  var _activeDesc, _activeItem;
+  var lineupItems = document.querySelectorAll(SEL_ITEM);
+  var _activeItem = new State();
 
   var currentMq = function(src) {
     getPseudoContent(src);
@@ -18,6 +19,7 @@
     return document.querySelector(siblingSel);
   };
 
+
   var clickHandler = function(item) {
     var desc = item.querySelector(SEL_DETAIL),
         id = item.id;
@@ -26,6 +28,14 @@
               nextClosestSibling(id, '2n'),
               nextClosestSibling(id, '3n')
         ];
+
+    var targetState = new State();
+    targetState.watch(function(innerHTML) {
+      console.log('state changed');
+      copyTargets.forEach(function(target) {
+        target.innerHTML = innerHTML;
+      });
+    });
 
     return function() {
       /*var shouldHide = isActiveElement(item);
@@ -38,24 +48,57 @@
         toggleActiveElement(item, true);
       }*/
 
+      targetState.set(desc.innerHTML);
+
       copyTargets.forEach(function(target) {
-        target.innerHTML = desc.innerHTML;
         toggleElement(target);
       });
       toggleElement(desc);
-
-      _activeItem = item;
-
     };
   };
 
-  var lineupItems = document.querySelectorAll(SEL_ITEM);
+  var stateHandler = function(srcItem) {
 
-  forEach(lineupItems, function(i, parent){
-    var clickTarget = parent.querySelector(SEL_TITLE);
+    var desc = srcItem.querySelector(SEL_DETAIL),
+        id = srcItem.id;
+
+    var copyTargets = [
+              nextClosestSibling(id, '2n'),
+              nextClosestSibling(id, '3n')
+        ];
+    var hideTargets = copyTargets.concat(desc);
+    return function(newItem) {
+      if(!newItem) {
+        hideElements(hideTargets);
+        return;
+      }
+
+      copyTargets.forEach(function(target) {
+        target.innerHTML = innerHTML;
+      });
+    };
+
+  };
+
+  forEach(lineupItems, function(i, item){
+    var clickTarget = item.querySelector(SEL_TITLE);
     // var toggler = elementToggler(toggleTarget);
-    clickTarget.addEventListener('click', clickHandler(parent));
 
+    _activeItem.watch(function(selected){
+      var isThis = (selected === item);
+      toggleActiveElement(item, isThis);
+    });
+
+    _activeItem.watch(stateHandler(item));
+
+    clickTarget.addEventListener('click', function(){
+      if(isActiveElement(item)) {
+        _activeItem.set(null);
+      } else {
+        _activeItem.set(item);
+      }
+    });
+    // clickTarget.addEventListener('click', clickHandler(item));
       /*, function(){
       // Media query hack:
       // we have '', '2n', '3n' on parent's :before content

@@ -32,5 +32,11 @@ var isActiveElement = function(target) {
     return false;
   }
 
-  target.classList.contains(activeClass);
+  return target.classList.contains(activeClass);
+};
+
+var hideElements = function(elements) {
+  elements.forEach(function(el){
+    hideElement(el);
+  });
 };
