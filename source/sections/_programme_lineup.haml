@@ -17,7 +17,7 @@
         .lup-det-in{class: "lup-item--#{band.id}"}
           %p.lup-desc= band.description
     - if (n % 2 == 0) || band == last
-      .lup-det--2n.js-hide
+      .js-det-tgt.lup-det--2n.js-hide
     - if (n % 3 == 0) || band == last
-      .lup-det--3n.js-hide
+      .js-det-tgt.lup-det--3n.js-hide
     - n += 1
