@@ -4,15 +4,12 @@ var LineupExpander = function(rootEl) {
   var SEL_ITEM = '.lup-item',
     SEL_CLICK_TGT = '.lup-title',
     SEL_DETAIL = '.lup-det',
-    SEL_MQ_CONTAINER = '.lup-wr',
     SEL_DETAIL_TARGETS = '.js-det-tgt';
     // SEL_DETAIL_COPY = '.lup-det--';
 
   var _root = rootEl;
   var _activeItem = new State();
   var _activeDetails = new State();
-
-  console.log(_root);
 
   var nextClosestSibling = function(forId, nthName) {
     var siblingSel = '#' + forId + ' ~ .lup-det--' + nthName;
@@ -73,7 +70,7 @@ var LineupExpander = function(rootEl) {
   });
 };
 
-forEach(document.querySelectorAll('.lup-wr'), function(lupWr) {
+forEach(document.querySelectorAll('.js-lup-wr'), function(lupWr) {
   LineupExpander(lupWr);
 });
 
