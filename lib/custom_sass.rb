@@ -1,7 +1,6 @@
 
 module SassListFiles
   def list_files(string)
-    puts 'list files!'
     assert_type string, :String
     files = Dir.glob("source/#{string.value}").map do |file|
       Sass::Script::String.new(File.basename(file, ".*"))

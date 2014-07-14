@@ -42,7 +42,7 @@ var LineupExpander = function(rootEl) {
     var clickTarget = item.querySelector(SEL_CLICK_TGT),
         localDetail = item.querySelector(SEL_DETAIL),
         copyTargets = closestSiblings(item);
-    var hideTargets = copyTargets.concat(localDetail);
+    // var hideTargets = copyTargets.concat(localDetail);
 
     clickTarget.addEventListener('click', function(){
       if(isActiveElement(item)) {
