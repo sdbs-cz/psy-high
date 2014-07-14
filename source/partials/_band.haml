@@ -1,0 +1,13 @@
+.lup-item{class: "lup-item--#{band.id}", id: "b-#{band.id}"}
+  .lup-title
+    %h2.lup-name= band.name
+    .lup-byline-wr
+      %span.lup-byline.lup-genre
+        =band.genre
+      <br>
+      %span.lup-byline.lup-location
+        =band.location
+    .lup-det.lup-det--1n.js-hide
+      .lup-det-in{class: "lup-item--#{band.id}"}
+        %p.lup-desc= band.description
+= lineup_dividers(band_counter, band.last, arity)

@@ -1,23 +1,4 @@
 %h1 Hudba
 
-.lup-wr
-  - n = 1
-  - last = data.bands.last
-  - data.bands.each do |band|
-    .lup-item{class: "lup-item--#{band.id}", id: "b-#{band.id}"}
-      .lup-title
-        %h2.lup-name= band.name
-        .lup-byline-wr
-          %span.lup-byline.lup-genre
-            =band.genre
-          %br
-          %span.lup-byline.lup-location
-            =band.location
-      .lup-det.lup-det--1n.js-hide
-        .lup-det-in{class: "lup-item--#{band.id}"}
-          %p.lup-desc= band.description
-    - if (n % 2 == 0) || band == last
-      .js-det-tgt.lup-det--2n.js-hide
-    - if (n % 3 == 0) || band == last
-      .js-det-tgt.lup-det--3n.js-hide
-    - n += 1
+.lup-wr--headliners
+  = partial('partials/band', collection: lineup_data(:headliners), locals: {arity: 2})
