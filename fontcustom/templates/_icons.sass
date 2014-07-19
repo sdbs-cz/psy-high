@@ -1,0 +1,18 @@
+@import compass/css3
+//
+// Icon Font: <%= font_name %>
+//
+
+<%
+file_name = @options[:font_name]
+font_name = @options[:font_name]
+css_prefix = @options[:css_prefix]
+css_selector = @options[:css_selector]
+exts = %w{woff ttf svg}
+files = exts.map { |ext| "'#{file_name}.#{ext}'"}.join(', ')
+%>
++font-face(<%= font_name %>, font-files(<%= files %>), '<%= file_name %>.eot', normal, normal)
+
+<% @glyphs.each do |name, value| %>
+$icon-<%= name %>: '\<%= value[:codepoint].to_s(16) %>'
+<% end -%>
