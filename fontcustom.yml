@@ -7,7 +7,7 @@
 font_name: fontcustom
 css_selector: .icon-{{glyph}}
 preprocessor_path: ""
-autowidth: false
+autowidth: true
 no_hash: true
 force: false
 debug: false
