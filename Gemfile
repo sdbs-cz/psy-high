@@ -22,3 +22,8 @@ gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw]
+
+group :fonts do
+  # Custom fork until most outstanding PRs are merged
+  gem 'fontcustom', github: 'jnv/fontcustom', branch: 'prs'
+end

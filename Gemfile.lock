@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/jnv/fontcustom.git
+  revision: 12670759c6241e0b3e7e27f097ba53781ed374e5
+  branch: prs
+  specs:
+    fontcustom (1.3.3)
+      json
+      listen
+      thor
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -138,6 +148,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass (~> 1.0.0.alpha.19)
+  fontcustom!
   haml
   middleman (~> 3.3.3)
   middleman-deploy
