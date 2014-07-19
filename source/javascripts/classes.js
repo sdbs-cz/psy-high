@@ -9,23 +9,24 @@ var elementToggler = function(target) {
 };
 
 var toggleElement = function(target, force) {
-  if(target) {
-    switch(force) {
-      case true:
-        showElement(target);
-        break;
-      case false:
-        hideElement(target);
-        break;
-      default:
-        toggleClasses(target, [hideClass, showClass]);
-    }
+  if(!target) {
+    return false;
+  }
+  switch(force) {
+    case true:
+      showElement(target);
+      return true;
+    case false:
+      hideElement(target);
+      return false;
+    default:
+      var cls = toggleClasses(target, [hideClass, showClass]);
+      return (cls == showClass);
   }
 };
 
 var toggleElements = function(targets, force) {
   forEach(targets, function(target){
-    console.log(target);
     toggleElement(target, force);
   });
 };
