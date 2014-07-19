@@ -3,7 +3,8 @@
 Letos se koná druhý ročník Psy-High, DIY umělecko-kulturního festivalu všecho psychedelickýho a mystickýho, podivnýho a magickýho, co se zrovna na naší planetě děje. Oslavíme přírodu a sebe-vyjádření skrze semináře, workshopy, komunitaření a především zatraceně dobrý koncerty více než dvaceti kapel (psych, stoner, sludge, noise-rock a doom), který doprovodí malá ochutnávka konceptuálně souvisejících elektronických i instrumentálních projektů z různých dalších žánrů. Samotnou lokaci vytvarujeme do formy a podoby centra těch nejnovějších i těch vůbec nejstarších umělecko-kulturních témat včetně šamanismu, rozšiřování vědomí, meditace, práce s vůlí, neomezený kreativity a limitů lidskýho potenciálu. Dorazíte, abyste s náma pozorně vykročili směrem k realizaci našich společných snů?
 </div>
 
-<div class="js-hide">
+<div class="about-more-wr">
+<div class="about-more js-hide js-more" id="about-more">
 
 <section class="about-s">
 # Mystický způsob dělaní tohohle i onoho… 
@@ -14,8 +15,6 @@ Náš festival je rituálem kombinujícím lidi, nápady, místa a umění do ž
 </section>
 
 
-
-<div class="about-expand">
 
 <section class="about-s">
 # Dávka účastné kultury a drogy zvané *jdeme to udělat…*
@@ -41,6 +40,7 @@ Jsme malá skupiny, skromná a soustředěná. Naštěstí existují spolehlivý
 Každá z našich událostí (Psy-High není naším jediným festivalem, ale je rozhodně nejpozitivnější a nejvíc prodchnutý duchem oslav) je definována a zušlechtěna účastí mnoha umělců a stavitelů, kteří neúnavně pracují na místě konání dny a týdny před začátkem festivalu. Jejich cílem je změnit okolí, přetvořit ho na vodič a katalyzátor ideálů a vytvarovat lokaci do kusu reality, která je pečlivě vyladěná na to, co se bude dít. Pak dorazí kapely a návštěvníci a celý festival vybuchne životem. Semináře a debaty, workshopy a předčítání se divoce odehrávají kolem páteřního programu tvořeného kapelami.
 </div>
 </section>
-</div>
 
-</div>
+</div><!-- .about-more -->
+</div><!-- .about-more-wr -->
+
