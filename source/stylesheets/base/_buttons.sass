@@ -7,3 +7,12 @@ input[type="submit"]
   user-select: none
   vertical-align: middle
   white-space: nowrap
+
+  border-radius: $button-border-radius
+
+  &:focus, &:active
+    outline: none
+    box-shadow: 0px 0px 3px $base-button-color
+
+  &::-moz-focus-inner
+    border: 0
