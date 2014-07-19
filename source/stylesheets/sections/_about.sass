@@ -1,3 +1,4 @@
+@import mixins/button_more
 
 .wr--about
   // @extend %section-wrapper
@@ -9,25 +10,22 @@
   min-height: 100vh
 
 
-.se--about
-  .js-hide-wr
-    clear: both
-    text-align: center
-
-  .js-hide-expander
-    @extend %gamma
-    color: $c-accent
-    background: none
-  .js-hide-expander:after
-    @extend %animation-floating
-    +icon($icon-down)
-    display: block
-
 .about-intro
   +media($medium-screen-up)
     padding-top: 5vh
     +span-columns(4)
 
+.about-more-wr
+  clear: both
+
+// Toggle button
+
+.se--about
+  .more-toggler-wr
+    text-align: center
+
+  .more-toggler
+    @extend %button-more
 
 .about-fig,
 .about-txt

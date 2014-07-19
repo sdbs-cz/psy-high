@@ -1,0 +1,27 @@
+@import animations
+@import icons
+
+%button-more
+  @extend %gamma
+  color: $c-accent
+  background: none
+  min-width: 4em
+  min-height: 2em
+
+  \:lang(cs) &::before
+    content: 'Více'
+  \:lang(en) &::before
+    content: 'More'
+
+  &::after
+    @extend %animation-floating
+    +icon($icon-down)
+    display: block
+
+  &.js-active::before
+    content: ''
+
+  &.js-active::after
+    +icon($icon-up)
+    +animation-play-state(paused)
+
