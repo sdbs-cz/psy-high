@@ -3,6 +3,7 @@
 //= require start
 //= require util
 //= require classes
+//= require main
 //= require more
 //= require lineup
 //= require end

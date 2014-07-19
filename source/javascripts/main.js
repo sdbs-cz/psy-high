@@ -1,17 +1,21 @@
-  /*var showMore = function(selector) {
-    var $expandWrapper = $('<div class="js-hide-wr"/>');
-    var $expandBtn = $('<button type="Button" class="js-hide-expander">Více</button>');
-    var classToggler = function(target) {
-      return function() {
-        $(target).toggleClass('hide');
-      };
-    };
-    $(selector).addClass('hide').each(function() {
-      var $this = $(this);
-      var $btn = $expandBtn.clone();
-      $btn.click(classToggler(this));
-      $(this).before($expandWrapper.append($btn));
-    });
-  };
+var linkHandler = function(ev) {
+    ev.preventDefault();
 
-  showMore('.js-hide');*/
+    if (location.hash !== this.hash) window.history.pushState(null, null, this.hash);
+    // using the history api to solve issue #1 - back doesn't work
+    // most browser don't update :target when the history api is used:
+    // THIS IS A BUG FROM THE BROWSERS.
+    // change the scrolling duration in this call
+    smoothScroll(document.getElementById(this.hash.substring(1)), 500, function(el) {
+        location.replace('#' + el.id);
+        // this will cause the :target to be activated.
+    });
+};
+
+// We look for all the internal links in the documents and attach the smoothscroll function
+document.addEventListener("DOMContentLoaded", function () {
+    var links = document.querySelectorAll('a[href^="#"]'), a;
+    forEach(links, function(link){
+      link.addEventListener('click', linkHandler, false);
+    });
+});
