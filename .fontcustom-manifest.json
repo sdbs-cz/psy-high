@@ -1,0 +1,62 @@
+{
+  "checksum": {
+    "previous": "f0013f42b6e2b3e19de8e6e6a3bdc05d4431f5892902c3e32a8f0ce9b51feb13",
+    "current": "f0013f42b6e2b3e19de8e6e6a3bdc05d4431f5892902c3e32a8f0ce9b51feb13"
+  },
+  "fonts": [
+    "source/fonts/fontcustom.ttf",
+    "source/fonts/fontcustom.svg",
+    "source/fonts/fontcustom.woff",
+    "source/fonts/fontcustom.eot"
+  ],
+  "glyphs": {
+    "down": {
+      "codepoint": 61696,
+      "source": "source/images/icons/down.svg"
+    },
+    "fb": {
+      "codepoint": 61697,
+      "source": "source/images/icons/fb.svg"
+    },
+    "gplus": {
+      "codepoint": 61698,
+      "source": "source/images/icons/gplus.svg"
+    },
+    "menu": {
+      "codepoint": 61699,
+      "source": "source/images/icons/menu.svg"
+    },
+    "up": {
+      "codepoint": 61700,
+      "source": "source/images/icons/up.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_prefix": "icon-",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": "fontcustom/templates",
+      "vectors": "source/images/icons"
+    },
+    "no_hash": true,
+    "output": {
+      "_icons.sass": "source/stylesheets",
+      "css": "source/fonts",
+      "fonts": "source/fonts",
+      "preview": "source/fonts"
+    },
+    "preprocessor_path": "",
+    "quiet": false,
+    "templates": [
+      "_icons.sass"
+    ]
+  },
+  "templates": [
+    "source/stylesheets/_icons.sass"
+  ]
+}
