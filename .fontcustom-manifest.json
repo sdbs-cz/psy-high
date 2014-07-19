@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "f0013f42b6e2b3e19de8e6e6a3bdc05d4431f5892902c3e32a8f0ce9b51feb13",
-    "current": "f0013f42b6e2b3e19de8e6e6a3bdc05d4431f5892902c3e32a8f0ce9b51feb13"
+    "previous": "f1e208034680a3badcebdf873011cae33acd64a6b207489dcb8a1dbf0f0dc21d",
+    "current": "f1e208034680a3badcebdf873011cae33acd64a6b207489dcb8a1dbf0f0dc21d"
   },
   "fonts": [
     "source/fonts/fontcustom.ttf",
@@ -11,23 +11,23 @@
   ],
   "glyphs": {
     "down": {
-      "codepoint": 61696,
+      "codepoint": 8595,
       "source": "source/images/icons/down.svg"
     },
     "fb": {
-      "codepoint": 61697,
+      "codepoint": 102,
       "source": "source/images/icons/fb.svg"
     },
     "gplus": {
-      "codepoint": 61698,
+      "codepoint": 103,
       "source": "source/images/icons/gplus.svg"
     },
     "menu": {
-      "codepoint": 61699,
+      "codepoint": 9776,
       "source": "source/images/icons/menu.svg"
     },
     "up": {
-      "codepoint": 61700,
+      "codepoint": 8593,
       "source": "source/images/icons/up.svg"
     }
   },
@@ -38,7 +38,7 @@
     "css_selector": ".icon-{{glyph}}",
     "debug": false,
     "font_name": "fontcustom",
-    "force": false,
+    "force": true,
     "input": {
       "templates": "fontcustom/templates",
       "vectors": "source/images/icons"
