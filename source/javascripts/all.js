@@ -1,9 +1,11 @@
 //= require lib/statelet
-//= require lib/smoothscroll
 //= require tpl/begin
 //= require util
+//= require lib/smoothscroll
+//= require lib/headhesive
 //= require classes
 //= require main
+//= require nav
 //= require more
 //= require lineup
 //= require tpl/end
