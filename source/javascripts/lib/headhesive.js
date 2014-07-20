@@ -119,7 +119,7 @@
          * Update status of elem
          */
         update: function() {
-            if (_getScrollY() > this.scrollOffset) {
+            if (window.scrollY > this.scrollOffset) {
                 this.stick();
             } else {
                 this.unstick();
