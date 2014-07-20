@@ -27,3 +27,7 @@ group :fonts do
   # Custom fork until most outstanding PRs are merged
   gem 'fontcustom', github: 'jnv/fontcustom', branch: 'prs'
 end
+
+group :data do
+  gem 'remote_table'
+end
