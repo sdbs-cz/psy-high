@@ -15,17 +15,27 @@ var createToggler = function(text) {
 };
 
 var ShowMore = function(target) {
-  var _toggler = createToggler();
-  var _btn = _toggler.button;
   var _toggleTarget = target;
+  var _toggler = createToggler();
+  var _btn = _toggler.button,
+      _wrapper = _toggler.wrapper;
 
   _toggler.button.addEventListener('click', function(e){
-    var shown = toggleElement(_toggleTarget);
+    var shown = toggleElement(_toggleTarget),
+        eTarget = e.target;
+    var blurTarget = eTarget.blur.bind(eTarget);
+
     toggleActiveElement(_btn, shown);
-    e.target.blur();
+    // scroll only if the target is being displayed, not hidden
+    if(shown) {
+      window.smoothScroll(_wrapper, 500, blurTarget);
+    }
+    else {
+      blurTarget();
+    }
   });
 
-  _toggleTarget.parentNode.insertBefore(_toggler.wrapper, _toggleTarget);
+  _toggleTarget.parentNode.insertBefore(_wrapper, _toggleTarget);
 };
 
 ShowMore(document.querySelector('.js-more'));
