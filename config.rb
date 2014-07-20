@@ -17,7 +17,7 @@ activate :neat
 ###
 # Page options, layouts, aliases and proxies
 ###
-
+activate :i18n, :mount_at_root => :cs
 # Per-page layout changes:
 #
 # With no layout
