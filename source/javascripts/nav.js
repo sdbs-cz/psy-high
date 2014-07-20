@@ -3,6 +3,7 @@ var NAV_EL = document.querySelector('.js-nav');
 
 
 var navHeadhesive = new Headhesive(NAV_EL, {
+  offset: '.wr--main',
   classes: {
     clone: 'nav--clone',
     stick: 'nav--stick',

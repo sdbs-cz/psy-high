@@ -1,4 +1,4 @@
-$nav-height: 5vh
+$nav-padding-v: 3vh
 $nav-items: 4
 // $nav-item-color: rgba(255, 255, 255, 0.5)
 
@@ -10,18 +10,25 @@ $nav-items: 4
   a
     +span-columns(1)
     color: $c-fg-light
-    line-height: $nav-height
+    line-height: 3rem
+
     text-align: center
     font-weight: 400
     &:hover
       color: $c-accent
 
 .nav--clone
+  // min-height: 2rem
   position: fixed
   top: 0
   left: 0
   width: 100%
   transform: translateY(-100%)
+  a
+    padding:
+      top: 0
+      bottom: 0
+    line-height: $nav-height-sticky
 
 .nav--stick
   transform: translateY(0%)
