@@ -30,4 +30,5 @@ end
 
 group :data do
   gem 'remote_table'
+  gem 'oembedr'
 end
