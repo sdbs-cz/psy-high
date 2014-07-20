@@ -16,7 +16,8 @@ if(document.querySelectorAll === void 0 || window.pageYOffset === void 0 || hist
 // Get the top position of an element in the document
 var getTop = function(element) {
     // return value of html.getBoundingClientRect().top ... IE : 0, other browsers : -pageYOffset
-    if(element.nodeName === 'HTML') return -window.pageYOffset;
+    if(element.nodeName === 'HTML')
+      return -window.pageYOffset;
     return element.getBoundingClientRect().top + window.pageYOffset;
 };
 // ease in out function thanks to:
@@ -49,9 +50,6 @@ var smoothScroll = function(el, duration, callback){
     }
 
     var clock = Date.now();
-    var requestAnimationFrame = window.requestAnimationFrame ||
-        window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame ||
-        function(fn){window.setTimeout(fn, 15);};
 
     var step = function(){
         var elapsed = Date.now() - clock;
