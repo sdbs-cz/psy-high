@@ -6,13 +6,17 @@
 .se--lineup h1
   text-align: center
 
+@each $file in list-files("images/lineup/*.jpg")
+  .lup-item--#{$file}
+    background-image: image-url("images/lineup/#{$file}.jpg")
+
 %band-bg
   background:
     // image: image-url('lineup/zatokrev.jpg')
     // color: $c-bg-shade
     repeat: no-repeat
     size: cover
-    position: center top
+    position: center
 
 .lup-item
   @extend %band-bg
@@ -24,7 +28,7 @@
 
 .lup-name, .lup-byline
   display: inline-block
-  background-color: rgba($c-bg-light, 0.7)
+  background-color: rgba($c-bg-light, 0.75)
   padding: 0.2rem 0.5rem
 
 .lup-byline
@@ -91,6 +95,7 @@
   +media($large-screen-up)
     .lup-item
       +flex(0 0 32%)
+
     .lup-det--3n
       +flex(0 0 100%)
 
@@ -107,9 +112,5 @@
 
 .lup-wr--major
   @extend %lineup--3n
-
-@each $file in list-files("images/lineup/*.jpg")
-  .lup-item--#{$file}
-    background-image: image-url("images/lineup/#{$file}.jpg")
-.se--extras
-
+  .lup-item
+    background-image: none
