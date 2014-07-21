@@ -3,11 +3,14 @@
 
 .se--footer
   @extend %section
+  margin-top: 5vh
 
 .footer-link
   @extend %gamma
-  display: block
-  width: 30%
-  float: left
   text-align: center
   color: $c-fg-light
+  display: block
+  margin: 0.5rem 0
+
+  +media($medium-screen-up)
+    +span-columns(2)
