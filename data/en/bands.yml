@@ -57,52 +57,6 @@
     themselfs into the top of the vital Polish stoner rock scene, among such names
     as Dopelord or Ampacity.
   :url: http://weedpecker.bandcamp.com/
-- :name: Nod Nod
-  :id: nod-nod
-  :genre: slow-dark core, deep noise
-  :location_cs: Tábor, Jindřichův Hradec
-  :location: Tábor, Jindřichův Hradec, Czech Republic
-  :description_cs: Už po zaznění prvních tónů jihočeských Nod Nod, kteří kombinují
-    melodický hardcore s uhrančivým ženským vokálem, pocítíte vnitřní tíseň, znepokojení
-    a úzkost, zároveň však strnule budete hltat každý další zvuk, který vám tahle
-    pětičlená sestava naservíruje, a fascinovaně se nebudete schopní odtrhnout až
-    do úplného konce. Nod Nod (vzniknuvší na troskách Veena a na základech Five Seconds
-    to Leave) jsou skutečně vynikajícím zážitkem, který se vám nadlouho vryje pod
-    kůži jednak svými pomalými a temnými melodiemi, ale i propracovanou hudbou a muzikantskou
-    precizností. Na letošním Psy-High pak budete mít možnost poslechnout si i songy
-    z nové desky, která velmi brzy spatří světlo světa ve své finální podobě.
-  :description: Right after hearing the first few tones of southern Czech Republic
-    based Nod Nod, combining melodic hardcore with Veronica’s bewitching vocals, you’ll
-    feel deep anxiety, disquiet and trepidation. At the same time, you’ll go torpid,
-    devouring every following sound this five-member group serves up, taking away
-    your ability to cede until the very end. Nod Nod, emerging from the oddments of
-    Veena and the building blocks of Five Seconds to Leave, are a unique experience
-    that will stay under your skin for a long while, thanks to their slow, dark melodies
-    and their elaborate and precise musicianship. At this year’s Psy-High, you’ll
-    get a chance to hear pieces from their new album, soon to be released upon the
-    unsuspecting light of day.
-  :url: http://nodnod.bandcamp.com/album/nod-nod
-- :name: Bird People
-  :id: bird-people
-  :genre: Ritual ambient, dark folk
-  :location_cs: Vídeň, Rakousko
-  :location: Vienna, Austria
-  :description_cs: Pozice šamana byla určena jen jednotlivcům. Není proto náhodou,
-    že za relativně mladým projektem Bird People stojí pouze jedna osoba. Za pomoci
-    nejrůznějších elektronických i akustických nástrojů vytváří spirituální spojení
-    mezi hudebníkem/šamanem a posluchačem, kdy jednotlivé tóny a melodie účinkují
-    stejně dobře jako kouř uvolňující se z lístků šalvěje. Pravděpodobně budeme mít
-    možnost si poslechnout i věci ze zatím nejnovější desky Nightshades, která byla
-    vydaná letos v dubnu.
-  :description: The position of a shaman was predestined only for a extraordinary
-    personalities. So it is therefore no coincidence, that this - relatively new -
-    project is represented only by one man. He is creating a spiritual connection
-    between musician (in this case maybe shaman) and the audience, when the single
-    tones and melodies are powerfull as well, as the smoke released from the leaves
-    of sage - that all with the help of various electonic and acustic instruments.
-    There is a chance, that we gonna have an opportunity to hear also the tracks of
-    the last album yet - Nightshades, which was released this April.
-  :url: http://bird-people.bandcamp.com/album/nightshades
 - :name: Tomáš Palucha
   :id: tomas-palucha
   :genre: minimal americana
@@ -129,9 +83,55 @@
     and midi-controllers dubbing organ-like soundscapes… When it all comes together,
     they build an unforgettable and devilishly well poised journey.
   :url: http://tomaspalucha.bandcamp.com/
+- :name: Nod Nod
+  :id: nod-nod
+  :genre: slow-dark core
+  :location_cs: Tábor, Jindřichův Hradec
+  :location: Tábor, Jindřichův Hradec, Czech Republic
+  :description_cs: Už po zaznění prvních tónů jihočeských Nod Nod, kteří kombinují
+    melodický hardcore s uhrančivým ženským vokálem, pocítíte vnitřní tíseň, znepokojení
+    a úzkost, zároveň však strnule budete hltat každý další zvuk, který vám tahle
+    pětičlená sestava naservíruje, a fascinovaně se nebudete schopní odtrhnout až
+    do úplného konce. Nod Nod (vzniknuvší na troskách Veena a na základech Five Seconds
+    to Leave) jsou skutečně vynikajícím zážitkem, který se vám nadlouho vryje pod
+    kůži jednak svými pomalými a temnými melodiemi, ale i propracovanou hudbou a muzikantskou
+    precizností. Na letošním Psy-High pak budete mít možnost poslechnout si i songy
+    z nové desky, která velmi brzy spatří světlo světa ve své finální podobě.
+  :description: Right after hearing the first few tones of southern Czech Republic
+    based Nod Nod, combining melodic hardcore with Veronica’s bewitching vocals, you’ll
+    feel deep anxiety, disquiet and trepidation. At the same time, you’ll go torpid,
+    devouring every following sound this five-member group serves up, taking away
+    your ability to cede until the very end. Nod Nod, emerging from the oddments of
+    Veena and the building blocks of Five Seconds to Leave, are a unique experience
+    that will stay under your skin for a long while, thanks to their slow, dark melodies
+    and their elaborate and precise musicianship. At this year’s Psy-High, you’ll
+    get a chance to hear pieces from their new album, soon to be released upon the
+    unsuspecting light of day.
+  :url: http://nodnod.bandcamp.com/album/nod-nod
+- :name: Bird People
+  :id: bird-people
+  :genre: ritual ambient, dark folk
+  :location_cs: Vídeň, Rakousko
+  :location: Vienna, Austria
+  :description_cs: Pozice šamana byla určena jen jednotlivcům. Není proto náhodou,
+    že za relativně mladým projektem Bird People stojí pouze jedna osoba. Za pomoci
+    nejrůznějších elektronických i akustických nástrojů vytváří spirituální spojení
+    mezi hudebníkem/šamanem a posluchačem, kdy jednotlivé tóny a melodie účinkují
+    stejně dobře jako kouř uvolňující se z lístků šalvěje. Pravděpodobně budeme mít
+    možnost si poslechnout i věci ze zatím nejnovější desky Nightshades, která byla
+    vydaná letos v dubnu.
+  :description: The position of a shaman was predestined only for a extraordinary
+    personalities. So it is therefore no coincidence, that this - relatively new -
+    project is represented only by one man. He is creating a spiritual connection
+    between musician (in this case maybe shaman) and the audience, when the single
+    tones and melodies are powerfull as well, as the smoke released from the leaves
+    of sage - that all with the help of various electonic and acustic instruments.
+    There is a chance, that we gonna have an opportunity to hear also the tracks of
+    the last album yet - Nightshades, which was released this April.
+  :url: http://bird-people.bandcamp.com/album/nightshades
 - :name: Sunnata
   :id: sunnata
-  :genre: psych sludge
+  :genre: psychedelic sludge
   :location_cs: Varšava, Polsko
   :location: Warsaw, Poland
   :description_cs: Samotný název této polské čtveřice o jejich tvorbě vypovídá hodně.
@@ -302,26 +302,27 @@
   :embed: ''
 - :name: Saiga
   :id: saiga
-  :genre: instrumental stoner rock
+  :genre: instrumental stoner
   :location_cs: Praha
   :location: Prague, Czech Republic
-  :description_cs: 'Naše oblíbené imigrantské trio o sobě napsalo(ponecháváme bez
-    korektury): “Očekavaš charismatickeho frontmana z krasnym zpěvem? Chceš uslyšet
+  :description_cs: "“Očekavaš charismatickeho frontmana z krasnym zpěvem? Chceš uslyšet
     klavir, housle, dechove nastroje nebo ambientove efekty? Maš rad hudbu pro celu
-    rodinu? FUCK OFF! Jsme Saiga!” Saigu - druh vysoké zvěře euroasijské stepi nebo
-    opakovací útočnou pušku - tvoří dva kluci ze Sibiře a jeden z Moldávie. Dohromady
-    dávají nezaměnitelnou, fluidní stoner rockovou expresi vedenou především geniálním
-    kytarovým přednesem, který lítá od chytlavých groovů přes stěny hluku až do frenetických
-    sólových záchvatů. O téhle kapele ještě uslyšíte.'
-  :description: 'Our favourite imigrant trio wrote about themselves : “Do you expect
-    a charismatic frontman with a beautiful voice? Do you want to hear a piano, violin,
-    brass or ambient effects? Do you like music for the whole family? well FUCK OFF!
-    We are Saiga!” Saiga - a strange kind of animal from the euroasian steppe, or
-    a automatic assault rigle - is composed of two Siberian and on Moldavian guy.
-    They put together a unique fluid stoner rock expression, directed mostly by a
-    genius guitar lead, which flies between catchy grooves, walls of noise to frantic
-    solo seizures. You will definetely hear about this band in the future.'
-  :url: https://www.youtube.com/watch?v=AnM16O_-Z8U
+    rodinu? Fuck off. Jsme Saiga.” To o sobě napsalo naše oblíbené imigrantské trio.
+    Saigu - druh vysoké zvěře euroasijské stepi nebo opakovací útočnou pušku - tvoří
+    dva kluci ze Sibiře a jeden z Moldávie. Dohromady dávají nezaměnitelnou fluidní
+    stoner rockovou expresi vedenou především geniálním kytarovým přednesem, který
+    lítá od chytlavých groovů přes stěny hluku až do frenetických sólových záchvatů.
+    O téhle kapele ještě uslyšíte."
+  :description: "“Do you expect a charismatic frontman with a beautiful voice? Do
+    you want to hear a piano, violin, brass or ambient effects? Do you like music
+    for the whole family? well Fuck off. We are Saiga.” That’s what our favourite
+    imigrant trio wrote about themselves. Saiga - a kind of high game animal of the
+    euroasian steppe, or an automatic assault rifle - is composed of two Siberian
+    and one Moldavian guy. They put together a unique fluid stoner rock expression,
+    directed mostly by a genius guitar lead, which flies between catchy grooves, walls
+    of noise to frantic solo seizures. You will definetely hear about this band in
+    the future."
+  :url: ''
   :embed: ''
 - :name: The Wild Tides
   :id: the-wild-tides
@@ -398,7 +399,7 @@
   :url: http://bullfrog-bullfrog.bandcamp.com/
   :embed: ''
 - :name: Enten og Eller
-  :id: enten-og-eler
+  :id: enten-og-eller
   :genre: noise-hardcore
   :location_cs: Brno
   :location: Brno, Czech Republic
@@ -476,7 +477,7 @@
   :embed: ''
 - :name: Stoned Ape
   :id: stoned-ape
-  :genre: psychedelic rock improvisation
+  :genre: psych rock impro
   :location_cs: Praha
   :location: Prague, Czech Republic
   :description_cs: Dejvická pětice (či bez bubeníka příležitostná čtveřice) Stoned
@@ -539,6 +540,35 @@
     also teaches.
   :url: ''
   :embed: ''
+- :name: Kochlea
+  :id: kochlea
+  :genre: nu-jazz, alternative post-rock
+  :location_cs: Brno
+  :location: Brno, Czech Republic
+  :description_cs: Brněnská instrumentální kapela Kochlea píše svoji historii už od
+    roku 2010. Sama svoji hudbu označuje za alternativní post-rock, avšak pozorný
+    posluchač může v jejích písních nalézt mnohem více - podmanivý saxofon evokuje
+    večerní posezení u kvalitního jazzu v Redutě, uklidňující basa pak noční vyjížďku
+    autem za poslechu Riders on the Storm, a k tomu všemu Kochlea ještě přidává vlastní,
+    originální sound, protože mimo klasických nástrojů se nebojí ani pianetu, thereminu,
+    nebo nejrůznějších DIY udělátek. Kromě celé řady živých koncertů, má kapela na
+    svém kontě i velmi povedenou desku ‘Rehersal Room’, která vyšla v lednu 2012.
+    V konečném výsledku je hudba těchto tří brňáků velmi příjemným zážitkem, a vůbec
+    nevadí, že jsou jejich tracky pouze instrumentální, protože i beze slov vyprávější
+    příběhy, kterými vás Kochlea pozve do svých vnitřních světů.
+  :description: Brno-based instrumental band Kochlea traces its history since 2010.
+    Players themselves are decribing their music as alternative post-rock, but attentive
+    listener can find much more in their songs - captivating saxophone evokes an idea
+    of pleasant evening spent with jazz in Reduta club, calming bass evokes night
+    ride with a sound of Riders on the Storm. To all that Kochlea adds their own original,
+    because besides classical instruments they are even not afraid of pianet, theremin
+    or various DIY sound-producing stuff. In addition to a series of live concerts,
+    the band has to its credit a very successfull album ‘Rehersal Room’, which was
+    released in January 2012. In conclusion, music of these three guys is a very pleasant
+    experience, and it doesn’t matter, that their tracks are only instrumental, because
+    Kochlea tells stories without words, just with its music.
+  :url: https://kochlea.bandcamp.com/
+  :embed: ''
 :support:
 - :name: Kalle
   :id: kalle
@@ -562,13 +592,15 @@
     and unpleasant. Like you live through whole life during their set.
   :url: http://bandzone.cz/kalle
   :embed: ''
-- :name: L00k + live percussion
-  :id: l00k
-  :genre: electro
+- :name: Sítě
+  :id: site
+  :genre: minimal
   :location_cs: Praha
   :location: Prague, Czech Republic
-  :description_cs: ''
-  :description: ''
+  :description_cs: 'Omamný ambient, který jako by říkal: Buď pozdraven, starý oceáne!
+    Vedlejší projekt Honzy Tomáše z Tomáše Paluchy.'
+  :description: 'Intoxicating ambient, as if saying: Greetings, ancient ocen! Side
+    project of Jan Tomáš from Tomáš Palucha'
   :url: ''
   :embed: ''
 - :name: Les
@@ -592,38 +624,6 @@
     on their debut tape “Marianskohorsk” (2013), which was released on label Tape-ty.
   :url: http://shmyzem.bandcamp.com/album/marianskohorsk
   :embed: ''
-- :name: Rouilleux
-  :id: rouilleux
-  :genre: electro psychedelia
-  :location_cs: Praha
-  :location: Prague, Czech Republic
-  :description_cs: Label KLANGundKRACH je známý nekompromisně noisovými kapelami,
-    které experimentují až za hranice běžné snesitelnosti. Rouilleux jsou odlišní
-    v tom, že dávají experimantálnímu běsnění rockový formát. Jejich skladby mají
-    konvenčí délku a často i strukturu, to však prospívá lepší uchopitelnosti jejich
-    přístupu k hudbě a zvuku. Rouilleux jsou jakousi paralelou k populárně-vědecké
-    literatuře - dokáží podat komplikovanou hudbu v přístupným způsobem. Toto pražské
-    trio má na svém kontě již dvě alba, “Zugwang" z roku 2011 a nyní aktuálně vydanou
-    desku "Scatter Your Soul" z června tohoto roku.
-  :description: Label KLANGundKRACH is known for a rigorously noise bands, which are
-    experimenting beyond the boundaries of normal acceptability. Rouilleux are little
-    bit different in making a rock music shape of experimental rampage. Their songs
-    have a common length and often also a common structure, and both this facts are
-    helping to the better understandig of their music and sound. Rouilleux are kind
-    of a parallel to the popular scientific literature - the can put a complicated
-    music to the friendly form. This trio from Prague has already recorded two albums,
-    Zugwang (2011) and curently released LP “Scatter Your Soul” (2014).
-  :url: http://plastika.bandcamp.com/album/star-red
-  :embed: ''
-- :name: Sítě
-  :id: site
-  :genre: minimal
-  :location_cs: Praha
-  :location: Prague, Czech Republic
-  :description_cs: Side project Jana Tomáše z Tomáše Paluchy
-  :description: Side project of Jan Tomáš from Tomáš Palucha
-  :url: ''
-  :embed: ''
 - :name: Debbi Love
   :id: debbi-love
   :genre: alternative pop satire
@@ -646,9 +646,18 @@
     gonna be a pleasant surprise and certainly tune you in a good mood.
   :url: http://bandzone.cz/debbilove
   :embed: ''
+- :name: L00k + live percussion
+  :id: l00k
+  :genre: DJ + live percussion
+  :location_cs: Praha
+  :location: Prague, Czech Republic
+  :description_cs: Tradiční goa/psytrance v doprovodu živé improvizace na bicí
+  :description: Traditional goa/psy-trance accompanied by live percussion improvisation
+  :url: ''
+  :embed: ''
 - :name: DJ MindGroove + support
   :id: dj-mindgroove
-  :genre: electronica
+  :genre: DJ
   :location_cs: Praha
   :location: Prague, Czech Republic
   :description_cs: ''
