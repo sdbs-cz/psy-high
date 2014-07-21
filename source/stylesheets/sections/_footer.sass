@@ -10,7 +10,11 @@
   text-align: center
   color: $c-fg-light
   display: block
-  margin: 0.5rem 0
+  margin: 0.5rem 1rem
 
-  +media($medium-screen-up)
-    +span-columns(2)
++media($medium-screen-up)
+  .se--footer
+    +display(flex)
+    +flex-wrap(wrap)
+  .footer-link
+    +flex(1)
