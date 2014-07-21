@@ -1,0 +1,19 @@
+.wr--location
+  min-height: 100vh
+
+.se--location
+  @extend %section
+
+  .se-header
+    padding-bottom: 1rem
+    padding-top: 0
+
+.location-txt
+  margin-top: 20vh
+  +text-background
+
++media($medium-screen-up)
+  .location-txt
+    +span-columns(3)
+    +shift(4)
+
