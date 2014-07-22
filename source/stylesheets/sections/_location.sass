@@ -1,5 +1,7 @@
 .wr--location
+  @extend %section-wrapper
   min-height: 100vh
+  background-image: image-url('location-bg.jpg')
 
 .se--location
   @extend %section
@@ -11,9 +13,10 @@
 .location-txt
   margin-top: 20vh
   +text-background
+  +pad
 
 +media($medium-screen-up)
   .location-txt
-    +span-columns(3)
+    +span-columns(4)
     +shift(4)
 
