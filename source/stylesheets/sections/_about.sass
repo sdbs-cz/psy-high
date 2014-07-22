@@ -1,19 +1,24 @@
 @import mixins/button_more
 
 .wr--about
-  // @extend %section-wrapper
+  @extend %section-wrapper
+  padding: $section-offset 0
+  background:
+    image: image-url('about-bg.jpg')
+    repeat: repeat
+    position: center
   // min-height: 90vh
 
 .se--about
   @extend %section
   // background: $c-bg-light
-  padding-top: $section-offset
+  background: rgba($c-bg-light, 0.85)
   min-height: 100vh
+  +pad
 
 
 .about-intro
   +media($medium-screen-up)
-    padding-top: 5vh
     +span-columns(4)
 
 .about-more-wr
@@ -31,9 +36,6 @@
 
 .about-more
   padding-top: 1rem
-
-.about-fig,
-.about-txt
 
 
 .about-s h2
