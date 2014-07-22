@@ -1,6 +1,6 @@
 .wr--extras
   min-height: 100vh
-  background: image-url('extras-bg.jpg') no-repeat center top / cover
+  // background: image-url('extras-bg.jpg') repeat center
 
 .se--extras
   @extend %section
@@ -15,8 +15,6 @@
   +text-background
 
 +media($medium-screen-up)
-  .wr--extras
-    background-attachment: fixed
   .extras-txt
     +span-columns(4)
     +shift(2)
