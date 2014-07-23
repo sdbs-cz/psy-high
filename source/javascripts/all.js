@@ -8,6 +8,6 @@
 //= require main
 //= require nav
 //= require more
-//= require overlays
+//= require embeds
 //= require lineup
 //= require tpl/end
