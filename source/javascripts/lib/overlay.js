@@ -54,26 +54,22 @@ var Overlay = (function(root, document){
       _currentState.set(null);
     }
   };
-  var clickDeactivateHandler = function(e) {
-    if( e.target === _elements.overlay ||
-        e.target === _elements.close) {
-      _currentState.set(null);
-    }
-  };
+  // var clickDeactivateHandler = function(e) {
+  //   if( e.target === _elements.overlay ||
+  //       e.target === _elements.close) {
+  //     _currentState.set(null);
+  //   }
+  // };
 
 
   var activate = function() {
     document.addEventListener('keyup', keyDeactivateHandler, false );
-    document.addEventListener('click', clickDeactivateHandler, false );
-    document.addEventListener('touchstart', clickDeactivateHandler, false );
 
     showElement(_elements.overlay);
   };
 
   var deactivate = function() {
     document.removeEventListener('keyup', keyDeactivateHandler);
-    document.removeEventListener('click', clickDeactivateHandler);
-    document.removeEventListener('touchstart', clickDeactivateHandler);
 
     hideElement(_elements.overlay);
   };
@@ -94,6 +90,15 @@ var Overlay = (function(root, document){
     _elements = generateOverlay(defaults);
     var rootEl = _elements.overlay;
     hideElement(rootEl);
+    var deactivateHandler = function() {
+      _currentState.set(null);
+    };
+    ['click', 'touchstart'].forEach(function(eType){
+      _elements.overlay.addEventListener(eType, deactivateHandler, false);
+      _elements.close.addEventListener(eType, deactivateHandler, false);
+    });
+
+
     _container.appendChild(rootEl);
 
     return exports;
