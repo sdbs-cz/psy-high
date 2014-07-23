@@ -3,9 +3,11 @@
 //= require util
 //= require lib/smoothscroll
 //= require lib/headhesive
+//= require lib/overlay
 //= require classes
 //= require main
 //= require nav
 //= require more
+//= require overlays
 //= require lineup
 //= require tpl/end
