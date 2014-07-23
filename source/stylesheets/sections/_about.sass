@@ -3,17 +3,13 @@
 .wr--about
   @extend %section-wrapper
   padding: $section-offset 0
-  background:
-    image: image-url('about-bg.jpg')
-    repeat: repeat
-    position: center
-  // min-height: 90vh
+  background: image-url('about-bg.jpg') repeat center top
+  // min-height: 100vh
 
 .se--about
   @extend %section
   // background: $c-bg-light
-  background: rgba($c-bg-light, 0.85)
-  min-height: 100vh
+  +text-background(0.87)
   +pad
 
 
