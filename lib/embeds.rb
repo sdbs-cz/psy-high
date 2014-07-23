@@ -7,7 +7,7 @@ Oembedr.configure do |configuration|
 end
 
 class Embed
-  attr_reader :url, :embed, :provider, :embed_image
+  attr_reader :url, :embed, :provider, :embed_image, :embed_height
 
   def self.fetch(url)
     new(url).fetch
@@ -20,12 +20,12 @@ class Embed
   def fetch
     case @url
     when /bandcamp.com/
-      @embed = bandcamp_embed(fetch_bandcamp_id(url))
+      fetch_bandcamp(@url)
       @provider = 'Bandcamp'
     when /bandzone.cz/
       @provider = 'Bandzone'
     else
-      fetch_oembed(url)
+      fetch_oembed(@url)
     end
     self
   end
@@ -35,17 +35,18 @@ class Embed
   end
 
   private
-  def fetch_bandcamp_id(url)
+  def fetch_bandcamp(url)
     doc = Nokogiri::HTML(Excon.get(url).body)
     embedurl = doc.at('meta[property="twitter:player"]').attr('content')
-    embedurl[/((album|track)=[^\/]+)/i, 1]
+    @embed = bandcamp_url(embedurl[/((album|track)=[^\/]+)/i, 1])
+    @embed_height = doc.at('meta[property="twitter:player:height"]').attr('content')
   end
 
-  def bandcamp_embed(id)
+  def bandcamp_url(id)
     if id.blank?
       nil
     else
-      "//bandcamp.com/EmbeddedPlayer/#{id}/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+      "//bandcamp.com/EmbeddedPlayer/#{id}/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
     end
   end
 
@@ -54,13 +55,14 @@ class Embed
     response = Oembedr.fetch(url).body
 
     @provider = response['provider_name']
-    @embed = extract_iframe(response['html'])
+
+    iframe = Nokogiri::HTML.fragment(response['html']).at('iframe')
+
+    @embed = iframe.attr('src')
     @embed_image = response['thumbnail_url']
+    @embed_height = response['height']
   end
 
-  def extract_iframe(html)
-    Nokogiri::HTML.fragment(html).at('iframe').attr('src')
-  end
 end
 
 

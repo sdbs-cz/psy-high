@@ -47,10 +47,9 @@ end
 def process_embed(row)
   if row[:embed].blank? && !row[:url].blank?
     embed = Embed.fetch(row[:url])
-
-    row[:provider] = embed.provider
-    row[:embed] = embed.embed
-    row[:embed_image] = embed.embed_image
+    [:provider, :embed, :embed_image, :embed_height].each do |attr|
+      row[attr] ||= embed.send(attr)
+    end
     puts embed
   end
   row
