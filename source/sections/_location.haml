@@ -7,3 +7,8 @@
 
     Vybrali jsme ho především kvůli jeho „zemitosti“ – to, jak jsou skály obrostlé lesem, který pohltil většinu lidských stop vyvolává nezaměnitelný pocit klidu a pohody.
 
+  .location-gallery
+    - (1..6).each do |i|
+      - img = "#{i}.jpg"
+      %a.location-img{href: "images/location/f/#{img}"}
+        = image_tag "location/#{img}"
