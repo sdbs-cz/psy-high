@@ -13,9 +13,18 @@
   +pad
 
 
-.about-intro
-  +media($medium-screen-up)
+
++media($medium-screen-up)
+  .about-intro
+    +row($direction: RTL)
+  .about-intro-txt, .about-vid
     +span-columns(4)
+  .about-intro-txt
+    text-align: justify
+  .about-vid
+    +omega
+    +pad
+  +reset-layout-direction
 
 .about-more-wr
   clear: both
