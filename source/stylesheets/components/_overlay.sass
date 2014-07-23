@@ -1,0 +1,35 @@
+%overlay-bg
+  +position(fixed, 0 0 0 0)
+  z-index: 5000
+  background: rgba($c-bg-dark, 0.9)
+
+%overlay-close
+  +position(fixed, 0 0 null null)
+  border-radius: 0
+  z-index: 10000
+  background: $c-bg-dark
+  color: $c-fg-dark
+  font-size: 3rem
+  line-height: 1
+  font-weight: 300
+  &:hover, &:focus
+    color: $c-accent
+  +media($medium-screen-up)
+    font-size: 4rem
+
+%overlay-inner
+  +absolute-center
+  +media($medium-screen-up)
+    padding: 5rem
+
+.overlay
+  @extend %overlay-bg
+
+.overlay-close
+  @extend %overlay-close
+
+.overlay-inner
+  @extend %overlay-inner
+
+.overlay-inner--embed
+  +intrinsic-ratio($elements: 'iframe')
