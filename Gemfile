@@ -16,6 +16,7 @@ gem 'compass', '~> 1.0.0.alpha.19'
 # gem 'normalize-scss', '~> 3.0.0.alpha.2', require: false
 gem 'middleman-neat'
 # gem 'bitters'
+gem 'toolkit', '~>2.5'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]

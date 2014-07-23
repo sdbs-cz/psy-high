@@ -8,6 +8,7 @@ require 'lib/custom_sass'
 
 activate :neat
 # activate :bourbon
+require 'toolkit'
 
 # Change Compass configuration
 # compass_config do |config|
