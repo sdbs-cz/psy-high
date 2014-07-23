@@ -4,7 +4,8 @@ var LineupExpander = function(rootEl) {
   var SEL_ITEM = '.lup-item',
     SEL_CLICK_TGT = '.lup-title',
     SEL_DETAIL = '.lup-det',
-    SEL_DETAIL_TARGETS = '.js-det-tgt';
+    SEL_DETAIL_TARGETS = '.js-det-tgt',
+    SEL_EMBED_LINK = '.js-embed';
     // SEL_DETAIL_COPY = '.lup-det--';
 
   var _root = rootEl;
@@ -34,6 +35,14 @@ var LineupExpander = function(rootEl) {
     });
   };
 
+  var convertEmbeds = function(parent) {
+    var elink = parent.querySelector(SEL_EMBED_LINK);
+    if(elink) {
+      var embed = generateEmbed(elink);
+      elink.parentNode.replaceChild(embed, elink);
+    }
+  };
+
   // click handlers and state observer for individual items
   forEach(_root.querySelectorAll(SEL_ITEM), function(item){
     var clickTarget = item.querySelector(SEL_CLICK_TGT),
@@ -55,6 +64,7 @@ var LineupExpander = function(rootEl) {
 
       toggleActiveElement(item, isThis);
       if(isThis) {
+        convertEmbeds(localDetail);
         copyContents(localDetail, copyTargets);
         _activeDetails.set(copyTargets);
       }
