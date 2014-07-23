@@ -217,6 +217,7 @@
   :url: https://soundcloud.com/turbine-stollprona
   :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F9466263&show_artwork=true
   :provider: SoundCloud
+  :embed_image: http://i1.sndcdn.com/avatars-000036339040-errkoz-t500x500.jpg?e76cf77
 - :name: Zkouška sirén
   :id: zkouska-siren
   :genre: heavy-stoner rock
@@ -272,8 +273,9 @@
     gonna invite you to the trip to their alternative reality on Psy-High 2014. But
     be careful - it’s only one-way ticket!
   :url: https://www.youtube.com/watch?v=1ONWh3hktzg
-  :embed: "//www.youtube-nocookie.com/embed/1ONWh3hktzg?rel=0"
+  :embed: "//www.youtube-nocookie.com/embed/1ONWh3hktzg?rel=0&autoplay=1"
   :provider: YouTube
+  :embed_image: http://img.youtube.com/vi/1ONWh3hktzg/0.jpg
 - :name: Dysis
   :id: dysis
   :genre: Instrumental post-metal
@@ -339,6 +341,7 @@
   :url: https://soundcloud.com/texasal-1/saiga-thick
   :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F159925348&show_artwork=true
   :provider: SoundCloud
+  :embed_image: http://a1.sndcdn.com/images/fb_placeholder.png?e76cf77
 - :name: Kochlea
   :id: kochlea
   :genre: nu-jazz
@@ -541,6 +544,7 @@
   :url: https://soundcloud.com/stoned-ape-band
   :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F73757474&show_artwork=true
   :provider: SoundCloud
+  :embed_image: http://i1.sndcdn.com/avatars-000065047837-ylgspx-t500x500.jpg?e76cf77
 - :name: Deer Deer
   :id: deer-deer
   :genre: post-hardcore
@@ -677,3 +681,4 @@
   :url: https://soundcloud.com/mindgroove/duneni-cz-promo-mix-2013-free
   :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F114061755&show_artwork=true
   :provider: SoundCloud
+  :embed_image: http://i1.sndcdn.com/artworks-000082207143-irdh6k-t500x500.jpg?e76cf77
