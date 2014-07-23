@@ -30,6 +30,8 @@
     and soul shaking, if you gonna listen carefully and dive into the depths of their
     music."
   :url: http://zatokrev.bandcamp.com/album/the-bat-the-wheel-and-a-long-road-to-nowhere-2
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=2690021698/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Weedpecker
   :id: weedpecker
   :genre: stoner grunge
@@ -56,6 +58,8 @@
     themselfs into the top of the vital Polish stoner rock scene, among such names
     as Dopelord or Ampacity.
   :url: http://weedpecker.bandcamp.com/
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=133111594/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Tomáš Palucha
   :id: tomas-palucha
   :genre: minimal americana
@@ -81,6 +85,8 @@
     backgrounds and midi-controllers dubbing organ-like soundscapes… When it all comes
     together, they build an unforgettable and devilishly well poised journey.
   :url: http://tomaspalucha.bandcamp.com/
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=2385084088/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Nod Nod
   :id: nod-nod
   :genre: slow-dark core
@@ -106,6 +112,8 @@
     get a chance to hear pieces from their new album, soon to be released upon the
     unsuspecting light of day.
   :url: http://nodnod.bandcamp.com/album/nod-nod
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=1315861269/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Bird People
   :id: bird-people
   :genre: ritual ambient, dark folk
@@ -126,6 +134,8 @@
     There is a chance, that we gonna have an opportunity to hear also the tracks of
     the last album yet - Nightshades, which was released this April.
   :url: http://bird-people.bandcamp.com/album/nightshades
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=2696738891/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Sunnata
   :id: sunnata
   :genre: psychedelic sludge
@@ -148,6 +158,8 @@
     in 2008. Sunnata is a colossus fueled an explosive mixture of heavy riffs, groove
     and grunge vocal. When they finish playing, it remains after them only silence.
   :url: http://sunnataofficial.bandcamp.com/
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=1362805240/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 :major:
 - :name: Děti Deště
   :id: deti-deste
@@ -175,7 +187,8 @@
     sound like something excised from the works of Egon Bondy. Live, it’s a completely
     crushing experience - in the best way possible.
   :url: https://myspace.com/detideste
-  :embed: https://myspace.com/detideste/music/song/chliv-nas-21631292-21432477
+  :embed: "//media.myspace.com/play/song/chliv-nas-21631292-21432477"
+  :provider: Myspace
 - :name: Turbine Stollprona
   :id: turbine-stollprona
   :genre: progressive heavy psychedelic
@@ -202,7 +215,8 @@
     genres, they see as toys and concepts meant to be played with and designated for
     destruction.
   :url: https://soundcloud.com/turbine-stollprona
-  :embed: ''
+  :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F9466263&show_artwork=true
+  :provider: SoundCloud
 - :name: Zkouška sirén
   :id: zkouska-siren
   :genre: heavy-stoner rock
@@ -230,7 +244,7 @@
     to you, why it’s worth to play for people, even sometimes it’s pretty hard. And
     you will fuckin’ enjoy it, you bet!
   :url: http://bandzone.cz/zkouskasiren
-  :embed: ''
+  :provider: Bandzone
 - :name: Permon Balet Superstar
   :id: permon-balet-superstar
   :genre: alternative-rock
@@ -258,7 +272,8 @@
     gonna invite you to the trip to their alternative reality on Psy-High 2014. But
     be careful - it’s only one-way ticket!
   :url: https://www.youtube.com/watch?v=1ONWh3hktzg
-  :embed: ''
+  :embed: "//www.youtube-nocookie.com/embed/1ONWh3hktzg?rel=0"
+  :provider: YouTube
 - :name: Dysis
   :id: dysis
   :genre: Instrumental post-metal
@@ -273,7 +288,8 @@
     up slowly in order to plunge head first into a deep mire of post-metal riffs.
     A treat for all cultists of older Pelican and Russian Circles stuff.
   :url: http://dysis.bandcamp.com/track/spectral-plane-live-session
-  :embed: ''
+  :embed: "//bandcamp.com/EmbeddedPlayer/track=2128929470/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Limestone Whale
   :id: limestone-whale
   :genre: 70s retro stoner rock
@@ -296,7 +312,8 @@
     you are standing in the middle of the crowd at Woodstock in the sixty-ninth -
     and you don’t wanna miss that!
   :url: http://limestonewhale.bandcamp.com/
-  :embed: ''
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=3940018755/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Saiga
   :id: saiga
   :genre: instrumental raw-stoner
@@ -320,7 +337,8 @@
     of noise to frantic solo seizures. You will definetely hear about this band in
     the future."
   :url: https://soundcloud.com/texasal-1/saiga-thick
-  :embed: ''
+  :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F159925348&show_artwork=true
+  :provider: SoundCloud
 - :name: Kochlea
   :id: kochlea
   :genre: nu-jazz
@@ -349,7 +367,8 @@
     experience, and it doesn’t matter, that their tracks are only instrumental, because
     Kochlea tells stories without words, just with its music.
   :url: https://kochlea.bandcamp.com/
-  :embed: ''
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=2583756060/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: The Wild Tides
   :id: the-wild-tides
   :genre: surf rock
@@ -372,7 +391,8 @@
     To Go” (2012), “Hearts On Fire” (2012) or last year’s “I Only Miss You When You’re
     Gone”. Wild Tides simply gonna make your day full of rainbows and unicorns.
   :url: http://wildtides.bandcamp.com/
-  :embed: ''
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=767476355/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Social Party
   :id: social-party
   :genre: downtempo-hardcore
@@ -402,7 +422,8 @@
     this years Psy-High they gonna play tracks from their new album "Social Party"
     (2014) for sure. Obviously, Social Party is something to look forward!
   :url: http://socialparty1.bandcamp.com/
-  :embed: ''
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=1374694100/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Bullfrog
   :id: bullfrog
   :genre: noise-stoner-rock sludge
@@ -423,7 +444,8 @@
     which was established in 2011, will be playing also the tracks from their current
     debut “Good Day for Doomsday”, which was released in February 2014.
   :url: http://bullfrog-bullfrog.bandcamp.com/
-  :embed: ''
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=902687723/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Enten og Eller
   :id: enten-og-eller
   :genre: noise-hardcore
@@ -442,7 +464,8 @@
     title of their debut album Primal Forms (2012). It is EITHER you hate them, OR
     you love them.
   :url: http://entenogeller.bandcamp.com/
-  :embed: ''
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=3053483805/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: The Tower
   :id: the-tower
   :genre: doom metal
@@ -458,7 +481,7 @@
     relatively new band (est. 2012) revives the classic rock and metal music from
     the sixties to the nineties, using two guitars, bass, drums and a screamy vocal.
   :url: http://bandzone.cz/thetower
-  :embed: ''
+  :provider: Bandzone
 - :name: Lambda
   :id: lambda
   :genre: Instrumental stoner rock
@@ -478,7 +501,7 @@
     perfect melodic blues-rock solos, that are inducing the atmosphere of the American
     Midwest with its endless horizons and earthiness.
   :url: http://bandzone.cz/lambda
-  :embed: ''
+  :provider: Bandzone
 - :name: The Hops Party
   :id: the-hops-party
   :genre: garage stoner rock
@@ -499,8 +522,6 @@
     first concerts, release of first record and the first contact with the outter
     world. They told us performing at Psy-High is an honor to them. It will be their
     merely third concert, but these blokes know what they are doing.
-  :url: ''
-  :embed: ''
 - :name: Stoned Ape
   :id: stoned-ape
   :genre: psych rock impro
@@ -518,7 +539,8 @@
     place in their sets, so each one of their live performances is kind of a unique
     experience.
   :url: https://soundcloud.com/stoned-ape-band
-  :embed: ''
+  :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F73757474&show_artwork=true
+  :provider: SoundCloud
 - :name: Deer Deer
   :id: deer-deer
   :genre: post-hardcore
@@ -539,7 +561,8 @@
     are aint no newbies on the musical scene, because among many live performances,
     they also released two albums - Demo (2008) and Words Can Hurt (2011)
   :url: http://deerdeer.bandcamp.com/
-  :embed: ''
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=606618392/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Bagdasarov
   :id: bagdasarov
   :genre: noise improvisation
@@ -563,8 +586,6 @@
     references to the history of cinema, maybe also because of he is currently finishing
     his postgraduate studies at the Academy of Performing Arts in Prague, where he
     also teaches.
-  :url: ''
-  :embed: ''
 :support:
 - :name: Kalle
   :id: kalle
@@ -587,7 +608,7 @@
     can evoke unbelievably strong feelings and emotions in their listeners. Both pleasant
     and unpleasant. Like you live through whole life during their set.
   :url: http://bandzone.cz/kalle
-  :embed: ''
+  :provider: Bandzone
 - :name: Sítě
   :id: site
   :genre: minimal
@@ -597,8 +618,6 @@
     Vedlejší projekt Honzy Tomáše z Tomáše Paluchy.'
   :description_en: 'Intoxicating ambient, as if saying: Greetings, ancient ocen! Side
     project of Jan Tomáš from Tomáš Palucha'
-  :url: ''
-  :embed: ''
 - :name: Les
   :id: les
   :genre: ambient / downtempo
@@ -619,7 +638,8 @@
     time absolutely different for you. Les captured this floating atmosphere also
     on their debut tape “Marianskohorsk” (2013), which was released on label Tape-ty.
   :url: http://shmyzem.bandcamp.com/album/marianskohorsk
-  :embed: ''
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=4100048585/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+  :provider: Bandcamp
 - :name: Debbi Love
   :id: debbi-love
   :genre: alternative pop satire
@@ -641,7 +661,7 @@
     The characteristic sound of this band, mixed a little bit with theatrical expression,
     gonna be a pleasant surprise and certainly tune you in a good mood.
   :url: http://bandzone.cz/debbilove
-  :embed: ''
+  :provider: Bandzone
 - :name: L00k + live percussion
   :id: l00k
   :genre: DJ + live percussion
@@ -649,14 +669,11 @@
   :location_en: Prague, Czech Republic
   :description: Tradiční goa/psytrance v doprovodu živé improvizace na bicí
   :description_en: Traditional goa/psy-trance accompanied by live percussion improvisation
-  :url: ''
-  :embed: ''
 - :name: DJ MindGroove + support
   :id: dj-mindgroove
   :genre: DJ
   :location: Praha
   :location_en: Prague, Czech Republic
-  :description: ''
-  :description_en: ''
   :url: https://soundcloud.com/mindgroove/duneni-cz-promo-mix-2013-free
-  :embed: ''
+  :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F114061755&show_artwork=true
+  :provider: SoundCloud
