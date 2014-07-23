@@ -46,7 +46,12 @@ end
 
 def process_embed(row)
   if row[:embed].blank? && !row[:url].blank?
-    row[:provider], row[:embed] = get_embed(row[:url])
+    embed = Embed.fetch(row[:url])
+
+    row[:provider] = embed.provider
+    row[:embed] = embed.embed
+    row[:embed_image] = embed.embed_image
+    puts embed
   end
   row
 end
