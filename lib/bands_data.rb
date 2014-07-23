@@ -52,7 +52,7 @@ def process_embed(row)
 end
 
 def process_rows(rows, lang)
-  rows.map {|r| process_embed(fields_for(r, lang)) }
+  rows.map {|r| process_embed(fields_for(r, lang)).reject{|key, val| val.blank?} }
 end
 
 urls = SHEETS.hmap_val do |gid|
