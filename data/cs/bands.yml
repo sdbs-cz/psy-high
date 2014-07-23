@@ -299,7 +299,7 @@
   :embed: ''
 - :name: Saiga
   :id: saiga
-  :genre: instrumental stoner
+  :genre: instrumental raw-stoner
   :location: Praha
   :location_en: Prague, Czech Republic
   :description: "“Očekavaš charismatickeho frontmana z krasnym zpěvem? Chceš uslyšet
@@ -319,7 +319,36 @@
     directed mostly by a genius guitar lead, which flies between catchy grooves, walls
     of noise to frantic solo seizures. You will definetely hear about this band in
     the future."
-  :url: ''
+  :url: https://soundcloud.com/texasal-1/saiga-thick
+  :embed: ''
+- :name: Kochlea
+  :id: kochlea
+  :genre: nu-jazz
+  :location: Brno
+  :location_en: Brno, Czech Republic
+  :description: Brněnská instrumentální kapela Kochlea píše svoji historii už od roku
+    2010. Sama svoji hudbu označuje za alternativní post-rock, avšak pozorný posluchač
+    může v jejích písních nalézt mnohem více - podmanivý saxofon evokuje večerní posezení
+    u kvalitního jazzu v Redutě, uklidňující basa pak noční vyjížďku autem za poslechu
+    Riders on the Storm, a k tomu všemu Kochlea ještě přidává vlastní, originální
+    sound, protože mimo klasických nástrojů se nebojí ani pianetu, thereminu, nebo
+    nejrůznějších DIY udělátek. Kromě celé řady živých koncertů, má kapela na svém
+    kontě i velmi povedenou desku ‘Rehersal Room’, která vyšla v lednu 2012. V konečném
+    výsledku je hudba těchto tří brňáků velmi příjemným zážitkem, a vůbec nevadí,
+    že jsou jejich tracky pouze instrumentální, protože i beze slov vyprávější příběhy,
+    kterými vás Kochlea pozve do svých vnitřních světů.
+  :description_en: Brno-based instrumental band Kochlea traces its history since 2010.
+    Players themselves are decribing their music as alternative post-rock, but attentive
+    listener can find much more in their songs - captivating saxophone evokes an idea
+    of pleasant evening spent with jazz in Reduta club, calming bass evokes night
+    ride with a sound of Riders on the Storm. To all that Kochlea adds their own original,
+    because besides classical instruments they are even not afraid of pianet, theremin
+    or various DIY sound-producing stuff. In addition to a series of live concerts,
+    the band has to its credit a very successfull album ‘Rehersal Room’, which was
+    released in January 2012. In conclusion, music of these three guys is a very pleasant
+    experience, and it doesn’t matter, that their tracks are only instrumental, because
+    Kochlea tells stories without words, just with its music.
+  :url: https://kochlea.bandcamp.com/
   :embed: ''
 - :name: The Wild Tides
   :id: the-wild-tides
@@ -535,35 +564,6 @@
     his postgraduate studies at the Academy of Performing Arts in Prague, where he
     also teaches.
   :url: ''
-  :embed: ''
-- :name: Kochlea
-  :id: kochlea
-  :genre: nu-jazz, alternative post-rock
-  :location: Brno
-  :location_en: Brno, Czech Republic
-  :description: Brněnská instrumentální kapela Kochlea píše svoji historii už od roku
-    2010. Sama svoji hudbu označuje za alternativní post-rock, avšak pozorný posluchač
-    může v jejích písních nalézt mnohem více - podmanivý saxofon evokuje večerní posezení
-    u kvalitního jazzu v Redutě, uklidňující basa pak noční vyjížďku autem za poslechu
-    Riders on the Storm, a k tomu všemu Kochlea ještě přidává vlastní, originální
-    sound, protože mimo klasických nástrojů se nebojí ani pianetu, thereminu, nebo
-    nejrůznějších DIY udělátek. Kromě celé řady živých koncertů, má kapela na svém
-    kontě i velmi povedenou desku ‘Rehersal Room’, která vyšla v lednu 2012. V konečném
-    výsledku je hudba těchto tří brňáků velmi příjemným zážitkem, a vůbec nevadí,
-    že jsou jejich tracky pouze instrumentální, protože i beze slov vyprávější příběhy,
-    kterými vás Kochlea pozve do svých vnitřních světů.
-  :description_en: Brno-based instrumental band Kochlea traces its history since 2010.
-    Players themselves are decribing their music as alternative post-rock, but attentive
-    listener can find much more in their songs - captivating saxophone evokes an idea
-    of pleasant evening spent with jazz in Reduta club, calming bass evokes night
-    ride with a sound of Riders on the Storm. To all that Kochlea adds their own original,
-    because besides classical instruments they are even not afraid of pianet, theremin
-    or various DIY sound-producing stuff. In addition to a series of live concerts,
-    the band has to its credit a very successfull album ‘Rehersal Room’, which was
-    released in January 2012. In conclusion, music of these three guys is a very pleasant
-    experience, and it doesn’t matter, that their tracks are only instrumental, because
-    Kochlea tells stories without words, just with its music.
-  :url: https://kochlea.bandcamp.com/
   :embed: ''
 :support:
 - :name: Kalle
