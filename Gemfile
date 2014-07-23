@@ -31,4 +31,6 @@ end
 group :data do
   gem 'remote_table'
   gem 'oembedr'
+  gem 'excon'
+  gem 'nokogiri'
 end

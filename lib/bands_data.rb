@@ -1,6 +1,7 @@
 require 'remote_table'
 require 'yaml'
 require 'fileutils'
+require_relative './embeds'
 
 class Hash
   def hmap(&block)
@@ -43,8 +44,15 @@ def fields_for(hsh, lang)
   end
 end
 
+def process_embed(row)
+  if row[:embed].blank? && !row[:url].blank?
+    row[:provider], row[:embed] = get_embed(row[:url])
+  end
+  row
+end
+
 def process_rows(rows, lang)
-  rows.map {|r| fields_for(r, lang)}
+  rows.map {|r| process_embed(fields_for(r, lang)) }
 end
 
 urls = SHEETS.hmap_val do |gid|
