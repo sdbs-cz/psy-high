@@ -1,4 +1,4 @@
 :javascript
-  if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) {
+  if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach && ('classList' in document.createElement('_'))) {
     document.documentElement.className += 'js';
   }
