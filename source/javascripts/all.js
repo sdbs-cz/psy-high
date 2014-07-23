@@ -4,10 +4,11 @@
 //= require lib/smoothscroll
 //= require lib/headhesive
 //= require lib/overlay
+//= require lib/embed
 //= require classes
 //= require main
 //= require nav
 //= require more
-//= require embeds
+//= require overlays
 //= require lineup
 //= require tpl/end
