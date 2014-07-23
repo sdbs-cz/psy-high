@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "fd76ea05fe3bea97614ff908c180aa510dbc8992b633217d171ae187eeadd0e0",
-    "current": "fd76ea05fe3bea97614ff908c180aa510dbc8992b633217d171ae187eeadd0e0"
+    "previous": "1f468d89119fd89c2f8f426363f2746d5a05b5e855b8b3ca580c67fddcf50ca3",
+    "current": "1f468d89119fd89c2f8f426363f2746d5a05b5e855b8b3ca580c67fddcf50ca3"
   },
   "fonts": [
     "source/fonts/fontcustom.ttf",
@@ -10,6 +10,10 @@
     "source/fonts/fontcustom.eot"
   ],
   "glyphs": {
+    "bandzone": {
+      "codepoint": 98,
+      "source": "source/images/icons/bandzone.svg"
+    },
     "down": {
       "codepoint": 8595,
       "source": "source/images/icons/down.svg"
@@ -22,9 +26,25 @@
       "codepoint": 103,
       "source": "source/images/icons/gplus.svg"
     },
+    "lastfm": {
+      "codepoint": 108,
+      "source": "source/images/icons/lastfm.svg"
+    },
+    "left": {
+      "codepoint": 8592,
+      "source": "source/images/icons/left.svg"
+    },
     "menu": {
       "codepoint": 9776,
       "source": "source/images/icons/menu.svg"
+    },
+    "play": {
+      "codepoint": 9654,
+      "source": "source/images/icons/play.svg"
+    },
+    "right": {
+      "codepoint": 8594,
+      "source": "source/images/icons/right.svg"
     },
     "up": {
       "codepoint": 8593,
