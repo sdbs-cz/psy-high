@@ -9,5 +9,14 @@
         =band.location
   .lup-det.lup-det--1n.js-hide
     .lup-det-in{class: "lup-item--#{band.id}"}
-      %p.lup-desc= band.description
+      .lup-desc
+        %p= band.description
+        -unless band.embed? && band.provider?
+          %p= link_to band.provider, band.url, class: 'lup-link'
+
+      -if band.embed?
+        .lup-embed
+          = embed_link_for(band)
+
+      .lup-embed
 = lineup_dividers(band_counter, band.last, arity)
