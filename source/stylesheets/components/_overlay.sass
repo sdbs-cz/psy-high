@@ -2,6 +2,9 @@
   +position(fixed, 0 0 0 0)
   z-index: 5000
   background: rgba($c-bg-dark, 0.9)
+  +display(flex)
+  +align-items(center)
+  +justify-content(center)
 
 %overlay-close
   +position(fixed, 0 0 null null)
@@ -18,7 +21,9 @@
     font-size: 4rem
 
 %overlay-inner
-  +absolute-center
+  // +absolute-center
+  +align-self(center)
+  width: 100%
   +media($medium-screen-up)
     padding: 5rem
 
@@ -32,4 +37,13 @@
   @extend %overlay-inner
 
 .overlay-inner--embed
-  +intrinsic-ratio($elements: 'iframe')
+  position: relative
+  padding-bottom: 56.25%
+  height: 0
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  // +intrinsic-ratio($elements: 'iframe')
