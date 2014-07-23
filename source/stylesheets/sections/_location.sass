@@ -1,8 +1,8 @@
 .wr--location
   @extend %section-wrapper
-  min-height: 100vh
   background-image: image-url('location-bg.jpg')
-  padding-top: 5vh
+  min-height: 100vh
+  padding: 2rem 0
 
 .se--location
   @extend %section
@@ -10,18 +10,57 @@
   .se-header
     padding-top: 0
 
-.location-txt
+%location-se
+  +row
+
+.location-se--about
+  @extend %location-se
+  margin-bottom: 20vh
+
+.location-se--map
+  @extend %location-se
+  margin-top: 2rem
+
+%location-txt
   +text-background
   +pad
+  +media($medium-screen-up)
+    +pad
+
+.location-txt--about
+  @extend %location-txt
+
+.location-txt--transport
+  @extend %location-txt
 
 .location-img
   display: inline-block
-  width: 32.5%
+  width: 49%
+
+.location-map
 
 +media($medium-screen-up)
+  .wr--location
+    background-attachment: fixed
+    // padding-top: 105vh
+
   .se--location
 
-  .location-txt
+  .location-txt--about
     +span-columns(4)
     +shift(4)
-    +pad
+
+  .location-txt--transport
+    +span-columns(3, block-collapse)
+
+  .location-map
+    +span-columns(5, block-collapse)
+    +omega
+
+  .location-map iframe
+    width: 100%
+
++media($large-screen-up)
+  .location-img
+    display: inline-block
+    width: 32.5%

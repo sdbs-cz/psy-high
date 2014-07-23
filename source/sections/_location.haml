@@ -1,14 +1,33 @@
-.location-txt
+.location-se--about
+  .location-txt--about
+    %h1.se-header Místo konání
 
-  %h1.se-header Místo konání
+    :markdown
+      Lom u sv. Josefa jsme vybrali především kvůli jeho „zemitosti“ – to, jak jsou skály obrostlé lesem, který pohltil většinu lidských stop vyvolává nezaměnitelný pocit klidu a pohody. Skoro cítíte hřmění těch podzemních masivů, proplétající se s vůněmi a zvuky stromů. Lom byl aktivní od druhé poloviny 19. století, vysoce kvalitní pískovec z něj se využíval skoro výhradně k sochařství. Pochází z něj například sochy v průčelí Národního divadla v Praze.
 
-  :markdown
-    Lom sv. Josefa byl aktivní od druhé poloviny 19. století, jeho vysoce kvalitní pískovec se využíval především k sochařství. Pochází z něj například sochy v průčelí Národního divadla v Praze.
+    .location-gallery
+      - (1..6).each do |i|
+        - img = "#{i}.jpg"
+        %a.location-img{href: "images/location/f/#{img}"}
+          = image_tag "location/#{img}"
 
-    Vybrali jsme ho především kvůli jeho „zemitosti“ – to, jak jsou skály obrostlé lesem, který pohltil většinu lidských stop vyvolává nezaměnitelný pocit klidu a pohody.
+#map.location-se--map
+  .location-txt--transport
+    :markdown
+      ## Doprava
 
-  .location-gallery
-    - (1..6).each do |i|
-      - img = "#{i}.jpg"
-      %a.location-img{href: "images/location/f/#{img}"}
-        = image_tag "location/#{img}"
+      GPS
+      : 50.3758897°N, 15.6457500°E
+
+      Vlak
+      : Hořice v Podkrkonoší
+
+      Autobus
+      : Hořice, aut.nádr.
+
+      Parkování ve městě, bez omezení.
+
+      *Vstup psům je povolen, za předpokladu, že po nich bude uklizeno a že zůstanou pod dozorem.*
+
+  .location-map
+    %iframe.embed--map{src: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10177.99758387949!2d15.64575!3d50.3758884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDIyJzMzLjIiTiAxNcKwMzgnNDQuNyJF!5e0!3m2!1scs!2s!4v1406076551983', width:"600", height:"450"}
