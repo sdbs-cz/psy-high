@@ -9,7 +9,7 @@ module EmbedHelpers
       content = image_tag(band.embed_image, alt: band.provider)
     end
 
-    link_to content, band.url, class: [css_class, 'lup-link']
+    link_to content, band.url, class: [css_class, 'lup-link'].join(' '), data: {embed: band.embed }
   end
 
 
