@@ -45,6 +45,11 @@
   background-color: rgba($c-bg-light, 0.8)
   padding: 1rem
 
+.lup-embed
+  iframe
+    width: 100%
+    min-height: 16em
+
 .lup-det-in
   +pad
   @extend %band-bg
@@ -75,8 +80,11 @@
     .lup-det-in
       +row
 
-    .lup-desc
+    .lup-desc, .lup-embed
       +span-columns(4)
+
+    .lup-embed
+      +omega
 
     .js, .lup-item.js-active
       .lup-det--1n
