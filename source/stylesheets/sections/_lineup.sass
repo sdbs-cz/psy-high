@@ -1,8 +1,12 @@
 
+.wr--lineup
+  background: image-url('bg-c.png') $light-gray
+  padding-bottom: 2rem
+
 .se--lineup
   @extend %section
   min-height: 100vh
-  margin-bottom: 1rem
+
 
 @each $file in list-files("images/lineup/*.jpg")
   .lup-item--#{$file}
