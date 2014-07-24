@@ -36,6 +36,13 @@
 .lup-byline
   font-style: italic
 
+.lup-link
+  @extend %button
+  &:after
+    content: ' »'
+  &:hover, &:focus
+    color: $c-fg-light
+
 .js .lup-title
   cursor: pointer
 
