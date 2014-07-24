@@ -2,21 +2,21 @@
 
 .wr--about
   @extend %section-wrapper
-  padding-top: $section-offset
+  padding: $section-offset 0
   background: image-url('about-bg.jpg') repeat center top
   // min-height: 100vh
 
 .se--about
   @extend %section
   // background: $c-bg-light
-  +text-background(0.87)
+  +text-background(0.9)
   +pad
 
 .about-vid
   margin-bottom: 1rem
 
   /*&:before
-    +icon($icon-play)
+    +icon(play)
     display: block
     font-size: 5rem
     line-height: 100%
