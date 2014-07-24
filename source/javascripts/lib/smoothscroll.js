@@ -38,7 +38,7 @@ var position = function(start, end, elapsed, duration) {
 // if the first argument is an element then scroll to the top of this element
 // if the first argument is numeric then scroll to this location
 // if the callback exist, it is called when the scrolling is finished
-var smoothScroll = function(el, duration, callback){
+var smoothScroll = function(el, duration, callback, direction){
     duration = duration || 500;
     var start = window.pageYOffset,
         end;
@@ -47,6 +47,16 @@ var smoothScroll = function(el, duration, callback){
       end = parseInt(el);
     } else {
       end = getTop(el);
+    }
+
+    // We only want to go up
+    // → start is lower than end
+    if(direction === 'up' && start < end) {
+      return;
+    }
+    // and vice versa
+    if(direction === 'down' && start > end) {
+      return;
     }
 
     var clock = Date.now();

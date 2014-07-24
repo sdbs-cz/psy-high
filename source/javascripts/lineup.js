@@ -67,6 +67,7 @@ var LineupExpander = function(rootEl) {
         convertEmbeds(localDetail);
         copyContents(localDetail, copyTargets);
         _activeDetails.set(copyTargets);
+        smoothScroll(localDetail, 500, null, 'up');
       }
     });
   });
