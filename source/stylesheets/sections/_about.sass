@@ -2,7 +2,7 @@
 
 .wr--about
   @extend %section-wrapper
-  padding: $section-offset 0
+  padding-top: $section-offset
   background: image-url('about-bg.jpg') repeat center top
   // min-height: 100vh
 
@@ -12,9 +12,9 @@
   +text-background(0.87)
   +pad
 
-.about-vid-tgt
-  display: block
-  position: relative
+.about-vid
+  margin-bottom: 1rem
+
   /*&:before
     +icon($icon-play)
     display: block
@@ -32,9 +32,9 @@
     +span-columns(4)
   .about-intro-txt
     text-align: justify
-  .about-vid
     +omega
-    +pad
+  .about-vid
+    +pad(default 0 default default)
   +reset-layout-direction
 
 .about-more-wr
