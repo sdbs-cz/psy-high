@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "12921a5b49e85e393d854197adad20fbbaec7755c09b84cc5a33c82c401a993b",
-    "current": "12921a5b49e85e393d854197adad20fbbaec7755c09b84cc5a33c82c401a993b"
+    "previous": "3915ec7680fbd5eb2c63e9fee281a3e579b953946d56460a86b0db104e684991",
+    "current": "3915ec7680fbd5eb2c63e9fee281a3e579b953946d56460a86b0db104e684991"
   },
   "fonts": [
     "source/fonts/fontcustom.ttf",
@@ -62,7 +62,7 @@
     "css_selector": ".icon-{{glyph}}",
     "debug": false,
     "font_name": "fontcustom",
-    "force": true,
+    "force": false,
     "input": {
       "templates": "fontcustom/templates",
       "vectors": "source/images/icons"
