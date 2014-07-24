@@ -10,8 +10,9 @@
   .lup-det.lup-det--1n.js-hide
     .lup-det-in{class: "lup-item--#{band.id}"}
       .lup-desc
-        %p= band.description
-        -unless band.embed? && band.provider?
+        -if band.description?
+          %p= band.description
+        -if !band.embed? && band.provider?
           %p= link_to band.provider, band.url, class: 'lup-link'
 
       -if band.embed?
