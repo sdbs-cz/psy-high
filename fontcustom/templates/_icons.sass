@@ -13,5 +13,4 @@ files = exts.map { |ext| "'#{file_name}.#{ext}'"}.join(', ')
 %>
 +font-face(<%= font_name %>, font-files(<%= files %>), '<%= file_name %>.eot', normal, normal)
 
-<% @glyphs.each do |name, value| %>
-$icon-<%= name %>: '\<%= value[:codepoint].to_s(16) %>' // <%= value[:codepoint].chr(Encoding::UTF_8) %> <% end %>
+$icons: (<% @glyphs.each do |name, value| %><%= name %>: '\<%= value[:codepoint].to_s(16) %>'/* <%= value[:codepoint].chr(Encoding::UTF_8) %> */, <% end %>)
