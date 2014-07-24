@@ -8,14 +8,30 @@ $nav-items: 4
   @extend %section
 
   a
-    +span-columns(1)
+    display:inline-block
     color: $c-fg-light
-    line-height: 3rem
 
     text-align: center
-    font-weight: 400
     &:hover
       color: $c-accent
+
+%nav-icon
+  font-size: 0
+  &:before
+    font-family: $icon-font
+    font-size: 1rem
+
+.nav-in > a
+  font-weight: 400
+
+.nav-ex > a
+  @extend %nav-icon
+
+$nav-icons: fb lastfm bandzone nyx
+@each $icon in $nav-icons
+  .nav-i--#{$icon}:before
+    content: map-get($icons, $icon)
+
 
 .nav--clone
   // min-height: 2rem

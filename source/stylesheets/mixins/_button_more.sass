@@ -15,13 +15,13 @@
 
   &::after
     @extend %animation-floating
-    +icon($icon-down)
+    +icon(down)
     display: block
 
   &.js-active::before
     content: ''
 
   &.js-active::after
-    +icon($icon-up)
+    +icon(up)
     +animation-play-state(paused)
 
