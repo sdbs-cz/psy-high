@@ -39,7 +39,7 @@ def fields_for(hsh, lang)
   separator = LANG_SEP
   suffix = /#{separator}#{lang}\z/i
 
-  hsh.hmap do |key, value|
+  hsh.reject{|key, val| val.blank?}.hmap do |key, value|
     [key.sub(suffix, '').to_sym, value]
   end
 end
