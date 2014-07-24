@@ -4,34 +4,51 @@ $nav-items: 4
 
 .wr--nav
   background: rgba($c-bg-light, 0.9)
+
+
 .se--nav
   @extend %section
+  padding-bottom: 0
 
-  a
-    display:inline-block
-    color: $c-fg-light
-
-    text-align: center
-    &:hover
-      color: $c-accent
-
-%nav-icon
-  font-size: 0
-  &:before
-    font-family: $icon-font
-    font-size: 1rem
-
-.nav-in > a
+.nav-l
   font-weight: 400
+  color: $c-fg-light
+  text-align: center
+  line-height: 2
+  &:hover, &:focus
+    color: $c-accent
 
-.nav-ex > a
-  @extend %nav-icon
+.nav-in .nav-l
+  margin-right: 1rem
+
+.nav-ex .nav-l
+  display: inline-block
+  margin-left: 1rem
+  &:before
+    +icon-base
+    line-height: 1
+    font-size: 2rem
+  span
+    display: none
 
 $nav-icons: fb lastfm bandzone nyx
 @each $icon in $nav-icons
-  .nav-i--#{$icon}:before
-    content: map-get($icons, $icon)
+  .nav-l--#{$icon}:before
+    +icon($icon)
 
++media($medium-screen-up)
+  .nav-in
+    +span-columns(6)
+  .nav-ex
+    +span-columns(2)
+    +omega
+
+  .nav-in, .nav-ex
+    +display(flex)
+    +justify-content(space-between)
+
+  .nav-l
+    +flex(1)
 
 .nav--clone
   // min-height: 2rem

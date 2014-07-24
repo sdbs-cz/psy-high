@@ -1,13 +1,17 @@
 .wr--nav.js-nav
   %nav.se--nav
     .nav-in
-      = link_to 'Psy-High', '#about'
-      = link_to 'Hudba', '#lineup'
-      = link_to 'Místo', '#location'
-      = link_to 'Extra', '#extras'
+      = link_to 'Psy-High', '#about', class: 'nav-l'
+      = link_to 'Hudba', '#lineup', class: 'nav-l'
+      = link_to 'Místo', '#location', class: 'nav-l'
+      = link_to 'Extra', '#extras', class: 'nav-l'
       /= link_to '#tickets', 'Lístky'
     .nav-ex
-      %a.nav-i--fb{href: 'https://www.facebook.com/events/1503940179833269/', title: 'Událost na Facebooku'} Facebook
-      %a.nav-i--lastfm{href: 'http://www.last.fm/festival/3834101+Psy-High+%2714', title: 'Festival na Last.fm'} Last.fm
-      %a.nav-i--bandzone{href: 'http://bandzone.cz/koncert/349855', title: 'Koncert na Bandzone'} Bandzone
-      %a.nav-i--nyx{href: 'https://www.nyx.cz/index.php?l=events;l2=2;id=24387', title: 'Událost na Nyxu'} Nyx
+      %a.nav-l.nav-l--fb{href: 'https://www.facebook.com/events/1503940179833269/', title: 'Událost na Facebooku'}
+        %span Facebook
+      %a.nav-l.nav-l--lastfm{href: 'http://www.last.fm/festival/3834101+Psy-High+%2714', title: 'Festival na Last.fm'}
+        %span Last.fm
+      %a.nav-l.nav-l--bandzone{href: 'http://bandzone.cz/koncert/349855', title: 'Koncert na Bandzone'}
+        %span Bandzone
+      %a.nav-l.nav-l--nyx{href: 'https://www.nyx.cz/index.php?l=events;l2=2;id=24387', title: 'Událost na Nyxu'}
+        %span Nyx

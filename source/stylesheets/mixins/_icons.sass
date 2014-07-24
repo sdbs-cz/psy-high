@@ -1,6 +1,8 @@
 =icon-base
   font-family: $icon-font
   font-weight: normal
+  line-height: 1
+  +font-feature-settings('liga')
 
 =icon($icon)
   content: map-get($icons, $icon)
