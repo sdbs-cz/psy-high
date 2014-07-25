@@ -10,6 +10,8 @@ gem 'middleman-deploy'
 
 gem 'haml'
 
+gem 'middleman-imageoptim', '~> 0.1.4'
+
 # SASS plugins
 gem 'compass', '~> 1.0.0.alpha.19'
 
