@@ -15,9 +15,9 @@
     = field_set_tag(class: 'tickets-f-row') do
       %p.f--ticket_email
         = label_tag :ticket_email, caption: 'E-mail'
-        = email_field_tag :ticket_email, value: '@'
+        = email_field_tag :ticket_email, value: '@', required: true
       %p.f--ticket_amount
         = label_tag :ticket_amount, caption: 'Počet lístků'
-        = number_field_tag :ticket_amount, value: 1, min: 1, step: 1
+        = number_field_tag :ticket_amount, value: 1, min: 1, step: 1, required: true
     %p.f--submit
       = submit_tag 'Objednat lístky'

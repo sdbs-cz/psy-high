@@ -1,0 +1,24 @@
+
+.soc-nav
+  text-align: center
+
+.soc-l
+  color: $c-fg-dark
+  &:hover, &:focus
+    color: $c-accent
+
+.soc-l
+  display: inline-block
+  margin: 0 0.5rem
+  font-size: 0
+  &:before
+    +icon-base
+    line-height: 1
+    font-size: 3rem
+  span
+    display: none
+
+$social-icons: fb lastfm bandzone nyx
+@each $icon in $social-icons
+  .soc-l--#{$icon}:before
+    +icon($icon)
