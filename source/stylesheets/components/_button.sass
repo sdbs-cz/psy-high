@@ -17,6 +17,12 @@
   &:focus, &:active
     box-shadow: $form-box-shadow-focus
 
+  &:disabled
+    background-color: $light-gray
+    border-color: $medium-gray
+    cursor: not-allowed
+    color: $c-fg-light
+
 =button-external
   @extend %button
   &:after
