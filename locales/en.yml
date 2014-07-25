@@ -1,5 +1,11 @@
 ---
 en:
+  header:
+    lineup: "Line-up"
+    location: "Location"
+    extra: "Extra"
+    tickets: "Tickets"
+    
   call_to_action: "Contribute and come"
 
   about: |

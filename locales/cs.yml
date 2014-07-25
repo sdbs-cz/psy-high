@@ -1,5 +1,11 @@
 ---
 cs:
+  header:
+    lineup: "Hudba"
+    location: "Místo"
+    extra: "Extra"
+    tickets: "Lístky"
+
   call_to_action: "Podpoř a přijeď"
 
   about: |
