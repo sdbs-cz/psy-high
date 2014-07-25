@@ -1,17 +1,18 @@
 .wr--extras
   @extend %bg-pattern
   min-height: 100vh
+  padding: $section-offset 0 2rem
 
 .se--extras
   @extend %section
 
 .extras-txt
-  margin-top: 20vh
   +pad
   +text-background
 
 +media($medium-screen-up)
   .extras-txt
+    margin-top: 20vh
     +span-columns(4)
     +shift(2)
 
