@@ -8,26 +8,46 @@
   @extend %section
   padding-top: 10vh
 
-.tickets-shop, .tickets-order
+.tickets-b
   +pad
   +text-background
 
-.tickets-shop-l
+.tickets-l--shop
   text-align: center
   padding-top: 2rem
   a
     +button-external
 
+.tickets-f
+  margin-top: 2rem
+
+.tickets-f-row
+  margin-bottom: 0
+
+.f--ticket_amount
+  input
+    max-width: 3.5em
+
 +media($medium-screen-up)
-  .tickets-shop
+  .tickets-b--shop
     +span-columns(4)
 
-  .tickets-order
+  .tickets-b--order
     +span-columns(4)
     +omega
+
 +media($large-screen-up)
-  .tickets-shop
+  .tickets-b--shop
     +span-columns(5)
 
-  .tickets-order
+  .tickets-b--order
     +span-columns(7)
+
+  .tickets-f-row
+    +row
+
+  .f--ticket_email
+    +span-columns(5 of 7)
+  .f--ticket_amount
+    +span-columns(2 of 7)
+    +omega

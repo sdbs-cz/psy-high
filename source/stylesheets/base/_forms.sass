@@ -1,7 +1,7 @@
 fieldset
   border: none
   margin: 0 0 $base-line-height / 2 0
-  padding: $base-line-height
+  padding: 0
 
 input,
 label,
@@ -18,9 +18,9 @@ label
   abbr
     display: none
 
-textarea,
 #{$all-text-inputs},
-select[multiple=multiple]
+select[multiple=multiple],
+textarea,
   +box-sizing(border-box)
   +transition(border-color)
   background-color: white
