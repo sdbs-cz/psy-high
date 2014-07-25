@@ -1,20 +1,35 @@
 .wr--footer
-  background-color: #fff
+  background-color: $c-bg-light
+  padding: 1rem
 
 .se--footer
   @extend %section
-  margin-top: 5vh
+  // +align-items(center)
+  // +justify-content(center)
 
-.footer-link
-  @extend %gamma
-  text-align: center
-  color: $c-fg-light
+.footer-b
   display: block
-  margin: 0.5rem 1rem
+
+.footer-l
+  @extend %gamma
+  color: $c-fg-light
+  margin: 0.75rem 1rem
+  display: block
+  text-align: center
+
+
 
 +media($medium-screen-up)
   .se--footer
     +display(flex)
+    +align-items(center)
     +flex-wrap(wrap)
-  .footer-link
-    +flex(1)
+
+  .footer-l
+    display: inline-block
+    +flex(1 33%)
+    margin:
+      left: 0
+      right: 0
+
++media($large-screen-up)
