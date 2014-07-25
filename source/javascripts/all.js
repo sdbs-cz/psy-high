@@ -2,7 +2,6 @@
 //= require tpl/begin
 //= require util
 //= require lib/smoothscroll
-//= require lib/headhesive
 //= require lib/overlay
 //= require lib/embed
 //= require classes

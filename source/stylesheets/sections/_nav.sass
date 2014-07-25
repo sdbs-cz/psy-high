@@ -3,7 +3,9 @@ $nav-items: 4
 // $nav-item-color: rgba(255, 255, 255, 0.5)
 
 .wr--nav
-  background: rgba($c-bg-light, 0.9)
+  background: $c-bg-light
+  z-index: 1000
+  +position(fixed, 0 0 null 0)
 
 
 .se--nav
@@ -14,7 +16,7 @@ $nav-items: 4
   font-weight: 400
   color: $c-fg-light
   text-align: center
-  line-height: 2
+  line-height: $nav-height-sticky
   &:hover, &:focus
     color: $c-accent
 
@@ -49,22 +51,3 @@ $nav-icons: fb lastfm bandzone nyx
 
   .nav-l
     +flex(1)
-
-.nav--clone
-  // min-height: 2rem
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  z-index: 1000
-  transform: translateY(-100%)
-  a
-    padding:
-      top: 0
-      bottom: 0
-    line-height: $nav-height-sticky
-
-.nav--stick
-  transform: translateY(0%)
-
-.nav--unstick
