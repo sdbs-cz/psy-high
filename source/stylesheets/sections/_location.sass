@@ -21,8 +21,6 @@
 %location-txt
   +text-background
   +pad
-  +media($medium-screen-up)
-    +pad
 
 .location-txt--about
   @extend %location-txt
@@ -35,6 +33,11 @@
   width: 49%
 
 .location-map
+  +pad(0 default)
+  +text-background
+  iframe
+    width: 100%
+    max-height: 80vh
 
 +media($medium-screen-up)
   .wr--location
@@ -47,15 +50,22 @@
     +span-columns(4)
     +shift(4)
 
+  .location-se--map
+    +display(flex)
+    +align-items(stretch)
+
   .location-txt--transport
-    +span-columns(3, block-collapse)
+    +flex(3)
+    +pad(3.5rem default)
 
   .location-map
-    +span-columns(5, block-collapse)
-    +omega
+    +flex(5)
+    backgroun: none
+    padding: 0
 
   .location-map iframe
     width: 100%
+    min-height: 100%
 
 +media($large-screen-up)
   .location-img
