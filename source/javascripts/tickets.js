@@ -9,7 +9,6 @@ var TicketsForm = function(form) {
       CLS_FLASH_ERROR = 'flash-error';
 
   var setFlash = function(state) {
-    console.log('flash', state);
     var flashContainer = _form.querySelector('.js-flash'),
         cssClass = CLS_FLASH_OK,
         msg;
@@ -19,7 +18,6 @@ var TicketsForm = function(form) {
     }
     flashContainer.classList.add(cssClass);
     msg = flashContainer.getAttribute('data-' + state);
-    console.log(msg);
     flashContainer.innerHTML = msg;
 
     showElement(flashContainer);
@@ -28,7 +26,7 @@ var TicketsForm = function(form) {
   var responseLoad = function() {
     var data = JSON.parse(this.responseText);
 
-     switch (data.result) {
+    switch (data.result) {
       case 'ok':
         setFlash('ok');
         break;
@@ -36,10 +34,15 @@ var TicketsForm = function(form) {
         setFlash('invalid');
         break;
       default:
-        console.log(this);
         setFlash('error');
     }
     _submitBtn.disabled = false;
+
+    flare.emit({
+      category: "Tickets",
+      action: "response",
+      value: data.result || 'unknown',
+    });
   };
 
   var responseError = function() {
@@ -48,14 +51,22 @@ var TicketsForm = function(form) {
 
   var sendForm = function(e) {
     _submitBtn.disabled = true;
+
     e.preventDefault();
 
     var data = new FormData(_form);
     data.append('ajax', 1);
 
     var targetUrl = 'https://cors-test.appspot.com/test';
-
     //var targetUrl = form.target;
+
+    flare.emit({
+      category: "Tickets",
+      action: "submit",
+      label: "Amount",
+      value: _form.elements.ticket_amount.value,
+    });
+
     var xhr = new XMLHttpRequest();
     xhr.onload = responseLoad;
     xhr.onerror = responseError;

@@ -1,4 +1,5 @@
 //= require lib/statelet
+//= require lib/flare
 //= require tpl/begin
 //= require util
 //= require lib/smoothscroll
