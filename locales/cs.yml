@@ -1,0 +1,65 @@
+---
+cs:
+  header:
+    lineup: "Hudba"
+    location: "Místo"
+    extra: "Extra"
+    tickets: "Lístky"
+
+  call_to_action: "Podpoř a přijeď"
+
+  about: |
+    Psy-High je DIY umělecko-kulturní festival všecho psy&shy;che&shy;delickýho a mystickýho, podivnýho a magickýho, co se zrovna na naší planetě děje.
+
+    Všechno děláme vlastníma rukama, bez myšlenek na zisk a úplně bez sponzorů -- kromě rostoucího počtu těch, kdo živí Psy-High svoji osobní energií.
+
+    Psy-High je pro nás *uměním, jak podporovat umění*, definovaným a zušlechtěným účastí mnoha umělců a stavitelů, kteří neúnavně pracují na místě konání dny a týdny před začátkem festivalu.
+
+    Oslavíme přírodu a sebe-vyjádření skrze semináře, workshopy, komunitaření a především zatraceně dobrý koncerty více než dvaceti kapel (psych, stoner, sludge, noise-rock a doom), který doprovodí malá ochutnávka konceptuálně souvisejících elektro&shy;nických i instru&shy;mentálních projektů z různých dalších žánrů."
+
+  lineup: "Hudba"
+
+  extras:
+    header: "Extra"
+    description: |
+      Hudbu proložíme například přednáškami (lucidní snění, chaos magick), workshopy (sigilizace, pěstování, poi), cvičením jógy, předčítáním nebo videomappingem.
+
+      Detaily doprovodného programu teprve vypracováváme.
+
+  location:
+    header: "Místo konání"
+
+    description: |
+      Lom u sv. Josefa jsme vybrali především kvůli jeho „zemitosti“ – to, jak jsou skály obrostlé lesem, který pohltil většinu lidských stop vyvolává nezaměnitelný pocit klidu a pohody. Skoro cítíte hřmění těch podzemních masivů, proplétající se s vůněmi a zvuky stromů. Lom byl aktivní od druhé poloviny 19. století, vysoce kvalitní pískovec z něj se využíval skoro výhradně k sochařství. Pochází z něj například sochy v průčelí Národního divadla v Praze.
+
+    instructions: |
+      ## Doprava
+      
+      GPS
+      : 50.3758897°N, 15.6457500°E
+
+      Vlak
+      : Hořice v Podkrkonoší
+      
+      Autobus
+      : Hořice, aut.nádr.
+
+      Parkování ve městě, bez omezení.
+      
+      *Vstup psům je povolen, za předpokladu, že po nich bude uklizeno a že zůstanou pod dozorem.*
+  
+  tickets:
+    shop:
+      header: "Speciální nabídka"
+
+      description: |
+        Přidejte se k přípravám Psy-High koupí unikátních ručně vyrobených artefaktů a balíčků.
+      
+    order:
+      header: "Lístky"
+      
+      description: |
+        Lístky také můžete objednat v předprodeji za zvýhodněnou cenu 420 Kč. V tom případě prosím vyplňte svou e-mailovou adresu a počet lístků, obratem vám zašleme potřebné informace. Děkujeme!
+
+    amount: "Počet lístků"
+    submit: "Objednat lístky"

@@ -1,0 +1,66 @@
+---
+en:
+  header:
+    lineup: "Line-up"
+    location: "Location"
+    extra: "Extra"
+    tickets: "Tickets"
+    
+  call_to_action: "Contribute and come"
+
+  about: |
+    Psy-High is a DIY art-and-culture festival of everything psychedelic and mystical, weird and magickal, happening right now all over the planet.
+
+    Everything is done with our own hands, without profit on our minds and without any sponsors other than the increasing number of people who give Psy-High their energy.
+
+    For us, Psy-High is *the art of supporting art* - defined and refined by the participation of many artists and builders, who work at the chosen location tirelessly for days before the festival itself can happen.
+
+    We will celebrate nature and self-expression through seminars, workshops, community and especially some great fucking gigs by more than twenty bands (psych, stoner, sludge, noise-rock and doom) accompanied by a taste of conceptually-alligned electronic and instrumental projects from other genres.
+
+  lineup: "Line-up"
+
+  extras:
+    header: "Extra"
+
+    description: |
+      Apart from music, you can look forward to lectures (lucid dreaming, chaos magick), workshops (sigilization, growing, poi), yoga sessions and readings.
+
+      We are still working out the detailed support programme, stay tuned.
+
+  location:
+    header: "Location"
+
+    description: |
+      We chose the st. Joseph quarry primarily for it’s "earthiness" &mdash; the way the rocks chime with the forest and how nature slowly erased almost all signs of past human activity. It’s a place filled with a solid, calm ambiance where you can almost feel the deep rumble of ancient underground rocky massives interweave with the sounds and smells of trees. The quarry was active since the second half of the 19th century, it’s finest sandstone was being used primarily for sculptures, for example the ones at the roof of the National Theater in Prague.
+
+    instructions: |
+      ## How to get here
+      
+      GPS
+      : 50.3758897°N, 15.6457500°E
+
+      Train
+      : Hořice v Podkrkonoší
+      
+      Bus
+      : Hořice, aut.nádr.
+
+      Parking in the city, no restrictions.
+      
+      *Dogs allowed, given that they'll be cleaned up after and kept watched.*
+
+  tickets:
+    shop:
+      header: "Special offer"
+  
+      description: |
+        Be a part of Psy-High by buying our unique hand-made artifacts and special-offer packages.
+
+    order:
+      header: "Tickets"
+
+      description: |
+        Regular presale tickets are available for 16€. In that case, please fill out your e-mail address and the number of tickets you wish to purchase, we’ll send you the billing information right away. Thanks!
+
+    amount: "Amount"
+    submit: "Order tickets"
