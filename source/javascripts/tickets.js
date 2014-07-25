@@ -39,14 +39,15 @@ var TicketsForm = function(form) {
     _submitBtn.disabled = false;
 
     flare.emit({
-      category: "Tickets",
-      action: "response",
+      category: 'Tickets',
+      action: 'response',
       value: data.result || 'unknown',
     });
   };
 
   var responseError = function() {
     setFlash('error');
+    _submitBtn.disabled = false;
   };
 
   var sendForm = function(e) {
@@ -57,8 +58,8 @@ var TicketsForm = function(form) {
     var data = new FormData(_form);
     data.append('ajax', 1);
 
-    var targetUrl = 'https://cors-test.appspot.com/test';
-    //var targetUrl = form.target;
+    // var targetUrl = 'https://cors-test.appspot.com/test';
+    var targetUrl = form.target;
 
     flare.emit({
       category: "Tickets",
