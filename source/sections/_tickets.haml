@@ -1,0 +1,23 @@
+.tickets-shop
+  %h2.se-header Swag
+  :markdown
+    Přidejte se k přípravám Psy-High koupí unikátních ručně vyrobených artefaktů a balíčků.
+
+  %p.tickets-shop-l
+    =link_to 'Bigcartel', 'http://buy.psy-high.eu/#nav_primary'
+
+.tickets-order
+  %h2.se-header Lístky
+  :markdown
+    Lístky také můžete objednat v předprodeji za zvýhodněnou cenu 420 Kč. V tom případě prosím vyplňte svou e-mailovou adresu a počet lístků, obratem vám zašleme potřebné informace. Děkujeme!
+
+  = form_tag 'http://progrestinate.com/ticketpro/actionAdd.php', class: 'tickets-form', method: 'post' do
+    = field_set_tag do
+      .field-pair
+        = label_tag :ticket_email, caption: 'E-mail'
+        = email_field_tag :ticket_email, value: '@'
+      .field-pair
+        = label_tag :ticket_amount, caption: 'Počet lístků'
+        = number_field_tag :ticket_amount, value: 1, min: 1, step: 1
+      .form-submit
+        = submit_tag 'Objednat lístky'

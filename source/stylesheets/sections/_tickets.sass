@@ -1,0 +1,33 @@
+.wr--tickets
+  @extend %section-wrapper
+  background-image: image-url('tickets-bg.jpg')
+  min-height: 100vh
+  padding: 2rem 0
+
+.se--tickets
+  @extend %section
+  padding-top: 10vh
+
+.tickets-shop, .tickets-order
+  +pad
+  +text-background
+
+.tickets-shop-l
+  text-align: center
+  padding-top: 2rem
+  a
+    +button-external
+
++media($medium-screen-up)
+  .tickets-shop
+    +span-columns(4)
+
+  .tickets-order
+    +span-columns(4)
+    +omega
++media($large-screen-up)
+  .tickets-shop
+    +span-columns(5)
+
+  .tickets-order
+    +span-columns(7)
