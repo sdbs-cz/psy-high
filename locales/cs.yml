@@ -57,3 +57,8 @@ cs:
         Lístky také můžete objednat v předprodeji za zvýhodněnou cenu 420 Kč. V tom případě prosím vyplňte svou e-mailovou adresu a počet lístků, obratem vám zašleme potřebné informace. Děkujeme!
     amount: Počet lístků
     submit: Objednat lístky
+    flash:
+      ok: Za okamžik obdržíte e-mail s informací o registraci. Těšíme se na vás!
+      error: 'Při odesílání došlo k chybě, zkuste to prosím znovu nebo se <a href="mailto:pomoc@sdbs.cz">nám ozvěte</a>.'
+      invalid: 'Registraci nebylo možné dokončit, zkontrolujte prosím zadané údaje.'
+

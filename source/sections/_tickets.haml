@@ -13,9 +13,9 @@
 
 
   = form_tag 'http://progrestinate.com/ticketpro/actionAdd.php', id: 'tickets-f', class: 'tickets-f', novalidate: true, method: 'post' do
-    .js-flash.js-hide{data: { ok: 'Za okamžik obdržíte e-mail s informací o registraci. Děkujeme za váš zájem!',
-      error: 'Při odesílání došlo k chybě, zkuste to prosím znovu nebo se <a href="mailto:pomoc@sdbs.cz">nám ozvěte<a>.',
-      invalid: 'Registraci nebylo možné dokončit, zkontrolujte prosím údaje.' }}
+    .js-flash.js-hide{data: { ok: t('tickets.flash.ok'),
+      error: t('tickets.flash.error'),
+      invalid: t('tickets.flash.invalid')}}
     = field_set_tag(class: 'tickets-f-row') do
       %p.f--ticket_email
         = label_tag :ticket_email, caption: 'E-mail'
