@@ -1,9 +1,9 @@
 .location-se--about
   .location-txt--about
-    %h1.se-header Místo konání
+    %h1.se-header #{ t("location.header") }
 
     :markdown
-      Lom u sv. Josefa jsme vybrali především kvůli jeho „zemitosti“ – to, jak jsou skály obrostlé lesem, který pohltil většinu lidských stop vyvolává nezaměnitelný pocit klidu a pohody. Skoro cítíte hřmění těch podzemních masivů, proplétající se s vůněmi a zvuky stromů. Lom byl aktivní od druhé poloviny 19. století, vysoce kvalitní pískovec z něj se využíval skoro výhradně k sochařství. Pochází z něj například sochy v průčelí Národního divadla v Praze.
+      #{ t("location.description") }
 
     .location-gallery
       - (1..6).each do |i|
@@ -14,20 +14,6 @@
 #map.location-se--map
   .location-txt--transport
     :markdown
-      ## Doprava
-
-      GPS
-      : 50.3758897°N, 15.6457500°E
-
-      Vlak
-      : Hořice v Podkrkonoší
-
-      Autobus
-      : Hořice, aut.nádr.
-
-      Parkování ve městě, bez omezení.
-
-      *Vstup psům je povolen, za předpokladu, že po nich bude uklizeno a že zůstanou pod dozorem.*
-
+      #{ t("location.instructions") }
   .location-map
     /%iframe.embed--map{src: 'https://a.tiles.mapbox.com/v4/sdbs.j1h5bk8b/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1Ijoic2RicyIsImEiOiIxSmh5UEFJIn0.M-EuWW_GYjF5Z3k6o_BK4Q', width: "100%", height:"500"}

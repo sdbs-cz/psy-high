@@ -1,0 +1,22 @@
+---
+en:
+  extras:
+    description: |
+      Apart from music, you can look forward to lectures (lucid dreaming, chaos magick), workshops (sigilization, growing, poi), yoga sessions and readings. We are still working out the detailed support programme, stay tuned.
+
+  location:
+    description: |
+      We chose the st. Joseph quarry primarily for it’s ‘earthiness’ - the way the rocks chime with the forest and how nature slowly erased almost all signs of past human activity. It’s a place filled with a solid, calm ambiance where you can almost feel the deep rumble of ancient underground rocky massives interweave with the sounds and smells of trees. The quarry was active since the second half of the 19th century, it’s finest sandstone was being used primarily for sculptures, for example the ones at the roof of the National Theater in Prague.
+
+  tickets:
+    shop:
+      header: "Special offer"
+  
+      description: |
+        Be a part of Psy-High by buying our unique hand-made artifacts and special-offer packages.
+
+    order:
+      header: "Tickets"
+
+      description: |
+        Regular presale tickets are available for 16€. In that case, please fill out your e-mail address and the number of tickets you wish to purchase, we’ll send you the billing information right away. Thanks!
