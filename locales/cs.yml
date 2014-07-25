@@ -1,6 +1,7 @@
 ---
 cs:
-  header:
+  nav:
+    about: Psy-High
     lineup: Hudba
     location: Místo
     extra: Extra

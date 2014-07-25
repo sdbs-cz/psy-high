@@ -1,7 +1,4 @@
 .wr--nav.js-nav
   %nav.se--nav
-    = link_to 'Psy-High', '#about', class: 'nav-l'
-    = link_to t('header.lineup'), '#lineup', class: 'nav-l'
-    = link_to t('header.location'), '#location', class: 'nav-l'
-    = link_to t('header.extra'), '#extras', class: 'nav-l'
-    = link_to t('header.tickets'),  '#tickets', class: 'nav-l'
+    - %w{about lineup location extra tickets}.each do |sec|
+      = link_to t(sec, scope: :nav), "##{sec}", class: 'nav-l'
