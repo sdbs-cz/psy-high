@@ -1,4 +1,5 @@
 
+
 %button
   -webkit-font-smoothing: antialiased
   background: $base-button-color
@@ -27,6 +28,14 @@
   @extend %button
   &:after
     content: ' »'
+
+=button-inverse($color: $base-button-color)
+  @extend %button
+  background: none
+  border-color: $color
+  color: $color
+  &:hover, &:focus, &:active
+    background-color: $color
 
 input[type="submit"]
   @extend %button
