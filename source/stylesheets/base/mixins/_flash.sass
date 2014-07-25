@@ -1,10 +1,11 @@
 =flash($color)
+  color: $c-fg-dark
   background: $color
-  color: darken($color, 60)
-  font-weight: bold
+  font-weight: 400
   margin-bottom: $base-line-height / 2
   padding: $base-line-height / 2
   a
-    color: darken($color, 70)
+    color: lighten($color, 50)
+    text-decoration: underline
     &:hover
-      color: darken($color, 90)
+      color: lighten($color, 40)
