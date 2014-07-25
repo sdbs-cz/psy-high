@@ -286,7 +286,8 @@
   :url: https://www.youtube.com/watch?v=1ONWh3hktzg
   :embed: "//www.youtube-nocookie.com/embed/1ONWh3hktzg?rel=0"
   :provider: YouTube
-  :embed_image: http://img.youtube.com/vi/1ONWh3hktzg/0.jpg
+  :embed_image: http://i.ytimg.com/vi/1ONWh3hktzg/hqdefault.jpg
+  :embed_height: '315'
 - :name: Dysis
   :id: dysis
   :genre: Instrumental post-metal
@@ -522,8 +523,11 @@
     gig together with Belzebong (PL). And if we want to summarize it? Lambda represents
     perfect melodic blues-rock solos, that are inducing the atmosphere of the American
     Midwest with its endless horizons and earthiness.
-  :url: http://bandzone.cz/lambda
-  :provider: Bandzone
+  :url: http://youtu.be/DhfO5XmXYpQ
+  :embed: "//www.youtube-nocookie.com/embed/DhfO5XmXYpQ?rel=0"
+  :provider: YouTube
+  :embed_image: http://i.ytimg.com/vi/DhfO5XmXYpQ/hqdefault.jpg
+  :embed_height: '315'
 - :name: The Hops Party
   :id: the-hops-party
   :genre: garage stoner rock
