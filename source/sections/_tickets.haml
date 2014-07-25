@@ -1,16 +1,16 @@
 .tickets-b.tickets-b--shop
-  %h2.se-header #{ t("tickets.shop.header") }
+  %h2.se-header= t('tickets.shop.header')
   :markdown
-    #{ t("tickets.shop.description") }
+    #{ t('tickets.shop.description') }
 
   %p.tickets-l--shop
     =link_to 'buy.psy-high.eu', 'http://buy.psy-high.eu/#nav_primary'
 
 .tickets-b.tickets-b--order
-  %h2.se-header #{ t("tickets.order.header") }
+  %h2.se-header= t('tickets.order.header')
   :markdown
-    #{ t("tickets.order.description") }
-    
+    #{ t('tickets.order.description') }
+
 
   = form_tag 'http://progrestinate.com/ticketpro/actionAdd.php', id: 'tickets-f', class: 'tickets-f', novalidate: true, method: 'post' do
     .js-flash.js-hide{data: { ok: 'Za okamžik obdržíte e-mail s informací o registraci. Děkujeme za váš zájem!',
@@ -21,7 +21,7 @@
         = label_tag :ticket_email, caption: 'E-mail'
         = email_field_tag :ticket_email, value: '@', required: true
       %p.f--ticket_amount
-        = label_tag :ticket_amount, caption: t("tickets.amount")
+        = label_tag :ticket_amount, caption: t('tickets.amount')
         = number_field_tag :ticket_amount, value: 1, min: 1, step: 1, required: true
     %p.f--submit
-      = submit_tag t("tickets.submit"), class: 'js-submit'
+      = submit_tag t('tickets.submit'), class: 'js-submit'

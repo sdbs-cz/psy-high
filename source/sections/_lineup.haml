@@ -1,4 +1,4 @@
-%h1.se-header #{ t('lineup.header') }
+%h1.se-header= t('lineup.header')
 
 .js-lup-wr.lup-wr--headliners
   = partial('partials/band', collection: lineup_data(:headliners), locals: {arity: 2})
