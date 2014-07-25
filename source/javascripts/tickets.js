@@ -45,21 +45,34 @@ var TicketsForm = function(form) {
     });
   };
 
+  var sendStart = function() {
+    _submitBtn.disabled = true;
+  };
+
+  var sendStop = function() {
+    _submitBtn.disabled = false;
+    _submitBtn.blur();
+  };
+
   var responseError = function() {
     setFlash('error');
-    _submitBtn.disabled = false;
+    flare.emit({
+      category: 'Tickets',
+      action: 'response',
+      label: 'XHRError',
+      value: this.statusText,
+    });
+    sendStop();
   };
 
   var sendForm = function(e) {
-    _submitBtn.disabled = true;
-
     e.preventDefault();
+    sendStart();
 
     var data = new FormData(_form);
     data.append('ajax', 1);
 
-    // var targetUrl = 'https://cors-test.appspot.com/test';
-    var targetUrl = form.target;
+    var targetUrl = form.action;
 
     flare.emit({
       category: "Tickets",
