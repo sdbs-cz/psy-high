@@ -7,17 +7,18 @@
   color: $c-fg-dark
   display: inline-block
   // font-size: $base-font-size
-  font-weight: bold
+  font-weight: 400
   line-height: 1
   padding: .75em 1em
   text-decoration: none
   &:hover, &:focus, &:active
-    background-color: transparent
-    color: $c-fg-dark
+    background-color: rgba($base-button-color, 0.2)
+    color: $c-fg-light
 
 =button-external
   @extend %button
   &:after
     content: ' »'
-  &:hover, &:focus
-    color: $c-fg-light
+
+input[type="submit"]
+  @extend %button
