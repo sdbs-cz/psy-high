@@ -6,7 +6,9 @@ en:
     location: Location
     extra: Extra
     tickets: Tickets
-  call_to_action: Contribute and come
+  header:
+    location: 'Lom u sv.&nbsp;Josefa'
+    cta: Podpoř a přijeď
   about: |
     Psy-High is a DIY art-and-culture festival of everything psychedelic and mystical, weird and magickal, happening right now all over the planet.
 
@@ -38,7 +40,7 @@ en:
       Bus
       : Hořice, aut.nádr.
 
-      Parking in the city, no restrictions.
+      Parking only in the city, no restrictions.
 
       *Dogs allowed, given that they'll be cleaned up after and kept watched.*
   tickets:

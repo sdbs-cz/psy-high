@@ -7,8 +7,7 @@
     &ndash;
     %time{datetime: '2014-08-24', itemprop: 'endDate'} 24.&nbsp;8.
     2014
-  .header-location
-    Lom u sv.&nbsp;Josefa
+  .header-location= t('header.location')
 
 -#
   .header-progress
@@ -24,6 +23,6 @@
 
 .header-cta
   = link_to '#tickets', class: 'btn-cta' do
-    #{ t(:call_to_action) }
+    #{ t('header.cta') }
 
 = partial 'sections/header_social'
