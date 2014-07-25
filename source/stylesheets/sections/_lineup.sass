@@ -7,10 +7,6 @@
   @extend %section
 
 
-@each $file in list-files("images/lineup/*.jpg")
-  .lup-item--#{$file}
-    background-image: image-url("images/lineup/#{$file}.jpg")
-
 %band-bg
   background:
     // image: image-url('lineup/zatokrev.jpg')
@@ -125,3 +121,10 @@
   @extend %lineup--3n
   .lup-item
     background-image: none
+
+@each $file in list-files("images/lineup/*.jpg")
+  .lup-item--#{$file}
+    background-image: image-url("images/lineup/#{$file}.jpg")
+
+.lup-item--site, .lup-item--debbi-love
+  background-position: top center
