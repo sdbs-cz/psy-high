@@ -56,6 +56,25 @@ activate :deploy do |deploy|
   deploy.build_before = true # default: false
 end
 
+activate :imageoptim do |options|
+  options.nice = nil
+  options.threads = nil
+
+  # Image extensions to attempt to compress
+  options.image_extensions = %w(.png .jpg .gif .svg)
+
+  # compressor worker options, individual optimisers can be disabled by passing
+  # false instead of a hash
+  # options.pngcrush_options  = {:chunks => ['alla'], :fix => false, :brute => false}
+  options.pngout_options    = false
+  # options.optipng_options   = {:level => 6, :interlace => false}
+  # options.advpng_options    = {:level => 4}
+  # options.jpegoptim_options = {:strip => ['all'], :max_quality => 100}
+  # options.jpegtran_options  = {:copy_chunks => false, :progressive => true, :jpegrescan => true}
+  # options.gifsicle_options  = {:interlace => false}
+  # options.svgo_options      = {}
+end
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
