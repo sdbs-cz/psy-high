@@ -5,7 +5,6 @@
 
 .se--lineup
   @extend %section
-  min-height: 100vh
 
 
 @each $file in list-files("images/lineup/*.jpg")
@@ -37,11 +36,7 @@
   font-style: italic
 
 .lup-link
-  @extend %button
-  &:after
-    content: ' »'
-  &:hover, &:focus
-    color: $c-fg-light
+  +button-external
 
 .js .lup-title
   cursor: pointer
