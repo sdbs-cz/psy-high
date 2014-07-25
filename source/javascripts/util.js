@@ -25,6 +25,12 @@ var requestAnimationFrame = window.requestAnimationFrame ||
         window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame ||
         function(fn){window.setTimeout(fn, 15);};
 
+var addListeners = function(target, events, handler) {
+  events.forEach(function(e){
+    target.addEventListener(e, handler, false);
+  });
+};
+
 /**
  * Taken from Headhesive helpers
  */
@@ -89,3 +95,4 @@ function _getElemY(elem) {
     }
     return top;
 }
+
