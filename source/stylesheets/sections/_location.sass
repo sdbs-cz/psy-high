@@ -2,20 +2,17 @@
   @extend %section-wrapper
   background-image: image-url('location-bg.jpg')
   min-height: 100vh
-  padding: $section-offset 0 2rem
+  padding: $section-offset 0
 
 .se--location
   @extend %section
 
-%location-se
-  +row
 
 .location-se--about
-  @extend %location-se
+  +row
   margin-bottom: 20vh
 
 .location-se--map
-  @extend %location-se
   margin-top: 2rem
 
 %location-txt
@@ -35,9 +32,10 @@
 .location-map
   +pad(0 default)
   +text-background
-  iframe
-    width: 100%
-    max-height: 80vh
+
+.embed--map
+  width: 100%
+  max-height: 80vh
 
 +media($medium-screen-up)
   .wr--location
@@ -52,20 +50,25 @@
 
   .location-se--map
     +display(flex)
-    +align-items(stretch)
+    // +align-items(stretch)
 
   .location-txt--transport
     +flex(3)
     +pad(3.5rem default)
 
   .location-map
-    +flex(5)
-    backgroun: none
+    +flex(6)
     padding: 0
+    background: none
+    // XXX vertical stretch
+    position: relative
 
-  .location-map iframe
-    width: 100%
-    min-height: 100%
+  .embed--map
+    max-height: none
+    // XXX vertical stretch
+    // http://stackoverflow.com/a/15388247/240963
+    position: absolute
+    height: 100%
 
 +media($large-screen-up)
   .location-img
