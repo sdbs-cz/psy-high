@@ -14,3 +14,10 @@
   &:hover, &:focus, &:active
     background-color: transparent
     color: $c-fg-dark
+
+=button-external
+  @extend %button
+  &:after
+    content: ' »'
+  &:hover, &:focus
+    color: $c-fg-light
