@@ -7,8 +7,10 @@ en:
     extra: Extra
     tickets: Tickets
   header:
-    location: 'Lom u sv.&nbsp;Josefa'
+    location: 'St.&nbsp;Joseph Quarry'
     cta: Podpoř a přijeď
+    alt_lang: Česky
+    alt_link: http://www.psy-high.cz/
   about: |
     Psy-High is a DIY art-and-culture festival of everything psychedelic and mystical, weird and magickal, happening right now all over the planet.
 
