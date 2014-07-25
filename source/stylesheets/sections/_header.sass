@@ -10,6 +10,7 @@
 
 .header-title
   // +replace-text("header-logo.svg")
+  clear: both
 .header-logo
   display: block
   margin: 0 auto
@@ -20,12 +21,15 @@
 .header-cta
   text-align: center
 
-
 .header-facts
   @extend %alpha
   margin-bottom: 20vh
   text-shadow: 0 0 4px $c-bg-dark, 0 0 8px rgba($c-shade, 0.5)
 
+.header-al-l
+  display: inline-block
+  float: right
+  +button-inverse($light-gray)
 
 .btn-cta
   @extend %button
