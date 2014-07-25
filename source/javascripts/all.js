@@ -10,4 +10,5 @@
 //= require more
 //= require overlays
 //= require lineup
+//= require tickets
 //= require tpl/end

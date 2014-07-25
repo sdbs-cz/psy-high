@@ -11,7 +11,10 @@
   :markdown
     Lístky také můžete objednat v předprodeji za zvýhodněnou cenu 420 Kč. V tom případě prosím vyplňte svou e-mailovou adresu a počet lístků, obratem vám zašleme potřebné informace. Děkujeme!
 
-  = form_tag 'http://progrestinate.com/ticketpro/actionAdd.php', class: 'tickets-f', method: 'post' do
+  = form_tag 'http://progrestinate.com/ticketpro/actionAdd.php', id: 'tickets-f', class: 'tickets-f', novalidate: true, method: 'post' do
+    .js-flash.js-hide{data: { ok: 'Za okamžik obdržíte e-mail s informací o registraci. Děkujeme za váš zájem!',
+      error: 'Při odesílání došlo k chybě, zkuste to prosím znovu nebo se <a href="mailto:pomoc@sdbs.cz">nám ozvěte<a>.',
+      invalid: 'Registraci nebylo možné dokončit, zkontrolujte prosím údaje.' }}
     = field_set_tag(class: 'tickets-f-row') do
       %p.f--ticket_email
         = label_tag :ticket_email, caption: 'E-mail'
@@ -20,4 +23,4 @@
         = label_tag :ticket_amount, caption: 'Počet lístků'
         = number_field_tag :ticket_amount, value: 1, min: 1, step: 1, required: true
     %p.f--submit
-      = submit_tag 'Objednat lístky'
+      = submit_tag 'Objednat lístky', class: 'js-submit'
