@@ -130,6 +130,10 @@ configure :build do
     activate :minify_javascript
   end
 
+  compass_config do |config|
+    config.line_comments = false
+  end
+
   # Enable cache buster
   activate :asset_hash
 
