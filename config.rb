@@ -56,7 +56,7 @@ deploy_remotes = {
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.build_before = true
-  deploy.remote = deploy_remotes.fetch(BUILD_LANG, 'git@github.com:sdbs-cz/psy-high.cz.git')
+  deploy.remote = deploy_remotes.fetch(BUILD_LANG, 'git@github.com:sdbs-cz/psy-high.git')
   # deploy.branch = 'gh-pages'
   # deploy.strategy = :submodule
 end
