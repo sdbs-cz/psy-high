@@ -352,11 +352,11 @@
     directed mostly by a genius guitar lead, which flies between catchy grooves, walls
     of noise to frantic solo seizures. You will definetely hear about this band in
     the future."
-  :url: https://soundcloud.com/texasal-1/saiga-thick
+  :url: https://soundcloud.com/saiga-3/sets/saiga-thick-rusted-koala
   :provider: SoundCloud
-  :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F159925348&show_artwork=true
-  :embed_image: http://a1.sndcdn.com/images/fb_placeholder.png?e76cf77
-  :embed_height: 400
+  :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F44721991&show_artwork=true
+  :embed_image: http://i1.sndcdn.com/artworks-000086245995-5aygw5-t500x500.jpg?e76cf77
+  :embed_height: 450
 - :name: Kochlea
   :id: kochlea
   :genre: nu-jazz
@@ -530,7 +530,7 @@
   :embed_height: '315'
 - :name: The Hops Party
   :id: the-hops-party
-  :genre: garage stoner rock
+  :genre: garage stoner
   :location_cs: Hořice
   :location: Hořice, Czech Republic
   :description_cs: Domácí kapela. Hugo (Morokweng) a Dan (Abraham) si pro radost založili
@@ -593,9 +593,9 @@
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=606618392/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
   :embed_height: '467'
-- :name: Bagdasarov
-  :id: bagdasarov
-  :genre: noise improvisation
+- :name: Ukamau
+  :id: ukamau
+  :genre: bari core
   :location_cs: Praha
   :location: Prague, Czech Republic
   :description_cs: Georgij Bagdasarov svou hudební kariéru začal jako kytarista v
@@ -702,11 +702,12 @@
   :description: Traditional goa/psy-trance accompanied by live percussion improvisation
 - :name: DJ MindGroove + support
   :id: dj-mindgroove
-  :genre: DJ
+  :genre: dnb, deep, halfs, neuro
   :location_cs: Praha
   :location: Prague, Czech Republic
-  :url: https://soundcloud.com/mindgroove/duneni-cz-promo-mix-2013-free
-  :provider: SoundCloud
-  :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F114061755&show_artwork=true
-  :embed_image: http://i1.sndcdn.com/artworks-000082207143-irdh6k-t500x500.jpg?e76cf77
-  :embed_height: 400
+  :description_cs: Kluci z Duneni.cz crew vystoupí v dvouhodinovém setu plném zlámaných
+    beatů. Od halftempových lámanin set přejde pomalu k tvrdším nadupanějším beatům
+    a zakončí tak dlouhou temnou noc než vyjde slunce.
+  :description: The guys from Duneni.cz crew will whip out a 2hour set full of broken
+    beats. They will progress from half-tempo breakbeats to harder and harder beats
+    into the night, before the sun dawn.
