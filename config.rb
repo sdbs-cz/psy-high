@@ -38,35 +38,27 @@ ignore '/partials/*'
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
 BUILD_LANG = ENV['BUILD_LANG'].try(:to_sym)
+dev_build = false
 
 if BUILD_LANG.blank?
   activate :i18n, :mount_at_root => :cs
+  dev_build = true
 else # assume production build
   proxy '/CNAME', '/partials/CNAME.txt'
   activate :i18n, :langs => [BUILD_LANG]
 end
 
-if BUILD_LANG == :cs
-  activate :deploy do |deploy|
-    deploy.method = :git
-    deploy.build_before = true
-    deploy.remote   = 'git@github.com:sdbs-cz/psy-high.cz.git' # remote name or git url, default: origin
-    # deploy.branch = 'gh-pages'
-    # deploy.strategy = :submodule
-  end
-elsif BUILD_LANG == :en
-  activate :deploy do |deploy|
-    deploy.method = :git
-    deploy.build_before = true
-    deploy.remote   = 'git@github.com:sdbs-cz/psy-high.eu.git' # remote name or git url, default: origin
-    # deploy.branch = 'gh-pages'
-    # deploy.strategy = :submodule
-  end
-else
-  activate :deploy do |deploy|
-    deploy.method = :git
-    deploy.build_before = true # default: false
-  end
+deploy_remotes = {
+  cs: 'git@github.com:sdbs-cz/psy-high.cz.git',
+  en: 'git@github.com:sdbs-cz/psy-high.eu.git'
+}
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true
+  deploy.remote = deploy_remotes.fetch(BUILD_LANG, 'git@github.com:sdbs-cz/psy-high.cz.git')
+  # deploy.branch = 'gh-pages'
+  # deploy.strategy = :submodule
 end
 
 
@@ -131,14 +123,17 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  activate :minify_css
 
-  # Minify Javascript on build
-  # activate :minify_javascript
+  if !dev_build
+    # For example, change the Compass output style for deployment
+    activate :minify_css
+
+    # Minify Javascript on build
+    activate :minify_javascript
+  end
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets

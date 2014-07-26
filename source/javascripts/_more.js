@@ -3,7 +3,7 @@ var createToggler = function(text) {
       wrapper = document.createElement('div');
   wrapper.className = 'more-toggler-wr';
 
-  btn.type = 'button';
+  btn.setAttribute('type', 'button');
   btn.className = 'more-toggler';
 
   wrapper.appendChild(btn);
