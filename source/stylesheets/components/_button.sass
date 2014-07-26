@@ -31,9 +31,9 @@
 
 =button-inverse($color: $base-button-color)
   @extend %button
-  background: none
+  background: rgba($color, 0.2)
   border-color: $color
-  color: $color
+  color: $c-fg-dark
   &:hover, &:focus, &:active
     background-color: $color
 
