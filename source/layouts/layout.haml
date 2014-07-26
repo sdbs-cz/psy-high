@@ -8,6 +8,10 @@
     = partial 'javascripts/head'
     = stylesheet_link_tag "//brick.a.ssl.fastly.net/Roboto:300,300i,400,400i"
     = stylesheet_link_tag "main"
+    %link{rel: 'canonical', href: canonical(current_page.url)}
+    %meta{property: 'og:url', content: canonical(current_page.url)}
+    %meta{property: 'og:image', content: canonical('/images/fb.jpg')}
+    %meta{property: 'og:site_name', content: 'Psy-High'}
   %body{class: page_classes}
     = yield
 
