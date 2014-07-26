@@ -18,7 +18,6 @@ require 'toolkit'
 ###
 # Page options, layouts, aliases and proxies
 ###
-activate :i18n, :mount_at_root => :cs
 # Per-page layout changes:
 #
 # With no layout
@@ -32,9 +31,20 @@ activate :i18n, :mount_at_root => :cs
 #   page "/admin/*"
 # end
 
+ignore '/partials/*'
+
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
+
+BUILD_LANG = ENV['BUILD_LANG']
+
+if BUILD_LANG.blank?
+  activate :i18n, :mount_at_root => :cs
+else # assume production build
+  proxy '/CNAME', '/partials/CNAME.txt'
+  activate :i18n, :langs => [BUILD_LANG.to_sym]
+end
 
 ###
 # Helpers
@@ -94,6 +104,7 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+# set :cname, 'example.com'
 
 # Build-specific configuration
 configure :build do
