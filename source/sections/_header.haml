@@ -1,21 +1,17 @@
-.se--header-top
-  .header-b.header-b--altl
-    = link_to t('header.alt_lang'), t('header.alt_link'), class: 'header-altl-l'
+.header-b.header-b--altl
+  = link_to t('header.alt_lang'), t('header.alt_link'), class: 'header-altl-l'
+%h1.header-b--title{itemprop: 'name'}
+  = image_tag 'header-logo.svg', alt: 'Psy-High', class: 'header-logo'
 
-  %h1.header-b--title{itemprop: 'name'}
-    = image_tag 'header-logo.svg', alt: 'Psy-High', class: 'header-logo'
-
-.h--mid
-  .header-b.header-b--byline
-    .header-date
-      %time{datetime: '2014-08-22', itemprop: 'startDate'} 22.&nbsp;8.
-      &ndash;
-      %time{datetime: '2014-08-24', itemprop: 'endDate'} 24.&nbsp;8.
-      2014
-    .header-location= t('header.location')
+.header-b.header-b--byline
+  .header-date
+    %time{datetime: '2014-08-22', itemprop: 'startDate'} 22.&nbsp;8.
+    &ndash;
+    %time{datetime: '2014-08-24', itemprop: 'endDate'} 24.&nbsp;8.
+    2014
+  .header-location= t('header.location')
 
 .h--bot
-
   -#
     .header-progress
       .progress-min.progress-limit 0&nbsp;€

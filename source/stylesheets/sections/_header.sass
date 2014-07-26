@@ -1,45 +1,46 @@
 .wr--header
   @extend %section-wrapper
   +inverse-colors
-  min-height: 100vh
-  padding: $section-offset 0
-  background-image: image-url('header-bg-h.jpg')
+  // min-height: 100vh
+  padding: $section-offset 0 0
+  +background(image-url('header-logo.png') center / cover no-repeat, image-url('header-bg.jpg') center / cover, $c-bg-dark)
+  +clearfix
 
-%header-flexbox
-  +display(flex)
++media(orientation landscape min-width $large-screen)
 
 
-%header-flex-1
-  +flex(1)
+$h-pad: 1rem
 
-.wr--header
-  @extend %header-flexbox
-  +flex-direction(column)
-
-.h--top
+.se--header
   @extend %section
-  @extend %header-flexbox
-  @extend %header-flex-1
-  +justify-content(flex-end)
+  position: relative
+  min-height: 420px
+  height: 95vh
+  // +media($short-screen-up)
+    // min-height: 95vh
+.h--top
 
 .header-b--altl
-  +flex(1)
 
-.h--mid
-  @extend %section
-  @extend %header-flexbox
-  @extend %header-flex-1
+.header-altl-l
+  margin: $h-pad
+  display: inline-block
+  +button-inverse($c-fg-dark)
+
+.header-b--byline
+  @extend %gamma
+  text-align: right
+  +position(absolute, $h-pad $h-pad null null)
 
 .h--bot
-  @extend %section
-  @extend %header-flexbox
-  @extend %header-flex-1
-  +flex-direction(column)
-
-.se--header-bottom
   text-align: center
-  +align-items(center)
-  +justify-content(flex-end)
+  position: absolute
+  width: 100%
+  bottom: $h-pad
+
+.h--mid
+
+
 
 // .header-b
   // +flex(0 1 auto)
@@ -47,18 +48,8 @@
 .header-b--title
   display: none
 
-.header-b--byline
-  @extend %alpha
-
 .header-b--cta
-
-.header-facts
-  @extend %alpha
-  text-shadow: 0 0 4px $c-bg-dark, 0 0 8px rgba($c-shade, 0.5)
-
-.header-altl-l
-  display: inline-block
-  +button-inverse($light-gray)
+  margin-bottom: 2rem
 
 // .header-logo
 //   display: block
@@ -68,8 +59,16 @@
 
 .btn-cta
   @extend %button
-  font-size: $size-beta
+  font-size: $size-gamma
   &:hover, &:focus, &:active
     color: $c-fg-dark
 
++media($medium-screen-up)
+  .header-b--byline, .btn-cta
+    font-size: $size-alpha
+
++media(orientation portrait)
+  .wr--header
+
++media(orientation landscape min-width $large-screen)
 
