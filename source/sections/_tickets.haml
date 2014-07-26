@@ -23,5 +23,6 @@
       %p.f--ticket_amount
         = label_tag :ticket_amount, caption: t('tickets.amount')
         = number_field_tag :ticket_amount, value: 1, min: 1, step: 1, required: true
+      =hidden_field_tag('lang', value: I18n.locale)
     %p.f--submit
       = submit_tag t('tickets.submit'), class: 'js-submit'
