@@ -1,10 +1,14 @@
+$header-logo: image-url('header-logo.png') center / contain no-repeat
+
 .wr--header
   @extend %section-wrapper
   +inverse-colors
   // min-height: 100vh
   padding: $section-offset 0 0
-  +background(image-url('header-logo.png') center / contain no-repeat, image-url('header-bg.jpg') center / cover, $c-bg-dark)
-  +clearfix
+  // Fallback
+  background: $header-logo $c-bg-shade
+
+  +background($header-logo, image-url('header-bg.jpg') center / cover, $c-bg-shade)
 
 +media(orientation landscape min-width $large-screen)
 
