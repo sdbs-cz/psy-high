@@ -10,6 +10,11 @@ cs:
     location: Místo
     extras: Extra
     tickets: Lístky
+  social:
+    fb: Událost na Facebooku
+    lastfm: Festival na Last.fm
+    bandzone: Koncert na Bandzone
+    nyx: Událost na Nyxu
   header:
     location: 'Lom u sv.&nbsp;Josefa'
     cta: Podpoř a přijeď

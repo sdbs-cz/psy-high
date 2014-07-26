@@ -10,6 +10,11 @@ en:
     location: Location
     extras: Extra
     tickets: Tickets
+  social:
+    fb: Facebook Event
+    lastfm: Last.fm Festival
+    bandzone: Bandzone.cz Gig
+    nyx: Nyx.cz Event
   header:
     location: 'St.&nbsp;Joseph Quarry'
     cta: 'Support us & join us'
