@@ -37,14 +37,38 @@ ignore '/partials/*'
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
-BUILD_LANG = ENV['BUILD_LANG']
+BUILD_LANG = ENV['BUILD_LANG'].try(:to_sym)
 
 if BUILD_LANG.blank?
   activate :i18n, :mount_at_root => :cs
 else # assume production build
   proxy '/CNAME', '/partials/CNAME.txt'
-  activate :i18n, :langs => [BUILD_LANG.to_sym]
+  activate :i18n, :langs => [BUILD_LANG]
 end
+
+if BUILD_LANG == :cs
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.build_before = true
+    deploy.remote   = 'git@github.com:sdbs-cz/psy-high.cz.git' # remote name or git url, default: origin
+    # deploy.branch = 'gh-pages'
+    # deploy.strategy = :submodule
+  end
+elsif BUILD_LANG == :en
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.build_before = true
+    deploy.remote   = 'git@github.com:sdbs-cz/psy-high.eu.git' # remote name or git url, default: origin
+    # deploy.branch = 'gh-pages'
+    # deploy.strategy = :submodule
+  end
+else
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.build_before = true # default: false
+  end
+end
+
 
 ###
 # Helpers
@@ -61,10 +85,7 @@ configure :development do
   end
 end
 
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.build_before = true # default: false
-end
+
 
 =begin
 activate :imageoptim do |options|
