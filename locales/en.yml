@@ -1,6 +1,6 @@
 ---
 en:
-  header:
+  nav:
     about: Psy-High
     lineup: Line-up
     location: Location
@@ -8,7 +8,7 @@ en:
     tickets: Tickets
   header:
     location: 'St.&nbsp;Joseph Quarry'
-    cta: Support and join us
+    cta: 'Support us & join us'
     alt_lang: Česky
     alt_link: http://www.psy-high.cz/
   about: |
