@@ -7,7 +7,7 @@ var LineupExpander = function(rootEl) {
     SEL_DETAIL_TARGETS = '.js-det-tgt',
     SEL_EMBED_LINK = '.js-embed';
     // SEL_DETAIL_COPY = '.lup-det--';
-
+    /*
   var _root = rootEl;
   var _activeItem = new State();
   var _activeDetails = new State();
@@ -78,7 +78,7 @@ var LineupExpander = function(rootEl) {
       var isSelf = (activeGrp.indexOf(self) !== -1);
       toggleElement(self, isSelf);
     });
-  });
+  });*/
 };
 
 forEach(document.querySelectorAll('.js-lup-wr'), function(lupWr) {

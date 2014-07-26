@@ -64,15 +64,17 @@
 
 %lineup--2n
   +media($medium-screen-up)
-    &
-      +display(flex)
-      +flex-wrap(wrap)
-      +justify-content(space-between)
-    .lup-item
-      +flex(0 0 49%)
+    .lup-title
+      display: inline-block
+      // FIXME! well, somehow http://css-tricks.com/fighting-the-space-between-inline-block-elements/
+      width: 49%
 
-    .lup-det--2n
-      +flex(0 0 100%)
+    .lup-det--1n.js-hide
+      display: block
+    .lup-det--1n
+      width: 100%
+      float: left
+      +clearfix
 
     .lup-det-in
       +row
@@ -83,16 +85,6 @@
     .lup-embed
       +omega
 
-    .js, .lup-item.js-active
-      .lup-det--1n
-        display: none
-
-    .lup-det--3n.js-show
-      display: none
-
-    .lup-det--2n.js-show
-      display: block
-
     // .js
     //   .lup-det--1n, .lup-det--3n
     //     display: none
@@ -101,16 +93,6 @@
   @extend %lineup--2n
   +media($large-screen-up)
     .lup-item
-      +flex(0 0 32%)
-
-    .lup-det--3n
-      +flex(0 0 100%)
-
-    .lup-det--2n.js-show
-      display: none
-
-    .lup-det--3n:not(.js-hide)
-      display: block
 
 .lup-wr--headliners
   @extend %lineup--2n

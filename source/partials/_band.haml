@@ -1,22 +1,20 @@
-.lup-item{class: "lup-item--#{band.id}", id: "b-#{band.id}"}
-  .lup-title
-    %h2.lup-name= band.name
-    .lup-byline-wr
-      %span.lup-byline.lup-genre
-        =band.genre
+-#.lup-item{class: "lup-item--#{band.id}", id: "b-#{band.id}"}
+.lup-title{id: "b-#{band.id}"}
+  %h2.lup-name= band.name
+  .lup-byline-wr
+    %span.lup-byline.lup-genre
+      =band.genre
       <br>
-      %span.lup-byline.lup-location
-        =band.location
-  .lup-det.lup-det--1n.js-hide
-    .lup-det-in{class: "lup-item--#{band.id}"}
-      .lup-desc
-        -if band.description?
-          %p= band.description
-        -if !band.embed? && band.provider?
-          %p= link_to band.provider, band.url, class: 'lup-link'
+    %span.lup-byline.lup-location
+      =band.location
+.lup-det.lup-det--1n.js-hide
+  -# .lup-det-in{class: "lup-item--#{band.id}"}
+  .lup-desc
+    -if band.description?
+      %p= band.description
+    -if !band.embed? && band.provider?
+      %p= link_to band.provider, band.url, class: 'lup-link'
 
-      -if band.embed?
-        .lup-embed
-          = embed_link_for(band)
-
-= lineup_dividers(band_counter, band.last, arity)
+    -if band.embed?
+      .lup-embed
+        = embed_link_for(band)
