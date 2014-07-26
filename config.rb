@@ -56,6 +56,7 @@ activate :deploy do |deploy|
   deploy.build_before = true # default: false
 end
 
+=begin
 activate :imageoptim do |options|
   options.nice = nil
   options.threads = nil
@@ -73,7 +74,7 @@ activate :imageoptim do |options|
   # options.jpegtran_options  = {:copy_chunks => false, :progressive => true, :jpegrescan => true}
   # options.gifsicle_options  = {:interlace => false}
   # options.svgo_options      = {}
-end
+=end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
