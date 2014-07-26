@@ -11,4 +11,4 @@
         #{ t(:about)}
   .about-more-wr
     #about-more.about-more.js-hide.js-more
-      = partial 'sections/about_text_' + I18n.locale.to_s()
+      = partial "sections/about_text_#{I18n.locale}"
