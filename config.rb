@@ -120,6 +120,8 @@ set :markdown,
   auto_ids: false,
   header_offset: 1
 
+set :haml, { ugly: true }
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
