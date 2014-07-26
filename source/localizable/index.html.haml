@@ -4,14 +4,13 @@ title: Psy-High 2014
 
 .page{itemscope: true, itemtype: "http://schema.org/Festival"}
 
-  .wr.wr--header
-    #top.se.se--header
-      = partial 'sections/header'
+  #top.wr.wr--header
+    = partial 'sections/header'
 
   %main.wr--main
     =partial 'nav'
     #about.wr--about
-      .se.se--about
+      .se--about
         = partial 'sections/about'
 
     #lineup.wr--lineup

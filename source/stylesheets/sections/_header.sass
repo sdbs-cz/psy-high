@@ -1,35 +1,70 @@
 .wr--header
   @extend %section-wrapper
   +inverse-colors
-  +background(image-url('header-bg.svg') center 45% / cover no-repeat, image-url('header-bg.jpg') center / cover no-repeat)
   min-height: 100vh
   padding: $section-offset 0
+  background-image: image-url('header-bg-h.jpg')
 
-.se--header
+%header-flexbox
+  +display(flex)
+
+
+%header-flex-1
+  +flex(1)
+
+.wr--header
+  @extend %header-flexbox
+  +flex-direction(column)
+
+.h--top
   @extend %section
+  @extend %header-flexbox
+  @extend %header-flex-1
+  +justify-content(flex-end)
 
-.header-title
-  // +replace-text("header-logo.svg")
-  clear: both
-.header-logo
-  display: block
-  margin: 0 auto
-  +media($medium-screen-up)
-    max-height: 40vh
+.header-b--altl
+  +flex(1)
 
-.header-facts,
-.header-cta
+.h--mid
+  @extend %section
+  @extend %header-flexbox
+  @extend %header-flex-1
+
+.h--bot
+  @extend %section
+  @extend %header-flexbox
+  @extend %header-flex-1
+  +flex-direction(column)
+
+.se--header-bottom
   text-align: center
+  +align-items(center)
+  +justify-content(flex-end)
+
+// .header-b
+  // +flex(0 1 auto)
+
+.header-b--title
+  display: none
+
+.header-b--byline
+  @extend %alpha
+
+.header-b--cta
 
 .header-facts
   @extend %alpha
-  margin-bottom: 20vh
   text-shadow: 0 0 4px $c-bg-dark, 0 0 8px rgba($c-shade, 0.5)
 
-.header-al-l
+.header-altl-l
   display: inline-block
-  float: right
   +button-inverse($light-gray)
+
+// .header-logo
+//   display: block
+//   +media($medium-screen-up)
+//     max-height: 40vh
+
 
 .btn-cta
   @extend %button
@@ -37,35 +72,4 @@
   &:hover, &:focus, &:active
     color: $c-fg-dark
 
-.header-progress
-  margin: 0 auto 5vh
-  display: table
 
-.progress-limit
-  display: table-cell
-  width: 10%
-
-.progress-min
-  text-align: right
-  padding-right: 1ex
-
-.progress-max
-  padding-left: 1ex
-
-.progress-bar
-  display: table-cell
-  width: 80%
-  border: 1px solid $c-accent
-
-.progress-bar-meter
-  background-color: $c-accent
-  text-align: right
-  padding-right: 1ex
-  font-weight: 400
-  color: $c-bg-dark
-
-.progress-countdown
-  display: none
-
-.header-cta
-  margin-bottom: 5vh

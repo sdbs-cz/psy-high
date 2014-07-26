@@ -1,31 +1,36 @@
+.se--header-top
+  .header-b.header-b--altl
+    = link_to t('header.alt_lang'), t('header.alt_link'), class: 'header-altl-l'
 
-.header-al
-  = link_to t('header.alt_lang'), t('header.alt_link'), class: 'header-al-l'
+  %h1.header-b--title{itemprop: 'name'}
+    = image_tag 'header-logo.svg', alt: 'Psy-High', class: 'header-logo'
 
-%h1.header-title{itemprop: 'name'}
-  = image_tag 'header-logo.svg', alt: 'Psy-High', class: 'header-logo'
-.header-facts
-  .header-date
-    %time{datetime: '2014-08-22', itemprop: 'startDate'} 22.&nbsp;8.
-    &ndash;
-    %time{datetime: '2014-08-24', itemprop: 'endDate'} 24.&nbsp;8.
-    2014
-  .header-location= t('header.location')
+.h--mid
+  .header-b.header-b--byline
+    .header-date
+      %time{datetime: '2014-08-22', itemprop: 'startDate'} 22.&nbsp;8.
+      &ndash;
+      %time{datetime: '2014-08-24', itemprop: 'endDate'} 24.&nbsp;8.
+      2014
+    .header-location= t('header.location')
 
--#
-  .header-progress
-    .progress-min.progress-limit 0&nbsp;€
-    .progress-bar
-      %div.progress-bar-meter{style: 'width: 30%'}
-        0&nbsp;%
-    .progress-max.progress-limit 4500&nbsp;€
-    .progress-countdown
-      Zbývá
-      %span.progress-countdown
-        30 dní
+.h--bot
 
-.header-cta
-  = link_to '#tickets', class: 'btn-cta' do
-    = t('header.cta')
+  -#
+    .header-progress
+      .progress-min.progress-limit 0&nbsp;€
+      .progress-bar
+        %div.progress-bar-meter{style: 'width: 30%'}
+          0&nbsp;%
+      .progress-max.progress-limit 4500&nbsp;€
+      .progress-countdown
+        Zbývá
+        %span.progress-countdown
+          30 dní
 
-= partial 'sections/header_social'
+  .header-b.header-b--cta
+    = link_to '#tickets', class: 'btn-cta' do
+      = t('header.cta')
+
+  .header-b.header-b--soc
+    = partial 'sections/header_social'
