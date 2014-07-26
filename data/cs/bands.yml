@@ -385,8 +385,8 @@
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=2583756060/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
   :embed_height: '467'
-- :name: The Wild Tides
-  :id: the-wild-tides
+- :name: Wild Tides
+  :id: wild-tides
   :genre: surf rock
   :location: Praha
   :location_en: Prague, Czech Republic
