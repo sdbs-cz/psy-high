@@ -65,7 +65,8 @@ elsif BUILD_LANG == :en
 else
   activate :deploy do |deploy|
     deploy.method = :git
-    deploy.build_before = true # default: false
+    deploy.build_before = true
+    deploy.remote   = 'git@github.com:sdbs-cz/psy-high.git'
   end
 end
 
