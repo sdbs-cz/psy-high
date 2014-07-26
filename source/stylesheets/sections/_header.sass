@@ -5,9 +5,11 @@ $header-logo: image-url('header-logo.png') center / contain no-repeat
   +inverse-colors
   +clearfix
   // Fallback
-  background: $header-logo $c-bg-shade
+  background: image-url('header-logo.png') center no-repeat $c-bg-shade
 
-  +background($header-logo, image-url('header-bg.jpg') center / cover, $c-bg-shade)
+  background: image-url('header-logo.png') center no-repeat, image-url('header-bg.jpg') center, $c-bg-shade
+  background-size: contain, cover
+
 
 +media(orientation landscape min-width $large-screen)
 
