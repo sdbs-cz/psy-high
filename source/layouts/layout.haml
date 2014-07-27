@@ -12,6 +12,7 @@
       %meta{property: 'og:title', content: current_page.data.title}
     %meta{name: 'description', content: t('meta.description')}
     %link{rel: 'canonical', href: canonical(current_page.url)}
+    %link{rel: 'alternate', hreflang: t('header.alt_locale'), href: t('header.alt_link')}
     %meta{property: 'og:url', content: canonical(current_page.url)}
     %meta{property: 'og:image', content: canonical('/images/fb.jpg')}
     %meta{property: 'og:site_name', content: 'Psy-High'}
