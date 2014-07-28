@@ -69,7 +69,7 @@ en:
     submit: Order tickets
     flash:
       ok: 'Thanks, you will receive further information in your e-mail. See you soon!'
-      error: 'Submission failed, please try again or <a href="mailto:pomoc@sdbs.cz">
+      error: 'Submission failed, please try again or <a href="mailto:tickets@sdbs.cz">
       contact us</a>.'
       invalid: 'The form cannot be submitted, please, check your entry and and try
       again.'
