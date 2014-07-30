@@ -1,6 +1,6 @@
 -#.lup-item{class: "lup-item--#{band.id}", id: "b-#{band.id}"}
 .lup-item{id: "b-#{band.id}"}<>
-  %header.lup-header<>
+  %header.lup-header{class: "lup-b--#{band.id}"}<>
     = link_to "#b-#{band.id}", class: "lup-l" do
       %h2.lup-name= band.name
       .lup-byline
@@ -9,7 +9,7 @@
         %br/
         %span.lup-location
           =band.location
-  .lup-det
+  .lup-det{class: "lup-b--#{band.id}"}
     -# .lup-det-in{class: "lup-item--#{band.id}"}
     .lup-desc
       -if band.description?
