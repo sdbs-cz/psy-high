@@ -167,7 +167,7 @@
     and grunge vocal. When they finish playing, it remains after them only silence.
   :url: http://sunnataofficial.bandcamp.com/
   :provider: Bandcamp
-  :embed: "//bandcamp.com/EmbeddedPlayer/album=1362805240/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=1383332109/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
   :embed_height: '467'
 :major:
 - :name: Děti Deště
@@ -637,8 +637,10 @@
     especially Veronica’s urgent, dynamic and incredibly fascinating vocal, they can
     evoke unbelievably strong feelings and emotions in their listeners. Both pleasant
     and unpleasant. Like you live through whole life during their set.
-  :url: http://bandzone.cz/kalle
-  :provider: Bandzone
+  :url: http://kallesound.bandcamp.com/
+  :provider: Bandcamp
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=1913358027/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
+  :embed_height: '467'
 - :name: Sítě
   :id: site
   :genre: minimal
@@ -691,8 +693,11 @@
     which, however, are the result of improvisation, as was mentioned earlier. The
     characteristic sound of this band, mixed a little bit with theatrical expression,
     gonna be a pleasant surprise and certainly tune you in a good mood.
-  :url: http://bandzone.cz/debbilove
-  :provider: Bandzone
+  :url: https://soundcloud.com/debbilove/kim-album-verze?in=debbilove/sets/debbi-love-promo-set-z-multi
+  :provider: SoundCloud
+  :embed: https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F88182075&show_artwork=true&in=debbilove%2Fsets%2Fdebbi-love-promo-set-z-multi
+  :embed_image: http://i1.sndcdn.com/artworks-000055795979-ug9r6q-t500x500.jpg?e76cf77
+  :embed_height: 400
 - :name: L00k + live percussion
   :id: l00k
   :genre: DJ + live percussion
