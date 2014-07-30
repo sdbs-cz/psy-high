@@ -12,7 +12,7 @@
     #{ t('tickets.order.description') }
 
 
-  = form_tag 'http://progrestinate.com/ticketpro/actionAdd.php', id: 'tickets-f', class: 'tickets-f', novalidate: true, method: 'post' do
+  = form_tag 'http://progrestinate.com/ticketpro/actionAdd.php', id: 'tickets-f', class: 'tickets-f', method: 'post' do
     .js-flash.js-hide{data: { ok: t('tickets.flash.ok'),
       error: t('tickets.flash.error'),
       invalid: t('tickets.flash.invalid')}}
