@@ -1,7 +1,7 @@
 %h1.se-header= t('lineup.header')
 
-.js-lup-wr.lup-wr--headliners
+.js-lup-wr.lup-wr--headliners<>
   = partial('partials/band', collection: lineup_data(:headliners), locals: {arity: 2})
 
-.js-lup-wr.lup-wr--major
+.js-lup-wr.lup-wr--major<>
   = partial('partials/band', collection: lineup_data(:major), locals: {arity: 3})
