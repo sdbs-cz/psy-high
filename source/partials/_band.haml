@@ -6,7 +6,7 @@
       .lup-byline
         %span.lup-genre
           =band.genre
-        <br>
+        %br/
         %span.lup-location
           =band.location
   .lup-det
@@ -19,4 +19,4 @@
 
       -if band.embed?
         .lup-embed
-          = embed_link_for(band)
+          = embed_link_for(band, css_class: 'lup-det-l')

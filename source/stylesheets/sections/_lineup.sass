@@ -6,25 +6,34 @@
 .se--lineup
   @extend %section
 
-
-
 .lup-item
   display: inline
 
 .lup-header
-  padding-top: $section-offset
+  margin-top: $section-offset / 2
+  padding-top: $section-offset / 2
   // display: inline-block
 
 .lup-det
   display: none
 
-.lup-l
+.lup-l,
   color: $c-fg-light
 
 .lup-name, .lup-genre, .lup-location
   display: inline-block
   background-color: rgba($c-bg-light, 0.75)
   padding: 0.2rem 0.5rem
+
+.lup-byline
+  font-style: italic
+
+.lup-det-l
+  +button-external
+
+.lup-det
+  +pad
+  background-color: rgba($c-bg-light, 0.8)
 
 .lup-item:target
   // display: block
@@ -33,10 +42,11 @@
   .lup-det
     display: block
 
-.lup-det
-  +pad
-  background-color: rgba($c-bg-light, 0.8)
-
 +media($medium-screen-up)
-  // .lup-header
-    // width: 49%
+  .lup-header
+    display: inline-block
+    width: 49%
+  .lup-det
+    float: left
+    width: 100%
+    border: 2px solid $c-accent
