@@ -43,10 +43,32 @@
     display: block
 
 +media($medium-screen-up)
-  .lup-header
-    display: inline-block
-    width: 49%
   .lup-det
     float: left
     width: 100%
     border: 2px solid $c-accent
+
+// Two columns
+%lineup--2n
+  +media($medium-screen-up)
+    .lup-header
+      display: inline-block
+      width: 50%
+
+// Three columns
+%lineup--3n
+  @extend %lineup--2n
+  +media($large-screen-up)
+    .lup-header
+      width: 33.33%
+
+// Apply to various lineups
+.lup-wr--headliners
+  @extend %lineup--2n
+  .lup-header
+    padding-top: 3rem
+
+.lup-wr--major
+  @extend %lineup--3n
+  .lup-item
+    background-image: none
