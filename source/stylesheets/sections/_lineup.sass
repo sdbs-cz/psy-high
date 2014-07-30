@@ -7,106 +7,36 @@
   @extend %section
 
 
-%band-bg
-  background:
-    // image: image-url('lineup/zatokrev.jpg')
-    // color: $c-bg-shade
-    repeat: no-repeat
-    size: cover
-    position: center
 
 .lup-item
-  @extend %band-bg
-  margin-top: 1rem
+  display: inline
 
-.lup-title
-  min-height: 6.5rem
-  padding-top: 1rem
+.lup-header
+  padding-top: $section-offset
+  // display: inline-block
 
-.lup-name, .lup-byline
+.lup-det
+  display: none
+
+.lup-l
+  color: $c-fg-light
+
+.lup-name, .lup-genre, .lup-location
   display: inline-block
   background-color: rgba($c-bg-light, 0.75)
   padding: 0.2rem 0.5rem
 
-.lup-byline
-  font-style: italic
-
-.lup-link
-  +button-external
-
-.js .lup-title
-  cursor: pointer
-
-  &:hover, &:focus
-
-.lup-desc
-  background-color: rgba($c-bg-light, 0.8)
-  padding: 1rem
-
-.lup-embed
-  iframe
-    width: 100%
-
-.lup-det-in
-  +pad
-  @extend %band-bg
-
-.lup-det--2n,
-.lup-det--3n
-  display: none
-  border: 2px solid $c-accent
-
-.lup-item.js-active
-  background: $c-accent
-
-  .lup-det--1n
+.lup-item:target
+  // display: block
+  .lup-header
+    background: $c-accent
+  .lup-det
     display: block
 
-%lineup--2n
-  +media($medium-screen-up)
-    .lup-title
-      display: inline-block
-      // FIXME! well, somehow http://css-tricks.com/fighting-the-space-between-inline-block-elements/
-      width: 49%
+.lup-det
+  +pad
+  background-color: rgba($c-bg-light, 0.8)
 
-    .lup-det--1n.js-hide
-      display: block
-    .lup-det--1n
-      width: 100%
-      float: left
-      +clearfix
-
-    .lup-det-in
-      +row
-
-    .lup-desc, .lup-embed
-      +span-columns(4)
-
-    .lup-embed
-      +omega
-
-    // .js
-    //   .lup-det--1n, .lup-det--3n
-    //     display: none
-
-%lineup--3n
-  @extend %lineup--2n
-  +media($large-screen-up)
-    .lup-item
-
-.lup-wr--headliners
-  @extend %lineup--2n
-  .lup-title
-    padding-top: 4rem
-
-.lup-wr--major
-  @extend %lineup--3n
-  .lup-item
-    background-image: none
-
-@each $file in list-files("images/lineup/*.jpg")
-  .lup-item--#{$file}
-    background-image: image-url("images/lineup/#{$file}.jpg")
-
-.lup-item--site, .lup-item--debbi-love
-  background-position: top center
++media($medium-screen-up)
+  // .lup-header
+    // width: 49%
