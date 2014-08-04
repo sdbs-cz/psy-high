@@ -65,7 +65,6 @@ var LineupExpander = function(rootEl) {
     }
   });
 
-
   var unloadEmbed = function(parent) {
     var iframe = parent.querySelector('iframe');
     if(iframe) {

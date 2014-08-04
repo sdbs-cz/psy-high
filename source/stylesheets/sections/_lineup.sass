@@ -21,7 +21,7 @@
 .lup-header
   @extend %band-bg
   margin-top: $section-offset / 2
-  padding-top: $section-offset / 2
+  // padding-top: $section-offset / 2
   // display: inline-block
 
 .lup-det
@@ -29,6 +29,7 @@
 
 .lup-l
   color: $c-fg-light
+  padding-top: $section-offset / 2
   display: block
 
 .lup-name, .lup-genre, .lup-location
@@ -90,7 +91,7 @@
 // Apply to various lineups
 .lup-wr--headliners
   @extend %lineup--2n
-  .lup-header
+  .lup-l
     padding-top: 3rem
 
 .lup-wr--major
