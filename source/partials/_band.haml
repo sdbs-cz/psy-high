@@ -17,6 +17,6 @@
       -if !band.embed? && band.provider?
         %p= link_to band.provider, band.url, class: 'lup-det-l'
 
-      -if band.embed?
-        .lup-embed
-          = embed_link_for(band, css_class: 'lup-det-l')
+    -if band.embed?
+      .lup-embed
+        = embed_link_for(band, css_class: 'lup-det-l')
