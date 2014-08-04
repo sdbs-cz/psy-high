@@ -39,11 +39,13 @@ var LineupExpander = function(rootEl) {
 
   // Track clicks on tabs
   _state.watch(function(hsh){
-    flare.emit({
-      category: 'Line-up',
-      action: 'click',
-      label: hsh,
-    });
+    if(hsh) {
+      flare.emit({
+        category: 'Line-up',
+        action: 'click',
+        label: hsh,
+      });
+    }
   });
 
   // Reset to default state, unset active element
