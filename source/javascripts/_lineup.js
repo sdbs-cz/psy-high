@@ -37,10 +37,22 @@ var LineupExpander = function(rootEl) {
     pushHash(hsh, true);
   });
 
+  // Track clicks on tabs
+  _state.watch(function(hsh){
+    flare.emit({
+      category: 'Line-up',
+      action: 'click',
+      label: hsh,
+    });
+  });
+
+  // Reset to default state, unset active element
   _state.when(DEFAULT_STATE, function(){
     _activeElement.set(null);
   });
 
+  // When new element is selected (or unset),
+  // toggle active one and manage embeds.
   _activeElement.transition(function(oldElement, newElement) {
     if(oldElement) {
       toggleActiveElement(oldElement, false);
