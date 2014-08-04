@@ -1,9 +1,7 @@
-var linkHandler = function(ev) {
+var scrollLinkHandler = function(ev) {
     ev.preventDefault();
 
-    if (location.hash !== this.hash) {
-      window.history.pushState(null, null, this.hash);
-    }
+    pushHash(this.hash);
     // using the history api to solve issue #1 - back doesn't work
     // most browser don't update :target when the history api is used:
     // THIS IS A BUG FROM THE BROWSERS.
@@ -16,8 +14,8 @@ var linkHandler = function(ev) {
 
 // We look for all the internal links in the documents and attach the smoothscroll function
 document.addEventListener("DOMContentLoaded", function () {
-    var links = document.querySelectorAll('a[href^="#"]');
+    var links = document.querySelectorAll('.js-scroll');
     forEach(links, function(link){
-      link.addEventListener('click', linkHandler, false);
+      link.addEventListener('click', scrollLinkHandler, false);
     });
 });

@@ -6,7 +6,7 @@
 //= require lib/_overlay
 //= require lib/_embed
 //= require _classes
-//= require _main
+//= require _scroll
 //= require _nav
 //= require _more
 //= require _overlays
