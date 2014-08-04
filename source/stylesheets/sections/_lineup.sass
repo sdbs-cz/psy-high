@@ -5,7 +5,7 @@
 
 .se--lineup
   @extend %section
-
+  +clearfix
 
 %band-bg
   background:
@@ -16,14 +16,23 @@
     position: center
 
 .lup-item
+  display: inline
+
+.lup-header
   @extend %band-bg
-  margin-top: 1rem
+  margin-top: $section-offset / 2
+  // padding-top: $section-offset / 2
+  // display: inline-block
 
-.lup-title
-  min-height: 6.5rem
-  padding-top: 1rem
+.lup-det
+  display: none
 
-.lup-name, .lup-byline
+.lup-l
+  color: $c-fg-light
+  padding-top: $section-offset / 2
+  display: block
+
+.lup-name, .lup-genre, .lup-location
   display: inline-block
   background-color: rgba($c-bg-light, 0.75)
   padding: 0.2rem 0.5rem
@@ -31,51 +40,40 @@
 .lup-byline
   font-style: italic
 
-.lup-link
+.lup-det-l
   +button-external
 
-.js .lup-title
-  cursor: pointer
-
-  &:hover, &:focus
+.lup-det
+  @extend %band-bg
+  +pad
 
 .lup-desc
   background-color: rgba($c-bg-light, 0.8)
-  padding: 1rem
+  padding: 1em
 
-.lup-embed
-  iframe
-    width: 100%
+.lup-embed iframe
+  width: 100%
 
-.lup-det-in
-  +pad
-  @extend %band-bg
-
-.lup-det--2n,
-.lup-det--3n
-  display: none
-  border: 2px solid $c-accent
-
+.nojs .lup-item:target,
 .lup-item.js-active
-  background: $c-accent
-
-  .lup-det--1n
+  // display: block
+  .lup-header
+    background: $c-accent
+  .lup-det
     display: block
 
++media($medium-screen-up)
+  .lup-det
+    float: left
+    width: 100%
+    border: 2px solid $c-accent
+
+// Two columns
 %lineup--2n
   +media($medium-screen-up)
-    &
-      +display(flex)
-      +flex-wrap(wrap)
-      +justify-content(space-between)
-    .lup-item
-      +flex(0 0 49%)
-
-    .lup-det--2n
-      +flex(0 0 100%)
-
-    .lup-det-in
-      +row
+    .lup-header
+      display: inline-block
+      width: 50%
 
     .lup-desc, .lup-embed
       +span-columns(4)
@@ -83,48 +81,30 @@
     .lup-embed
       +omega
 
-    .js, .lup-item.js-active
-      .lup-det--1n
-        display: none
-
-    .lup-det--3n.js-show
-      display: none
-
-    .lup-det--2n.js-show
-      display: block
-
-    // .js
-    //   .lup-det--1n, .lup-det--3n
-    //     display: none
-
+// Three columns
 %lineup--3n
   @extend %lineup--2n
   +media($large-screen-up)
-    .lup-item
-      +flex(0 0 32%)
+    .lup-header
+      width: 33.33%
 
-    .lup-det--3n
-      +flex(0 0 100%)
-
-    .lup-det--2n.js-show
-      display: none
-
-    .lup-det--3n:not(.js-hide)
-      display: block
-
+// Apply to various lineups
 .lup-wr--headliners
   @extend %lineup--2n
-  .lup-title
-    padding-top: 4rem
+  .lup-l
+    padding-top: 3rem
 
 .lup-wr--major
   @extend %lineup--3n
-  .lup-item
+  .lup-header
     background-image: none
+    text-align: center
+  // .lup-item:target .lup-header
+    // text-align: left
 
 @each $file in list-files("images/lineup/*.jpg")
-  .lup-item--#{$file}
+  .lup-b--#{$file}
     background-image: image-url("images/lineup/#{$file}.jpg")
 
-.lup-item--site, .lup-item--debbi-love
+.lup-b--site, .lup-b--debbi-love
   background-position: top center

@@ -1,3 +1,4 @@
+
 var generateEmbed = function(target) {
   var iframe = document.createElement('iframe'),
       src = target.getAttribute('data-embed'),
@@ -11,4 +12,14 @@ var generateEmbed = function(target) {
   iframe.src = src;
   // iframe.appendChild(target.cloneNode());
   return iframe;
+};
+
+var unloadIframe = function(frame) {
+  frame.setAttribute('data-src', frame.src);
+  frame.src = '';
+};
+
+var reloadIframe = function(frame) {
+  var src = frame.getAttribute('data-src');
+  frame.src = src;
 };

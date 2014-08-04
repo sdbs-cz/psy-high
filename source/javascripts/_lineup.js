@@ -1,84 +1,118 @@
 // Line-up expander
 
+
+
+var ActiveElementState = function() {
+  var _state = new State();
+  var _oldValue;
+
+  return {
+    set: function(value) {
+      _oldValue = _state.get();
+      _state.set(value);
+    },
+    transition: function(callback) {
+      _state.watch(function(newValue) {
+        callback(_oldValue, newValue);
+      });
+    }
+
+  };
+
+};
+
 var LineupExpander = function(rootEl) {
+  var DEFAULT_STATE = '#lineup';
   var SEL_ITEM = '.lup-item',
-    SEL_CLICK_TGT = '.lup-title',
-    SEL_DETAIL = '.lup-det',
-    SEL_DETAIL_TARGETS = '.js-det-tgt',
+    SEL_CLICK_TGT = '.lup-l',
     SEL_EMBED_LINK = '.js-embed';
-    // SEL_DETAIL_COPY = '.lup-det--';
 
   var _root = rootEl;
-  var _activeItem = new State();
-  var _activeDetails = new State();
+  var _state = new State(window.location.hash);
+  var _activeElement = ActiveElementState();
 
-  var nextClosestSibling = function(forId, nthName) {
-    var siblingSel = '#' + forId + ' ~ .lup-det--' + nthName;
-    return document.querySelector(siblingSel);
-  };
 
-  var closestSiblings = function(forEl) {
-    var id = forEl.id;
-    var siblings = [
-      nextClosestSibling(id, '2n'),
-      nextClosestSibling(id, '3n')
-    ];
-    // Remove null
-    return siblings.filter(function(e) {
-      return e !== null;
+  // Always push location hash on state change
+  _state.watch(function(hsh){
+    pushHash(hsh, true);
+  });
+
+  // Track clicks on tabs
+  _state.watch(function(hsh){
+    flare.emit({
+      category: 'Line-up',
+      action: 'click',
+      label: hsh,
     });
+  });
+
+  // Reset to default state, unset active element
+  _state.when(DEFAULT_STATE, function(){
+    _activeElement.set(null);
+  });
+
+  // When new element is selected (or unset),
+  // toggle active one and manage embeds.
+  _activeElement.transition(function(oldElement, newElement) {
+    if(oldElement) {
+      toggleActiveElement(oldElement, false);
+      unloadEmbed(oldElement);
+    }
+
+    if(newElement) {
+      convertEmbed(newElement) || reloadEmbed(newElement);
+      toggleActiveElement(newElement, true);
+    }
+  });
+
+  var unloadEmbed = function(parent) {
+    var iframe = parent.querySelector('iframe');
+    if(iframe) {
+      unloadIframe(iframe);
+    }
   };
 
-  var copyContents = function(from, to) {
-    forEach(to, function(target) {
-      target.innerHTML = from.innerHTML;
-    });
+  var reloadEmbed = function(parent) {
+    var iframe = parent.querySelector('iframe');
+    if(iframe) {
+      reloadIframe(iframe);
+      return true;
+    }
+    return false;
   };
 
-  var convertEmbeds = function(parent) {
+  var convertEmbed = function(parent) {
     var elink = parent.querySelector(SEL_EMBED_LINK);
     if(elink) {
       var embed = generateEmbed(elink);
       elink.parentNode.replaceChild(embed, elink);
+      return true;
     }
+    return false;
   };
 
-  // click handlers and state observer for individual items
   forEach(_root.querySelectorAll(SEL_ITEM), function(item){
-    var clickTarget = item.querySelector(SEL_CLICK_TGT),
-        localDetail = item.querySelector(SEL_DETAIL),
-        copyTargets = closestSiblings(item);
-    // var hideTargets = copyTargets.concat(localDetail);
+    var id = item.id;
+    var clickTarget = item.querySelector(SEL_CLICK_TGT);
 
-    clickTarget.addEventListener('click', function(){
-      if(isActiveElement(item)) {
-        _activeItem.set(null);
-        _activeDetails.set([]);
-      } else {
-        _activeItem.set(item);
-      }
+    _state.when('#' + id, function(){
+      _activeElement.set(item);
+      smoothScroll(item, 500, null, 'up');
     });
 
-    _activeItem.watch(function(selected){
-      var isThis = (selected === item);
 
-      toggleActiveElement(item, isThis);
-      if(isThis) {
-        convertEmbeds(localDetail);
-        copyContents(localDetail, copyTargets);
-        _activeDetails.set(copyTargets);
-        smoothScroll(item, 500, null, 'up');
+    clickTarget.addEventListener('click', function(ev){
+      ev.preventDefault();
+      this.blur();
+      if(this.hash === window.location.hash) {
+        _state.set(DEFAULT_STATE);
       }
-    });
+      else {
+        _state.set(this.hash);
+      }
+    }, false);
   });
 
-  // state observers for details
-  forEach(_root.querySelectorAll(SEL_DETAIL_TARGETS), function(self){
-    _activeDetails.watch(function(activeGrp){
-      var isSelf = (activeGrp.indexOf(self) !== -1);
-      toggleElement(self, isSelf);
-    });
-  });
 };
 
 forEach(document.querySelectorAll('.js-lup-wr'), function(lupWr) {

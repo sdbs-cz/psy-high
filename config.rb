@@ -8,7 +8,6 @@ require 'lib/custom_sass'
 
 activate :neat
 # activate :bourbon
-require 'toolkit'
 
 # Change Compass configuration
 # compass_config do |config|
@@ -111,6 +110,8 @@ set :markdown,
   smart_quotes: 'sbquo,lsquo,bdquo,ldquo',
   auto_ids: false,
   header_offset: 1
+
+set :haml, { ugly: true }
 
 set :css_dir, 'stylesheets'
 

@@ -96,3 +96,22 @@ function _getElemY(elem) {
     return top;
 }
 
+
+var pushHash = function(newHash, replace) {
+  var method = 'pushState';
+  if(replace) {
+    method = 'replaceState';
+  }
+
+  try
+  {
+    if (location.hash !== newHash) {
+      window.history[method](null, null, newHash);
+      return true;
+    }
+    return false;
+  }
+  catch(e) {
+    return false;
+  }
+};

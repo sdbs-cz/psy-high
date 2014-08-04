@@ -1,22 +1,22 @@
-.lup-item{class: "lup-item--#{band.id}", id: "b-#{band.id}"}
-  .lup-title
-    %h2.lup-name= band.name
-    .lup-byline-wr
-      %span.lup-byline.lup-genre
-        =band.genre
-      <br>
-      %span.lup-byline.lup-location
-        =band.location
-  .lup-det.lup-det--1n.js-hide
-    .lup-det-in{class: "lup-item--#{band.id}"}
-      .lup-desc
-        -if band.description?
-          %p= band.description
-        -if !band.embed? && band.provider?
-          %p= link_to band.provider, band.url, class: 'lup-link'
+-#.lup-item{class: "lup-item--#{band.id}", id: "b-#{band.id}"}
+.lup-item{id: "b-#{band.id}"}<>
+  %header.lup-header{class: "lup-b--#{band.id}"}<>
+    = link_to "#b-#{band.id}", class: "lup-l" do
+      %h2.lup-name= band.name
+      .lup-byline
+        %span.lup-genre
+          =band.genre
+        %br/
+        %span.lup-location
+          =band.location
+  .lup-det{class: "lup-b--#{band.id}"}
+    -# .lup-det-in{class: "lup-item--#{band.id}"}
+    .lup-desc
+      -if band.description?
+        %p= band.description
+      -if !band.embed? && band.provider?
+        %p= link_to band.provider, band.url, class: 'lup-det-l'
 
-      -if band.embed?
-        .lup-embed
-          = embed_link_for(band)
-
-= lineup_dividers(band_counter, band.last, arity)
+    -if band.embed?
+      .lup-embed
+        = embed_link_for(band, css_class: 'lup-det-l')
