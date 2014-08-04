@@ -1,5 +1,6 @@
 :javascript
   if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach && ('classList' in document.createElement('_'))) {
+    document.documentElement.classList.remove('nojs');
     document.documentElement.classList.add('js');
     window.USE_JS = true;
   }
