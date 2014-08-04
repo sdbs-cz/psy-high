@@ -4,6 +4,9 @@ module UriHelpers
   end
 
   def canonical(path = nil)
+    unless path.start_with?('/')
+      path = '/' + path
+    end
     URI::HTTP.build(host: cname, path: path)
   end
 end
