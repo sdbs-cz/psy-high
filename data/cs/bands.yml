@@ -32,7 +32,7 @@
   :url: http://zatokrev.bandcamp.com/album/the-bat-the-wheel-and-a-long-road-to-nowhere-2
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=2690021698/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 440
 - :name: Weedpecker
   :id: weedpecker
   :genre: stoner grunge
@@ -61,7 +61,7 @@
   :url: http://weedpecker.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=133111594/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 344
 - :name: Tomáš Palucha
   :id: tomas-palucha
   :genre: minimal americana
@@ -89,7 +89,7 @@
   :url: http://tomaspalucha.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=2385084088/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 312
 - :name: Nod Nod
   :id: nod-nod
   :genre: slow-dark core
@@ -117,7 +117,7 @@
   :url: http://nodnod.bandcamp.com/album/nod-nod
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=1315861269/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 376
 - :name: Bird People
   :id: bird-people
   :genre: ritual ambient, dark folk
@@ -140,7 +140,7 @@
   :url: http://bird-people.bandcamp.com/album/nightshades
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=2696738891/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 216
 - :name: Sunnata
   :id: sunnata
   :genre: psychedelic sludge
@@ -165,7 +165,7 @@
   :url: http://sunnataofficial.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=1383332109/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 376
 :major:
 - :name: Děti Deště
   :id: deti-deste
@@ -300,8 +300,8 @@
     A treat for all cultists of older Pelican and Russian Circles stuff.
   :url: http://dysis.bandcamp.com/track/spectral-plane-live-session
   :provider: Bandcamp
-  :embed: "//bandcamp.com/EmbeddedPlayer/track=2128929470/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed: "//bandcamp.com/EmbeddedPlayer/track=2128929470/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/tracklist=false/"
+  :embed_height: 120
 - :name: Limestone Whale
   :id: limestone-whale
   :genre: 70s retro stoner rock
@@ -326,7 +326,7 @@
   :url: http://limestonewhale.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=3940018755/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 280
 - :name: Saiga
   :id: saiga
   :genre: instrumental raw-stoner
@@ -384,7 +384,7 @@
   :url: https://kochlea.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=2583756060/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 248
 - :name: Wild Tides
   :id: wild-tides
   :genre: surf rock
@@ -409,7 +409,7 @@
   :url: http://wildtides.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=767476355/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 216
 - :name: Social Party
   :id: social-party
   :genre: downtempo-hardcore
@@ -441,7 +441,7 @@
   :url: http://socialparty1.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=1374694100/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 408
 - :name: Bullfrog
   :id: bullfrog
   :genre: noise-stoner-rock sludge
@@ -464,7 +464,7 @@
   :url: http://bullfrog-bullfrog.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=902687723/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 344
 - :name: Enten og Eller
   :id: enten-og-eller
   :genre: noise-hardcore
@@ -485,7 +485,7 @@
   :url: http://entenogeller.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=3053483805/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 500
 - :name: The Tower
   :id: the-tower
   :genre: doom metal
@@ -588,7 +588,7 @@
   :url: http://deerdeer.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=606618392/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 344
 - :name: Ukamau
   :id: ukamau
   :genre: bari core
@@ -636,7 +636,7 @@
   :url: http://kallesound.bandcamp.com/
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=1913358027/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 408
 - :name: Sítě
   :id: site
   :genre: minimal
@@ -646,6 +646,10 @@
     Vedlejší projekt Honzy Tomáše z Tomáše Paluchy.'
   :description_en: 'Intoxicating ambient, as if saying: Greetings, ancient ocen! Side
     project of Jan Tomáš from Tomáš Palucha'
+  :url: http://sitesitesite.bandcamp.com/
+  :provider: Bandcamp
+  :embed: "//bandcamp.com/EmbeddedPlayer/track=3889678548/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/tracklist=false/"
+  :embed_height: 120
 - :name: Les
   :id: les
   :genre: ambient / downtempo
@@ -668,7 +672,7 @@
   :url: http://shmyzem.bandcamp.com/album/marianskohorsk
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=4100048585/size=large/bgcol=fafafa/linkcol=27CDFC/artwork=small/transparent=true/"
-  :embed_height: '467'
+  :embed_height: 312
 - :name: Debbi Love
   :id: debbi-love
   :genre: alternative pop satire
