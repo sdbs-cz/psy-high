@@ -1,0 +1,6 @@
+%h1.se-header= t('partners.header')
+
+- data.partners.sort.each do |id, partner|
+  = link_to partner.url, class: 'partner-item' do
+    = image_tag "partners/#{id}.svg", alt: partner.title
+

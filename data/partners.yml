@@ -1,0 +1,22 @@
+---
+wave:
+  url: http://www.wave.cz/
+  title: Radio Wave
+aardvark:
+  url: http://www.the-aardvark.cz/
+  title: The Aardvark
+fullmoon:
+  url: http://www.fullmoonmagazine.cz/
+  title: Fullmoon Music Magazine
+marast:
+  url: http://www.marastmusic.com/
+  title: Marast Music
+metalopolis:
+  url: http://www.metalopolis.net/
+  title: Metalopolis.net
+psychedelic:
+  url: http://psychedelic.cz/
+  title: Psychedelic
+radio1:
+  url: http://www.radio1.cz/
+  title: Radio 1
