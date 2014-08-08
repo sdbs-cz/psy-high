@@ -21,6 +21,7 @@
     </clipPath>
   </defs>
   <g
+     transform="translate(0,-32)"
      id="g3790">
     <path
        d="m 196.59079,134.67585 5.9666,0 0,6.90544 c 0,5.1307 -2.95943,9.72092 -9.81286,9.72092 -7.09963,0 -9.90833,-4.53995 -9.90833,-9.76868 l 0,-21.70677 6.30827,0 0,6.56105 13.41292,0 0,4.53743 -13.41292,0 0,9.96727 c 0,3.0568 1.0878,4.83406 3.70055,4.83406 2.5625,0 3.74577,-1.72699 3.74577,-4.73602 l 0,-6.3147 z"
@@ -73,6 +74,9 @@
       <cc:Work
          rdf:about="">
         <dc:title></dc:title>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
       </cc:Work>
     </rdf:RDF>
   </metadata>
