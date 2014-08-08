@@ -1,10 +1,48 @@
 .se--partners
   @extend %section
+  padding-top: $section-offset
 
-.partner-item
+  h1
+    display: none
+  h2
+    @extend %alpha
+    text-align: center
+
+
+.pa-se
+  padding-bottom: 2em
+
+.pa-item
   display: inline-block
-  width: 50%
+  min-width: 150px
 
-+media($medium-screen-up)
-  .partner-item
-    width: 33.33%
+  text-align: center
+  font-size: $size-beta
+  color: $c-fg-light
+
+  width: 33.33%
+  +media($medium-screen-up)
+    width: 25%
+  +media($large-screen-up)
+    font-size: $size-alpha
+    width: 20%
+
+.pa-item--text
+  position: relative
+
+  &:before
+    content: ""
+    display: block
+    padding-top: 56.25% // 16:9
+
+.pa-item-ti-wr
+  +position(absolute, 0 0 0 0)
+  display: table
+  width: 100%
+  height: 100%
+
+.pa-item-ti
+  display: table-cell
+  vertical-align: middle
+  padding: 0 1em
+

@@ -72,3 +72,8 @@ cs:
       error: 'Při odesílání došlo k chybě, zkuste to prosím znovu nebo se <a href="mailto:tickets@sdbs.cz">nám ozvěte</a>.'
       invalid: 'Registraci nebylo možné dokončit, zkontrolujte prosím zadané údaje.'
 
+  partners:
+    header: Partneři
+
+  orgs:
+    header: Pořadatelé

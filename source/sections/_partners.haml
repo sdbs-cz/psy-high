@@ -1,6 +1,16 @@
-%h1.se-header= t('partners.header')
+%h1= t('partners.header')
+%section.pa-se
+  %h2 Mediální partneři
+  = partial('partials/partner', collection: data.partners.media)
 
-- data.partners.sort.each do |id, partner|
-  = link_to partner.url, class: 'partner-item' do
-    = image_tag "partners/#{id}.svg", alt: partner.title
+%section.pa-se
+  %h2 Hlavní partneři
+  = partial('partials/partner', collection: data.partners.main)
 
+%section.pa-se
+  %h2 Pomohli nám
+  = partial('partials/partner', collection: data.partners.support)
+
+%section.pa-se
+  %h2 Pořadatelé
+  = partial('partials/partner', collection: data.partners.orgs)

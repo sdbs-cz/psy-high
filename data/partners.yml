@@ -1,22 +1,91 @@
 ---
-wave:
-  url: http://www.wave.cz/
-  title: Radio Wave
-aardvark:
-  url: http://www.the-aardvark.cz/
-  title: The Aardvark
-fullmoon:
-  url: http://www.fullmoonmagazine.cz/
-  title: Fullmoon Music Magazine
-marast:
-  url: http://www.marastmusic.com/
-  title: Marast Music
-metalopolis:
-  url: http://www.metalopolis.net/
-  title: Metalopolis.net
-psychedelic:
-  url: http://psychedelic.cz/
-  title: Psychedelic
-radio1:
-  url: http://www.radio1.cz/
-  title: Radio 1
+media:
+  - id: aardvark
+    url: http://www.the-aardvark.cz/
+    title: The Aardvark
+    img: true
+
+  - id: fullmoon
+    url: http://www.fullmoonmagazine.cz/
+    title: Fullmoon Music Magazine
+    img: true
+
+  - id: marast
+    url: http://www.marastmusic.com/
+    title: Marast Music
+    img: true
+
+  - id: metalopolis
+    url: http://www.metalopolis.net/
+    title: Metalopolis.net
+    img: true
+
+  - id: psychedelic
+    url: http://psychedelic.cz/
+    title: Psychedelic
+    img: true
+
+  - id: radio1
+    url: http://www.radio1.cz/
+    title: Radio 1
+    img: true
+
+  - id: wave
+    url: http://www.wave.cz/
+    title: Radio Wave
+    img: true
+
+main:
+  - id: klubovna
+    title: Klubovna
+    url: http://www.klubovna.povalec.cz/
+  - id: nofp
+    title: Nomads of Prague
+    url: http://www.nofp.cz/
+  - id: quantum
+    title: Quantum Labs
+    url: http://quantum-labs.cz/
+
+support:
+
+  - id: horice
+    title: Město Hořice
+    url: http://www.horice.org/
+
+  - id: nerudny
+    title: Nerudný fest
+    url: http://nerudnyfest.cz/
+
+  - id: prove
+    title: o.s. Prove Hořice
+    url: http://prove.wz.cz/
+
+  - id: junak
+    title: Junák Hořice
+    url: http://www.junakhorice.cz/
+
+
+orgs:
+  - id: sdbs
+    url: http://sdbs.cz/
+    title: /-\
+
+  - id: doublebrackets
+    url: https://www.facebook.com/doublebrackets
+    title: ']['
+
+  - id: letmo
+    title: Letmo.net
+    url: http://letmo.net/
+
+  - id: wbooking
+    title: w.booking
+    url: https://www.facebook.com/Wes.booking
+
+  - id: dirtyharry
+    title: Dirty Harry Agency
+    url: https://www.facebook.com/DirtyHarryAgency
+
+  - id: shusta
+    title: Shusta Booking
+    url: http://www.planbcafe.cz/
