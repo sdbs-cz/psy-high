@@ -12,6 +12,7 @@
   font-size: 0.9rem
   text-align: justify
   height: $nav-height-sticky
+  cursor: default
   &:after
     content: ""
     display: inline-block
@@ -21,7 +22,7 @@
 
 .nav-l
   display: inline-block
-  margin: 0 0.2rem
+  padding: 0 0.2rem
 
   line-height: $nav-height-sticky
   font-weight: 400
@@ -36,5 +37,12 @@
 +media($medium-screen-up)
   .se--nav
     font-size: 1rem
+    +display(flex)
+    +justify-content(space-between)
+    &:after
+      display: none
+
   .nav-l
+    +flex(1)
+    margin: 0 1em
 
