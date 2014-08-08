@@ -1,16 +1,16 @@
 %h1= t('partners.header')
 %section.pa-se
-  %h2 Mediální partneři
+  %h2= t('partners.media')
   = partial('partials/partner', collection: data.partners.media)
 
 %section.pa-se
-  %h2 Hlavní partneři
+  %h2= t('partners.main')
   = partial('partials/partner', collection: data.partners.main)
 
 %section.pa-se
-  %h2 Pomohli nám
+  %h2= t('partners.support')
   = partial('partials/partner', collection: data.partners.support)
 
 %section.pa-se
-  %h2 Pořadatelé
+  %h2= t('partners.orgs')
   = partial('partials/partner', collection: data.partners.orgs)

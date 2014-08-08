@@ -74,6 +74,7 @@ en:
 
   partners:
     header: Partners
-
-  orgs:
-    header: Organizers
+    media: Media partners
+    main: General partners
+    support: Thanks to
+    orgs: Organizers
