@@ -40,7 +40,8 @@ en:
     food:
       header: Nourishment
       trava:
-        header: <a href="https://www.facebook.com/divokatrava">Divoká tráva</a> (Wild Grass)
+        header: >
+          <a href="https://www.facebook.com/divokatrava">Divoká tráva</a> (Wild&nbsp;Grass)
         desc: Full range of vegan delicacies from our good friends.
       kafe:
         header: <a href="https://www.facebook.com/kavarnaKafeKafka">Kafe!Kafka</a>
