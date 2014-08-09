@@ -1,8 +1,7 @@
 - cls = partner.img? ? 'pa-item--img' : 'pa-item--text'
-= link_to partner.url, class: "pa-item #{cls}" do
-  - if partner.img?
-    = image_tag "partners/#{partner.id}.png", alt: partner.title
-  - else
-    %span.pa-item-ti-wr
-      %span.pa-item-ti
-        = partner.title
+%li.pa-item{class: "#{cls}"}
+  = link_to partner.url, class: 'pa-l', target: '_blank' do
+    - if partner.img?
+      = image_tag "partners/#{partner.id}.png", alt: partner.title
+    - else
+      = partner.title

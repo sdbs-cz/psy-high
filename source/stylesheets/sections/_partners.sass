@@ -10,21 +10,25 @@
     @extend %alpha
     text-align: center
 
-
-.pa-se
+.pa-list
   padding-bottom: 2em
-  text-align: center
-  +media($medium-screen-up)
-    text-align: left
+  +display(flex)
+  +flex-wrap(wrap)
+  +align-items(center)
 
 .pa-item
-  display: inline-block
+  +display(inline-block)
   min-width: 150px
+  padding: 0
+  margin: 0
 
   text-align: center
   font-size: $size-beta
   line-height: 1.2
-  color: $c-fg-light
+
+  display: inline-block
+
+  vartical-align: middle
 
   width: 33.33%
   +media($medium-screen-up)
@@ -32,24 +36,14 @@
   +media($large-screen-up)
     width: 20%
 
-.pa-item--text
-  position: relative
-
-  &:before
-    content: ""
-    display: block
-    padding-top: 56.25% // 16:9
-
-.pa-item-ti-wr
-  +position(absolute, 0 0 0 0)
-  display: table
-  width: 100%
+.pa-l
+  color: $c-fg-light
+  display: block
   height: 100%
 
-.pa-item-ti
-  display: table-cell
-  vertical-align: middle
-  padding: 0 1em
+.pa-item--text .pa-l
+  padding: 1em
+
 
 /*
   .footer-b

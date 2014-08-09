@@ -1,16 +1,17 @@
 %h1= t('partners.header')
-%section.pa-se
-  %h2= t('partners.media')
+
+%h2= t('partners.media')
+%ul.pa-list
   = partial('partials/partner', collection: data.partners.media)
 
-%section.pa-se
-  %h2= t('partners.main')
+%h2= t('partners.main')
+%ul.pa-list
   = partial('partials/partner', collection: data.partners.main)
 
-%section.pa-se
-  %h2= t('partners.thanks')
+%h2= t('partners.thanks')
+%ul.pa-list
   = partial('partials/partner', collection: data.partners.thanks)
 
-%section.pa-se
-  %h2= t('partners.orgs')
+%h2= t('partners.orgs')
+%ul.pa-list
   = partial('partials/partner', collection: data.partners.orgs)
