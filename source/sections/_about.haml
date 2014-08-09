@@ -10,7 +10,7 @@
       :markdown
         #{ t('about.intro')}
   .about-more-wr
-    #about-more.about-more.js-hide.js-more
+    #about-more.about-more.js-hide.js-more{data: {category: 'About', label: 'More'}}
       = partial "sections/about_text_#{I18n.locale}"
 
       .about-s.about-s--vid

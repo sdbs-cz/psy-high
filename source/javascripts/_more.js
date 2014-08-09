@@ -20,6 +20,8 @@ var ShowMore = function(target) {
   var _btn = _toggler.button,
       _wrapper = _toggler.wrapper;
 
+  var _label = _toggleTarget.getAttribute('data-label');
+
   _toggler.button.addEventListener('click', function(e){
     var shown = toggleElement(_toggleTarget),
         eTarget = e.target;
@@ -29,6 +31,11 @@ var ShowMore = function(target) {
     // scroll only if the target is being displayed, not hidden
     if(shown) {
       window.smoothScroll(_wrapper, 500, blurTarget);
+      flare.emit({
+        category: _toggleTarget.getAttribute('data-category'),
+        action: 'click',
+        label: _label,
+      });
     }
     else {
       blurTarget();
