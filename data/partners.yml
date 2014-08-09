@@ -39,9 +39,12 @@ main:
   - id: klubovna
     title: Klubovna
     url: http://www.klubovna.povalec.cz/
+    img: true
+
   - id: nofp
     title: Nomads of Prague
     url: http://www.nofp.cz/
+
   - id: quantum
     title: Quantum Labs
     url: http://quantum-labs.cz/
@@ -51,10 +54,12 @@ support:
   - id: horice
     title: Město Hořice
     url: http://www.horice.org/
+    img: true
 
-  - id: nerudny
+  - id: nerudnyfest
     title: Nerudný fest
     url: http://nerudnyfest.cz/
+    img: true
 
   - id: prove
     title: o.s. Prove Hořice
@@ -77,10 +82,12 @@ orgs:
   - id: letmo
     title: Letmo.net
     url: http://letmo.net/
+    img: true
 
   - id: wbooking
     title: w.booking
     url: https://www.facebook.com/Wes.booking
+    img: true
 
   - id: dirtyharry
     title: Dirty Harry Agency
