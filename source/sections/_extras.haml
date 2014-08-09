@@ -1,9 +1,13 @@
 %h1.se-header= t('extras.header')
 
 .ex-se--talks
-  %h2.ex-h Přednášky
+  %h2.ex-h= t('extras.talks')
   = partial 'partials/session', collection: data.extra.talks
 
 .ex-se--ws
-  %h2.ex-h Workshopy
+  %h2.ex-h= t('extras.workshops')
   = partial 'partials/session', collection: data.extra.workshops
+
+/
+  .ex-se--read
+    %h2.ex-h= t('extras.reading.header')

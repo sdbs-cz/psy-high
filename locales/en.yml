@@ -33,10 +33,10 @@ en:
     header: Line-up
   extras:
     header: Extra
-    description: |
-      Apart from music, you can look forward to lectures (lucid dreaming, chaos magick), workshops (sigilization, growing, poi), yoga sessions and readings.
-
-      We are still working out the detailed support programme, stay tuned.
+    talks: Lectures
+    workshops: Workshops
+    reading:
+      header: Readings
   location:
     header: Location
     description: |

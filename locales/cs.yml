@@ -33,10 +33,10 @@ cs:
     header: Hudba
   extras:
     header: Extra
-    description: |
-      Hudbu proložíme například přednáškami (lucidní snění, chaos magick), workshopy (sigilizace, pěstování, poi), cvičením jógy, předčítáním nebo videomappingem.
-
-      Detaily doprovodného programu teprve vypracováváme.
+    talks: Přednášky
+    workshops: Workshopy
+    reading:
+      header: Čtení
   location:
     header: Místo konání
     description: |
