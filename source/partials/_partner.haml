@@ -1,7 +1,7 @@
 - cls = partner.img? ? 'pa-item--img' : 'pa-item--text'
 = link_to partner.url, class: "pa-item #{cls}" do
   - if partner.img?
-    = image_tag "partners/#{partner.id}.svg", alt: partner.title
+    = image_tag "partners/#{partner.id}.png", alt: partner.title
   - else
     %span.pa-item-ti-wr
       %span.pa-item-ti
