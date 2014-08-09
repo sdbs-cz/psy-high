@@ -1,5 +1,19 @@
 ---
 media:
+  - id: sleeping
+    url: http://www.thesleepingshaman.com/
+    title: The Sleeping Shaman
+    img: true
+
+  - id: obelisk
+    url: http://theobelisk.net/
+    title: The Obelisk
+
+  - id: doomsmoker
+    url: http://doomsmoker.pl/
+    title: Doomsmoker
+    img: true
+
   - id: aardvark
     url: http://www.the-aardvark.cz/
     title: The Aardvark
@@ -41,15 +55,17 @@ main:
     url: http://www.klubovna.povalec.cz/
     img: true
 
-  - id: nofp
-    title: Nomads of Prague
-    url: http://www.nofp.cz/
-
   - id: quantum
     title: Quantum Labs
     url: http://quantum-labs.cz/
 
 thanks:
+
+  - id: void
+    title: Void Fest
+    url: http://voidfest.de/en/
+    img: true
+
 
   - id: horice
     title: Město Hořice
@@ -60,6 +76,9 @@ thanks:
     title: Nerudný fest
     url: http://nerudnyfest.cz/
     img: true
+  - id: nofp
+    title: Nomads of Prague
+    url: http://www.nofp.cz/
 
   - id: prove
     title: o.s. Prove Hořice
@@ -74,10 +93,12 @@ orgs:
   - id: sdbs
     url: http://sdbs.cz/
     title: /-\
+    large: true
 
   - id: doublebrackets
     url: https://www.facebook.com/doublebrackets
     title: ']['
+    large: true
 
   - id: letmo
     title: Letmo.net
