@@ -21,14 +21,18 @@ en:
     alt_lang: Česky
     alt_link: http://www.psy-high.cz/
     alt_locale: cs
-  about: |
-    Psy-High is a DIY art-and-culture festival of everything psychedelic and mystical, weird and magickal, happening right now all over the planet.
+  about:
+    intro: |
+      Psy-High is a DIY art-and-culture festival of everything psychedelic and mystical, weird and magickal, happening right now all over the planet.
 
-    Everything is done with our own hands, without profit on our minds and without any sponsors other than the increasing number of people who give Psy-High their energy.
+      Everything is done with our own hands, without profit on our minds and without any sponsors other than the increasing number of people who give Psy-High their energy.
 
-    For us, Psy-High is *the art of supporting art* - defined and refined by the participation of many artists and builders, who work at the chosen location tirelessly for days before the festival itself can happen.
+      For us, Psy-High is *the art of supporting art* - defined and refined by the participation of many artists and builders, who work at the chosen location tirelessly for days before the festival itself can happen.
 
-    We will celebrate nature and self-expression through seminars, workshops, community and especially some great fucking gigs by more than twenty bands (psych, stoner, sludge, noise-rock and doom) accompanied by a taste of conceptually-alligned electronic and instrumental projects from other genres.
+      We will celebrate nature and self-expression through seminars, workshops, community and especially some great fucking gigs by more than twenty bands (psych, stoner, sludge, noise-rock and doom) accompanied by a taste of conceptually-alligned electronic and instrumental projects from other genres.
+    vid:
+      header: Reports from past editions
+
   lineup:
     header: Line-up
   extras:

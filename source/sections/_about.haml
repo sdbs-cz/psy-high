@@ -8,7 +8,16 @@
         = image_tag('about-vid.jpg', alt: 'Psy-High 2014 Invitation')
     .about-intro-txt
       :markdown
-        #{ t(:about)}
+        #{ t('about.intro')}
   .about-more-wr
     #about-more.about-more.js-hide.js-more
       = partial "sections/about_text_#{I18n.locale}"
+
+      .about-s.about-s--vid
+        %h2= t('about.vid.header')
+        %a.about-more-vid.js-overlay-embed(href='https://www.youtube.com/watch?v=w5-nF0GzCLQ'
+          data-embed='//www.youtube-nocookie.com/embed/w5-nF0GzCLQ?rel=0&autoplay=1&color=white&showinfo=1&disablekb=1&html5=1')
+          = image_tag('about/vid-13.jpg', alt: 'Psy-High report 2013')
+        %a.about-more-vid.js-overlay-embed(href='https://www.youtube.com/watch?v=7M1EWk_PPCk'
+          data-embed='//www.youtube-nocookie.com/embed/7M1EWk_PPCk?rel=0&autoplay=1&color=white&showinfo=1&disablekb=1&html5=1')
+          = image_tag('about/vid-14.jpg', alt: 'Psy-High Jaro/Spring report \'14')
