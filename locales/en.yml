@@ -37,6 +37,20 @@ en:
     workshops: Workshops
     reading:
       header: Readings
+    food:
+      header: Nourishment
+      trava:
+        header: <a href="https://www.facebook.com/divokatrava">Divoká tráva</a> (Wild Grass)
+        desc: Full range of vegan delicacies from our good friends.
+      kafe:
+        header: <a href="https://www.facebook.com/kavarnaKafeKafka">Kafe!Kafka</a>
+        desc: "Legendary local mobile café & tea room."
+      munchies:
+        header: Fu-Munchies
+        desc: Carnivores may prefer our grill.
+      bar:
+        header: Bar
+        desc: Quench your thirst at our bar.
   location:
     header: Location
     description: |

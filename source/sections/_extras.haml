@@ -11,3 +11,12 @@
 /
   .ex-se--read
     %h2.ex-h= t('extras.reading.header')
+
+
+#food.ex-se--food
+  %h2.se-header= t('extras.food.header')
+
+  - %i(trava kafe munchies bar).each do |item|
+    .ex-food-it{class: "ex-food-it--#{item}"}
+      %h3= t("extras.food.#{item}.header")
+      %p= t("extras.food.#{item}.desc")

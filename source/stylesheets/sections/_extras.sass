@@ -7,16 +7,33 @@
 
 %ex-se
   +text-background
-  +pad(1.5em default default)
+  +pad(1.5em default)
+  margin-bottom: 1.5em
 
   +media($medium-screen-up)
     +span-columns(4)
 
-.ex-se--talks, .ex-se--ws
+.ex-se--talks, .ex-se--ws,
+.ex-se--read,
+.ex-se--food
   @extend %ex-se
 
-.ex-se--ws
-  +omega
+.ex-se--food
+  +fill-parent
+  +row
+
++media($medium-screen-up)
+  .ex-se--ws
+    +omega
+    float: right
+  .ex-food-it
+    +span-columns(4)
+  .ex-food-it--kafe
+    +omega
+
++media($large-screen-up)
+  .ex-food-it
+    +span-columns(3)
 
 .ex-h
   text-align: center

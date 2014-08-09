@@ -37,6 +37,22 @@ cs:
     workshops: Workshopy
     reading:
       header: Čtení
+    food:
+      header: Občerstvení
+      trava:
+        header: <a href="https://www.facebook.com/divokatrava">Divoká tráva</a>
+        desc: Plný sortiment veganských dobrot od našich přátel.
+      kafe:
+        header: <a href="https://www.facebook.com/kavarnaKafeKafka">Kafe!Kafka</a>
+        desc: "Místní legendární pojízdná kávárna & čajovna."
+      munchies:
+        header: Fu-Munchies
+        desc: Pro masožravce máme připravený gril.
+      bar:
+        header: Bar
+        desc: Žízeň budete moct uhasit i u našeho baru.
+
+
   location:
     header: Místo konání
     description: |
