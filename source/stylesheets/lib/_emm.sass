@@ -1,0 +1,7 @@
+// Like Bourbon's em(), expects sizes in em
+@function emm($emval, $base: $base-font-size)
+  @if not unitless($emval)
+    $emval: strip-units($emval)
+  @if not unitless($base)
+    $base: strip-units($base)
+  @return ($emval / $base) * 1em
