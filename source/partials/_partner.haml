@@ -4,4 +4,8 @@
     - if partner.img?
       = image_tag "partners/#{partner.id}.png", alt: partner.title
     - else
-      = partner.title
+      - if partner.large?
+        %span.pa-ti--l
+          = partner.title
+      - else
+        = partner.title
