@@ -1,6 +1,9 @@
+%h1.se-header= t('extras.header')
 
-.extras-txt
-  %h1.se-header= t('extras.header')
+.ex-se--talks
+  %h2.ex-h Přednášky
+  = partial 'partials/session', collection: data.extra.talks
 
-  :markdown
-    #{ t('extras.description') }
+.ex-se--ws
+  %h2.ex-h Workshopy
+  = partial 'partials/session', collection: data.extra.workshops

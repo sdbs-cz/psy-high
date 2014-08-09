@@ -1,18 +1,27 @@
 .wr--extras
   @extend %bg-pattern
-  min-height: 100vh
-  padding: $section-offset 0 2rem
+  padding: $section-offset*1.5 0 $section-offset
 
 .se--extras
   @extend %section
 
-.extras-txt
-  +pad
+%ex-se
   +text-background
+  +pad(1.5em default default)
 
-+media($medium-screen-up)
-  .extras-txt
-    margin-top: 20vh
+  +media($medium-screen-up)
     +span-columns(4)
-    +shift(2)
 
+.ex-se--talks, .ex-se--ws
+  @extend %ex-se
+
+.ex-se--ws
+  +omega
+
+.ex-h
+  text-align: center
+  padding-bottom: emm(1, $size-beta)
+
+
+.ex-it
+  padding-bottom: 1em
