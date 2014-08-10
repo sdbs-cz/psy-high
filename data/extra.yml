@@ -22,10 +22,13 @@ talks:
     desc_cs: |
       Pro každého, kdo bere svoji mysl vážně (a nebo s nadhedem, dle vaší pozice na Apollónsko-Dyonýské-Orficko-Eleusiánské škále) jsou sny důležitou součástí lidského vědomí. Tato přednáška nastíní, co se můžeme naučit od lucidního snění, proč bychom se jím měli zabývat a jak nám může být prospěšné. A to vůbec nejdůležitější - jak tohoto stavu můžeme dosáhnout?
 
-  - title_en: Subconscious perception of visual arts
-    title_cs: Podvědomé vnimání vizuálního umění
+  - title_en: My Art
+    title_cs: Moje umění
     author: Jan Škop
-
+    desc_en: |
+      How is it possible that in reality, which is composed exclusively of physical matter, can arise individuality of consciousness and how is it reflected through arts?
+    desc_cs: |
+      Jak může v realitě tvořené výlučně fyzickou hmotou vzniknout individualita vědomí a jak se jeho fungování reflektuje v oblasti umění?
 workshops:
   - title_en: The sound around us
     author: Marek Henzl
