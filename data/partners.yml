@@ -12,6 +12,7 @@ media:
   - id: doomsmoker
     url: http://doomsmoker.pl/
     title: DoomSmoker.pl
+    img: true
 
   - id: aardvark
     url: http://www.the-aardvark.cz/
@@ -57,6 +58,8 @@ main:
   - id: quantum
     title: Quantum Labs
     url: http://quantum-labs.cz/
+    img: true
+
 
 thanks:
 
