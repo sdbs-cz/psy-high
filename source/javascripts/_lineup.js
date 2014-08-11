@@ -1,26 +1,5 @@
 // Line-up expander
 
-
-
-var ActiveElementState = function() {
-  var _state = new State();
-  var _oldValue;
-
-  return {
-    set: function(value) {
-      _oldValue = _state.get();
-      _state.set(value);
-    },
-    transition: function(callback) {
-      _state.watch(function(newValue) {
-        callback(_oldValue, newValue);
-      });
-    }
-
-  };
-
-};
-
 var LineupExpander = function(rootEl) {
   var DEFAULT_STATE = '#lineup';
   var SEL_ITEM = '.lup-item',
@@ -29,7 +8,7 @@ var LineupExpander = function(rootEl) {
 
   var _root = rootEl;
   var _state = new State(window.location.hash);
-  var _activeElement = ActiveElementState();
+  var _activeElement = new TransitionalState();
 
 
   // Always push location hash on state change

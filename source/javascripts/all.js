@@ -2,6 +2,7 @@
 //= require lib/_flare
 //= require tpl/_begin
 //= require _util
+//= require lib/_transition
 //= require lib/_smoothscroll
 //= require lib/_overlay
 //= require lib/_embed
