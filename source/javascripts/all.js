@@ -6,6 +6,7 @@
 //= require lib/_smoothscroll
 //= require lib/_overlay
 //= require lib/_embed
+//= require lib/_scrollspy
 //= require _classes
 //= require _scroll
 //= require _nav
