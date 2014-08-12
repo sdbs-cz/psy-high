@@ -1,14 +1,12 @@
 (function() {
-  var sections = [],
-      targets = {};
+  var targets = {},
+      sections = document.querySelectorAll('.js-section');
 
   // Collect sections based on link elements,
   // arrange links to and id => link hash
   forEach(document.querySelectorAll('.js-nav a'), function(link){
     var id = link.hash.substring(1);
-    var section = document.getElementById(id);
     targets[id] = link;
-    sections.push(section);
   });
 
   var spy = ScrollSpy(sections);
@@ -28,6 +26,7 @@
   // Track a 'pageview' once new section is reached
   // (with some time threshold to prevent too much noise)
   var trackSection = _throttle(function(sectionEl){
+    // console.log('track!');
     try {
       var id = sectionEl.id;
       ga('send', 'pageview', {
