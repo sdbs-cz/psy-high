@@ -31,9 +31,8 @@
       if(trackHsh === null) {
         trackHsh = '#' + sectionEl.id;
       }
-      ga('send', 'pageview', {
-       'page': location.pathname + location.search + trackHsh
-      });
+      ga('set', 'page', location.pathname + location.search + trackHsh);
+      ga('send', 'pageview');
     } catch(e){}
   }, 3000);
   spy.state.watch(trackSection);
