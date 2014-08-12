@@ -26,19 +26,21 @@ var ScrollSpy = function(sections, options){
     };
     var throttledUpdate = _throttle(update, 250); // TODO options
 
-    window.addEventListener('scroll', throttledUpdate);
-
-    var disable = function(callback) {
+    var disable = function() {
         window.removeEventListener('scroll', throttledUpdate);
-        callback(function(){
-            window.addEventListener('scroll', throttledUpdate);
-            update();
-        });
     };
+
+    var enable = function() {
+        window.addEventListener('scroll', throttledUpdate);
+        update();
+    };
+
+    enable();
 
     return {
         state: _activeState,
         disable: disable,
+        enable: enable,
         update: update
     };
 };
