@@ -26,11 +26,13 @@
   // Track a 'pageview' once new section is reached
   // (with some time threshold to prevent too much noise)
   var trackSection = _throttle(function(sectionEl){
-    // console.log('track!');
     try {
-      var id = sectionEl.id;
+      var trackHsh = sectionEl.getAttribute('data-trackhash');
+      if(trackHsh === null) {
+        trackHsh = '#' + sectionEl.id;
+      }
       ga('send', 'pageview', {
-       'page': location.pathname + location.search  + '#' + id
+       'page': location.pathname + location.search + trackHsh
       });
     } catch(e){}
   }, 3000);

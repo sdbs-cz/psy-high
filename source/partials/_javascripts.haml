@@ -7,6 +7,10 @@
 :javascript
   (function(p,s,y,h,i,g){p.GoogleAnalyticsOpject=h;p[h]||(p[h]= function(){(p[h].q=p[h].q||[]).push(arguments)});p[h].h=+new Date; i=s.createElement(y);g=s.getElementsByTagName(y)[0]; i.src='//www.google-analytics.com/analytics.js'; g.parentNode.insertBefore(i,g)}(window,document,'script','ga'));
   ga('create','UA-53219163-1');
-  ga('set', 'dimension1', window.USE_JS);
-  ga('send','pageview');
-= javascript_include_tag  "//code.visidom.cz/Kt09eCtQ"
+  ga('set', 'dimension1', window.USE_JS ? 1 : 0);
+  if(!window.USE_JS) {
+    // scrollspy otherwise
+    ga('send', 'pageview', {
+     'page': location.pathname + location.search  + location.hash
+    });
+  }
