@@ -88,7 +88,8 @@ cs:
     order:
       header: Lístky
       description: |
-        Lístky také můžete objednat v předprodeji za zvýhodněnou cenu 420 Kč. V tom případě prosím vyplňte svou e-mailovou adresu a počet lístků, obratem vám zašleme potřebné informace. Děkujeme!
+        Lístky také můžete objednat v předprodeji za zvýhodněnou cenu 470 Kč. V tom případě prosím vyplňte svou e-mailovou adresu a počet lístků, obratem vám zašleme potřebné informace. Děkujeme!
+        Vstupenky je také možné zakoupit v [Čítárně UniJazzu](http://unijazz.cz) v Praze za stejnou cenu.
     amount: Počet lístků
     submit: Objednat lístky
     flash:
