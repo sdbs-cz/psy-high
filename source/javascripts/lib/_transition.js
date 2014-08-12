@@ -11,7 +11,11 @@ TransitionalState.prototype = Object.create(State.prototype);
 TransitionalState.prototype.constructor = TransitionalState;
 
 TransitionalState.prototype.set = function(value) {
-  this._oldValue = this.get();
+  var currentVal = this.get();
+  if(currentVal === value) {
+    return;
+  }
+  this._oldValue = currentVal;
   State.prototype.set.apply(this, arguments);
 };
 
