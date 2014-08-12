@@ -1,22 +1,6 @@
-var ScrollSpy = function(links){
-    var self = Object.create(ScrollSpy.prototype);
-
-    var _targets = {},
-        _sections = [],
-        _activeTarget = new TransitionalState();
-    forEach(links, function(anchor){
-        var id = anchor.hash.substring(1);
-        var section = document.getElementById(id);
-        _sections.push(section);
-        _targets[id] = anchor;
-    });
-
-    _activeTarget.transition(function(oldElement, newElement){
-        console.log('transition', newElement);
-        toggleActiveElement(oldElement, false);
-        toggleActiveElement(newElement, true);
-    });
-
+var ScrollSpy = function(sections, options){
+    var _sections = sections,
+        _activeState = new TransitionalState();
 
     var update = function() {
         var scrollY = window.scrollY;
@@ -25,24 +9,36 @@ var ScrollSpy = function(links){
             var section = _sections[i];
             var offset = section.offsetTop;
 
-            // If the element's top edge is above
-            // the viewport, store it as active
             if(offset <= scrollY) {
+                // If the element's top edge is above
+                // the viewport, store it as active
                 lastVisible = section;
             }
             else {
+                // Sections below may be visible too,
+                // but we do not care about those
                 break;
             }
         }
         if(lastVisible) {
-            var target = _targets[lastVisible.id];
-            _activeTarget.set(target);
-        }
-        else {
-            console.log('nope');
+            _activeState.set(lastVisible);
         }
     };
-    var throttledUpdate = _throttle(update, 250);
+    var throttledUpdate = _throttle(update, 250); // TODO options
 
     window.addEventListener('scroll', throttledUpdate);
+
+    var disable = function(callback) {
+        window.removeEventListener('scroll', throttledUpdate);
+        callback(function(){
+            window.addEventListener('scroll', throttledUpdate);
+            update();
+        });
+    };
+
+    return {
+        state: _activeState,
+        disable: disable,
+        update: update
+    };
 };
