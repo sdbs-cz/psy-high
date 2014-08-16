@@ -67,13 +67,13 @@ en:
       ## How to get here
 
       GPS
-      : 50.3758897°N, 15.6457500°E
+      : [50.3758897°N, 15.6457500°E](https://www.google.com/maps/place/50%C2%B022%2733.2%22N+15%C2%B038%2744.7%22E/@50.3746712,15.642467,16z)
 
       Train
-      : Hořice v Podkrkonoší
+      : [Hořice v Podkrkonoší](http://jizdnirady.idnes.cz/vlakyautobusymhdvse/spojeni/?date=22.08.2014&time=17%3a00&t=Ho%c5%99ice+v+Podkrkono%c5%a1%c3%ad&tc=100003&byarr=true&lng=E)
 
-      Bus
-      : Hořice, aut.nádr.
+      Autobus
+      : [Hořice, aut.nádr.](http://jizdnirady.idnes.cz/vlakyautobusymhdvse/spojeni/?date=22.08.2014&time=17%3a00&t=Ho%c5%99ice+%5bJC%5d%2c%2caut.n%c3%a1dr.&tc=200003&byarr=true&lng=E)
 
       Parking only in the city, no restrictions.
 
@@ -87,7 +87,7 @@ en:
       header: Tickets
       description: |
         Regular presale tickets are available for 18€. In that case, please fill out your e-mail address and the number of tickets you wish to purchase, we’ll send you the billing information right away. Thanks!
-        
+
         The tickets can also be purchased at [Čítárna at Unijazz](http://unijazz.cz/en) in Prague for the same price.
     amount: Amount
     submit: Order tickets
