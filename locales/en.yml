@@ -89,9 +89,7 @@ en:
     order:
       header: Tickets
       description: |
-        Regular presale tickets are available for 18€. In that case, please fill out your e-mail address and the number of tickets you wish to purchase, we’ll send you the billing information right away. Thanks!
-
-        The tickets can also be purchased at [Čítárna at Unijazz](http://unijazz.cz/en) in Prague for the same price.
+        The presale is over! Tickets will be available for €22 at the festival.
     amount: Amount
     submit: Order tickets
     flash:

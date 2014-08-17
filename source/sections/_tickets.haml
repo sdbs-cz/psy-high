@@ -10,19 +10,3 @@
   %h2.se-header= t('tickets.order.header')
   :markdown
     #{ t('tickets.order.description') }
-
-
-  = form_tag 'http://progrestinate.com/ticketpro/actionAdd.php', id: 'tickets-f', class: 'tickets-f', method: 'post' do
-    .js-flash.js-hide{data: { ok: t('tickets.flash.ok'),
-      error: t('tickets.flash.error'),
-      invalid: t('tickets.flash.invalid')}}
-    = field_set_tag(class: 'tickets-f-row') do
-      %p.f--ticket_email
-        = label_tag :ticket_email, caption: 'E-mail'
-        = email_field_tag :ticket_email, value: '@', required: true
-      %p.f--ticket_amount
-        = label_tag :ticket_amount, caption: t('tickets.amount')
-        = number_field_tag :ticket_amount, value: 1, min: 1, step: 1, required: true
-      =hidden_field_tag('lang', value: I18n.locale)
-    %p.f--submit
-      = submit_tag t('tickets.submit'), class: 'js-submit'
