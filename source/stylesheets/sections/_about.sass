@@ -52,8 +52,7 @@
 +media($medium-screen-up)
   .about-intro
     +row($direction: RTL)
-  .about-intro-txt, .about-vid,
-  .about-more-vid
+  .about-intro-txt, .about-vid
     +span-columns(4)
   .about-intro-txt
     text-align: justify
@@ -62,9 +61,10 @@
     +pad(default 0 default 0)
   +reset-layout-direction
 
+  .about-more-vid
+    +span-columns(4 of 12)
+
   .txt-col
     +columns(2)
     +column-gap($gutter)
     text-align: justify
-  // +media($large-screen-up)
-    // @include columns(3 $gutter)
