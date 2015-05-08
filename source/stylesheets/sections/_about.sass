@@ -51,15 +51,15 @@
 
 +media($medium-screen-up)
   .about-intro
-    +row($direction: RTL)
-  .about-intro-txt, .about-vid
-    +span-columns(4)
-  .about-intro-txt
-    text-align: justify
-    +omega
-  .about-vid
-    +pad(default 0 default 0)
-  +reset-layout-direction
+    +row
+  +direction-context(right-to-left)
+    .about-intro-txt, .about-vid
+      +span-columns(4)
+    .about-intro-txt
+      text-align: justify
+      +omega
+    .about-vid
+      +pad(default 0 default 0)
 
   .about-more-vid
     +span-columns(4 of 12)
