@@ -52,9 +52,12 @@ $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1)
 $header-line-height: $base-font-size * 1.25
 $base-border-radius: em(3)
 
-$size-alpha:  modular-scale($base-font-size, 3, $major-second)
-$size-beta: modular-scale($base-font-size, 2, $major-second)
-$size-gamma: modular-scale($base-font-size, 1, $major-second)
+$modular-scale-base: $base-font-size
+$modular-scale-ratio: $major-second
+
+$size-alpha:  modular-scale(3)
+$size-beta: modular-scale(2)
+$size-gamma: modular-scale(1)
 // $size-delta:
 
 // Background Color
