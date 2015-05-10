@@ -16,27 +16,28 @@ en:
     bandzone: Bandzone.cz Gig
     nyx: Nyx.cz Event
   header:
-    location: 'St.&nbsp;Joseph Quarry'
+    location: 'Western Bohemia'
     cta: 'Support us & join us'
     alt_lang: Česky
     alt_link: http://www.psy-high.cz/
     alt_locale: cs
   about:
     intro: |
-      Psy-High is a DIY art-and-culture festival of everything psychedelic and mystical, weird and magickal, happening right now all over the planet.
+      Psy-High is an arts and culture experience based around the interplay of music, seminars, theatre, debates, readings and workshops. We also give a lot of attention to changing the location as much as possible in accordance with the main themes and concepts of the festival.  Psy-High 2015 will increase in length to four full days – two days just weren't enough to enjoy the event for most people.
 
-      Everything is done with our own hands, without profit on our minds and without any sponsors other than the increasing number of people who give Psy-High their energy.
-
-      For us, Psy-High is *the art of supporting art* - defined and refined by the participation of many artists and builders, who work at the chosen location tirelessly for days before the festival itself can happen.
-
-      We will celebrate nature and self-expression through seminars, workshops, community and especially some great fucking gigs by more than twenty bands (psych, stoner, sludge, noise-rock and doom) accompanied by a taste of conceptually-alligned electronic and instrumental projects from other genres.
+      The basics of why and how we make Psy-High happen stay the same: We do everything we can by our own hands, without profit and without sponsors - except for the growing number of people ready to fuel the event with their personal energy.
     vid:
       header: More video
 
   lineup:
     header: Line-up
+    desc: |
+      Expect a tighter line-up aimed at all kinds of psychedelia-inspired music. There will be more than 30 bands performing at P-H, here’s a small sample:
   extras:
     header: Extra
+    desc: |
+      There will be a lot of new lectures, debates and workshops (some of them in English) that will address themes like intersubjectivity, the human right for self-determination, activism, archaic revival, partnership culture and occultism.
+
     talks: Lectures
     workshops: Workshops
     reading:
@@ -62,7 +63,7 @@ en:
   location:
     header: Location
     description: |
-      We chose the st. Joseph quarry primarily for it’s "earthiness"&mdash;the way the rocks chime with the forest and how nature slowly erased almost all signs of past human activity. It’s a place filled with a solid, calm ambiance where you can almost feel the deep rumble of ancient underground rocky massives interweave with the sounds and smells of trees. The quarry was active since the second half of the 19th century, it’s finest sandstone was being used primarily for sculptures, for example the ones at the roof of the National Theater in Prague.
+      We'll continue the string of amazing locations: Last year's “rocky cathedral” of the Saint Joseph quarry is followed by a wide, flooded quarry somewhere in the western parts of Czech Republic. We're still keeping the location a secret for now, but get ready for 13,000 m² of five-pointed lake surrounded by 7.5 hectars of awesomeness). You will receive the exact location through an e-mail after paying for and receiving your ticket. For purposes of planning, we will tell you this: the location lays in a 50 km radius from the city of Pilsen.
     instructions: |
       ## How to get here
 
@@ -89,12 +90,16 @@ en:
     order:
       header: Tickets
       description: |
-        The presale is over! Tickets will be available for €22 at the festival.
+        We have decided to limit the number of tickets to 400, mainly due to our belief that Psy-High needs a smaller crowd in order to retain it's unique atmosphere. The tickets are now available for 580 CZK per ticket and the price will rise up to 720 CZK per ticket.
+
+        For payment inside Czech republic, please order the tickets from the [Czech Psy-High website](http://www.psy-high.cz/2015/#tickets).
+
+        We built the presale app ourselves and we cannot eliminate the possibility of malfunction with certain e-mail providers. If you receive an unreadable e-mail, or anything else is not right, please contact us at [tickets@sdbs.cz](mailto:tickets@sdbs.cz).
     amount: Amount
     submit: Order tickets
     flash:
       ok: 'Thanks, you will receive further information in your e-mail. See you soon!'
-      error: 'Submission failed, please try again or <a href="mailto:tickets@sdbs.cz"> contact us</a>.'
+      error: 'Submission failed, please try again or <a href="mailto:tickets@sdbs.cz">contact us</a>.'
       invalid: 'The form cannot be submitted, please, check your entry and and try again.'
 
   partners:
