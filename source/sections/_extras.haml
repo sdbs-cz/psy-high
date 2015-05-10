@@ -1,25 +1,27 @@
 %h1.se-header= t('extras.header')
 
-%p.sched
-  = link_to t('schedule.link'), '/program.pdf', class: 'sched-l'
+-#
 
-.ex-se--talks
-  %h2.ex-h= t('extras.talks')
-  = partial 'partials/session', collection: data.extra.talks
+  %p.sched
+    = link_to t('schedule.link'), '/program.pdf', class: 'sched-l'
 
-.ex-se--ws
-  %h2.ex-h= t('extras.workshops')
-  = partial 'partials/session', collection: data.extra.workshops
+  .ex-se--talks
+    %h2.ex-h= t('extras.talks')
+    = partial 'partials/session', collection: data.extra.talks
 
-.ex-se--read
-  %h2.ex-h= t('extras.reading.header')
-  %p= t('extras.reading.desc')
+  .ex-se--ws
+    %h2.ex-h= t('extras.workshops')
+    = partial 'partials/session', collection: data.extra.workshops
+
+  .ex-se--read
+    %h2.ex-h= t('extras.reading.header')
+    %p= t('extras.reading.desc')
 
 
-#food.ex-se--food
-  %h2.se-header= t('extras.food.header')
+  #food.ex-se--food
+    %h2.se-header= t('extras.food.header')
 
-  - %i(trava kafe munchies bar).each do |item|
-    .ex-food-it{class: "ex-food-it--#{item}"}
-      %h3= t("extras.food.#{item}.header")
-      %p= t("extras.food.#{item}.desc")
+    - %i(trava kafe munchies bar).each do |item|
+      .ex-food-it{class: "ex-food-it--#{item}"}
+        %h3= t("extras.food.#{item}.header")
+        %p= t("extras.food.#{item}.desc")
