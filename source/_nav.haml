@@ -1,4 +1,4 @@
 .wr--nav.js-nav
   %nav.se--nav
-    - %w{about lineup location extras tickets}.each do |sec|
+    - %w{about lineup extras location tickets}.each do |sec|
       = link_to t(sec, scope: :nav), "##{sec}", class: 'nav-l js-scroll'
