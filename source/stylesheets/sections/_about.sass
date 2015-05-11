@@ -12,24 +12,10 @@
   +text-background(0.9)
   +pad
 
-.about-vid
-  margin-bottom: 1rem
-
-  /*&:before
-    +icon(play)
-    display: block
-    font-size: 5rem
-    line-height: 100%
-    position: absolute
-    left: 0
-    margin-left:auto
-    margin-right:auto*/
-
 .about-more-wr
   clear: both
 
 // Toggle button
-
 .se--about
   .more-toggler-wr
     text-align: center
@@ -41,27 +27,34 @@
 .about-more
   padding-top: 1rem
 
-.about-s h2
-  text-align: center
+.about-s
+  +row
 
-.about-more-vid
-  display: block
-  margin-top: 1em
+.about-h
   text-align: center
+  margin-bottom: 1rem
+
+.about-txt, .about-vid
+  margin-bottom: 1rem
+
+.about-vid
+  text-align: center
+  display: block
 
 +media($medium-screen-up)
   .about-intro
     +row
+
   +direction-context(right-to-left)
-    .about-intro-txt, .about-vid
+    .about-intro-txt, .about-intro-vid
       +span-columns(4)
     .about-intro-txt
-      text-align: justify
       +omega
-    .about-vid
+      text-align: justify
+    .about-intro-vid
       +pad(default 0 default 0)
 
-  .about-more-vid
+  .about-txt, .about-vid
     +span-columns(4 of 12)
 
   .txt-col

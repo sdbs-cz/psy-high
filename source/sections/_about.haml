@@ -2,26 +2,40 @@
 %article
 
   .about-intro
-    .about-vid
-      %a.about-vid-tgt.js-overlay-embed(href='https://www.youtube.com/watch?v=oZ8LyCmS8fM'
-          data-embed='//www.youtube-nocookie.com/embed/oZ8LyCmS8fM?rel=0&autoplay=1&color=white&showinfo=1&disablekb=1&html5=1')
-        = image_tag('about-vid.jpg', alt: "Psy-High '14 “experience” teaser")
+    .about-intro-vid
+      = youtube_embed('oZ8LyCmS8fM', 'about-vid--intro') do
+        - image_tag('about-vid.jpg', alt: "Psy-High '14 “experience” teaser")
+
     .about-intro-txt
       :markdown
         #{ t('about.intro')}
   .about-more-wr
     #about-more.about-more.js-hide.js-more{data: {category: 'About', label: 'More'}}
-      = partial "sections/about_text_#{I18n.locale}"
+      =# partial "sections/about_text_#{I18n.locale}"
 
-      .about-s.about-s--vid
-        %h2= t('about.vid.header')
+      .about-s
+        %h2.about-h Psy-High 2014
+        .about-txt
+          :markdown
+            * [Foto: /-\\](https://www.flickr.com/photos/100241479@N08/sets/72157650194192922/)
+            * [Foto: Vice](http://www.vice.com/cs/read/lidi-a-psi-z-planety-psy-high-896)
+            * [Foto: FullMoon Zine](http://www.fullmoonzine.cz/galerie/psy-high-2014-22-8-2014-lom-u-sv-josefa-ho-ice)
+            * [Foto: The Aardvark](http://www.the-aardvark.cz/psy-high-2014-foto)
+            * [Report: The Aardvark](http://www.the-aardvark.cz/psy-high-2014-i)
+            * [Report: Marast Music](http://www.marastmusic.com/Clanky/PSY-HIGH-2014-patek)
+            * [Report: WWWar](http://wiwontwor.com/2014/08/25/psy-high-14-910/)
 
-        %a.about-more-vid.js-overlay-embed(href='https://www.youtube.com/watch?v=9IbjqNvLpOc'
-          data-embed='//www.youtube-nocookie.com/embed/9IbjqNvLpOc?rel=0&autoplay=1&color=white&showinfo=1&disablekb=1&html5=1')
-          = image_tag('about/vid-14inv.jpg', alt: "Psy-High '14 Invitation")
-        %a.about-more-vid.js-overlay-embed(href='https://www.youtube.com/watch?v=7M1EWk_PPCk'
-          data-embed='//www.youtube-nocookie.com/embed/7M1EWk_PPCk?rel=0&autoplay=1&color=white&showinfo=1&disablekb=1&html5=1')
-          = image_tag('about/vid-14.jpg', alt: "Psy-High Jaro/Spring report '14")
-        %a.about-more-vid.js-overlay-embed(href='https://www.youtube.com/watch?v=w5-nF0GzCLQ'
-          data-embed='//www.youtube-nocookie.com/embed/w5-nF0GzCLQ?rel=0&autoplay=1&color=white&showinfo=1&disablekb=1&html5=1')
-          = image_tag('about/vid-13.jpg', alt: 'Psy-High report 2013')
+        = youtube_embed('9IbjqNvLpOc', 'about-vid') do
+          - image_tag('about/vid-14inv.jpg', alt: "Psy-High '14 Invitation")
+
+        = youtube_embed('7M1EWk_PPCk', 'about-vid about-vid--omega') do
+          - image_tag('about/vid-14.jpg', alt: "Psy-High Jaro/Spring report '14")
+      .about-s
+        %h2.about-h Psy-High 2013
+        .about-txt
+          :markdown
+            * [Foto: /-\\](https://secure.flickr.com/photos/100241479@N08/collections/72157635581784951)
+            * [Report: Psychedelic.cz](http://psychedelic.cz/ohlednuti-psy-high-2013-hell-yes/)
+
+        = youtube_embed('w5-nF0GzCLQ', 'about-vid') do
+          - image_tag('about/vid-13.jpg', alt: 'Psy-High report 2013')
