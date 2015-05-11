@@ -6,7 +6,7 @@
       #{ t('location.description') }
 
     .location-gallery
-      - (1..6).each do |i|
+      - (1..5).each do |i|
         - img = "#{i}.jpg"
         %a.location-img{href: "images/location/f/#{img}"}
           = image_tag "location/#{img}"
