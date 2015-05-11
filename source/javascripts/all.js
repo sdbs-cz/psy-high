@@ -13,4 +13,5 @@
 //= require _more
 //= require _overlays
 //= require _lineup
+//= require _tickets
 //= require tpl/_end
