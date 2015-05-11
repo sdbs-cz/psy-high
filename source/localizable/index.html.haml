@@ -14,22 +14,26 @@ title: Psy-High 2014
       .se--about
         = partial 'sections/about'
 
-    #lineup.wr--lineup.js-section
-      .se--lineup.js-lup-wr
-        = partial 'sections/lineup'
+    .wr--program
+      #lineup.wr--lineup.js-section
+        -# .se--lineup.js-lup-wr
+          = partial 'sections/lineup'
+        .se--lineup
+          = partial 'sections/lineup_list'
+
+      #extras.wr--extras.js-section
+        .se--extras
+          = partial 'sections/extras'
 
     #location.wr--location.js-section
       .se--location
         = partial 'sections/location'
 
-    #extras.wr--extras.js-section
-      .se--extras
-        = partial 'sections/extras'
 
     #tickets.wr--tickets.js-section
       .se--tickets
         = partial 'sections/tickets'
 
-  #partners.wr--partners.js-section
-    .se--partners
-      = partial 'sections/partners'
+  -##partners.wr--partners.js-section
+  -#  .se--partners
+  -#    = partial 'sections/partners'
