@@ -1,0 +1,16 @@
+// Probably a temporary file
+.wr--program
+  @extend %bg-pattern
+
+.wr--lineup, .wr--extras
+  // @extend %bg-pattern
+  @extend %section
+
+.se--lineup, .se--extras
+  +pad($section-offset*1.5 default $section-offset)
+
+
++media($medium-screen-up)
+  .se--lineup, .se--extras
+    +shift(2 of 12)
+    +span-columns(8 of 12)
