@@ -14,7 +14,8 @@
   = form_tag 'http://progrestinate.com/ticketpro/actionAdd.php', id: 'tickets-f', class: 'tickets-f', method: 'post' do
     .js-flash.js-hide{data: { ok: t('tickets.flash.ok'),
       error: t('tickets.flash.error'),
-      invalid: t('tickets.flash.invalid')}}
+      invalid: t('tickets.flash.invalid'),
+      soldout: t('tickets.flash.soldout')}
     = field_set_tag(class: 'tickets-f-row') do
       %p.f--ticket_email
         = label_tag :ticket_email, caption: 'E-mail'

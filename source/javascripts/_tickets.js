@@ -33,6 +33,9 @@ var TicketsForm = function(form) {
       case 'invalidparams':
         setFlash('invalid');
         break;
+      case 'soldout':
+        setFlash('soldout');
+        break;
       default:
         setFlash('error');
     }
