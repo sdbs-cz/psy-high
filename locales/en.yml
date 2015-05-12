@@ -15,6 +15,7 @@ en:
     lastfm: Last.fm Festival
     bandzone: Bandzone.cz Gig
     nyx: Nyx.cz Event
+    gplus: Google+ Event
   header:
     location: 'Western Bohemia'
     cta: 'Support us & join us'
