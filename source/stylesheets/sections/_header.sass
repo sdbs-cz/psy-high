@@ -33,13 +33,17 @@ $h-pad: 1rem
 
 .header-altl-l
   display: inline-block
-  +button-inverse($c-fg-dark)
+  +button-inverse($c-accent-light, 0.5)
+  &:hover, &:focus, &:active
+    color: $c-fg-dark
+
 
 .header-b--byline
   @extend %gamma
   text-align: right
   // +position(absolute, $h-pad $h-pad null null)
   float: right
+  text-shadow: 0 0 2px $c-bg-dark
 
 .h--bot
   text-align: center
@@ -72,6 +76,7 @@ $h-pad: 1rem
   font-size: $size-gamma
   &:hover, &:focus, &:active
     color: $c-fg-dark
+    background-color: rgba($c-accent-light, 0.9)
 
 +media($medium-screen-up)
   .header-b--byline, .btn-cta

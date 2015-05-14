@@ -29,9 +29,9 @@
   &:after
     content: ' »'
 
-=button-inverse($color: $base-button-color)
+=button-inverse($color: $base-button-color, $transparency: 0.2)
   @extend %button
-  background: rgba($color, 0.2)
+  background: rgba($color, $transparency)
   border-color: $color
   color: $c-fg-dark
   &:hover, &:focus, &:active
