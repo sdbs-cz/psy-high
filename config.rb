@@ -49,17 +49,18 @@ else # assume production build
   activate :i18n, :langs => [BUILD_LANG]
 end
 
-deploy_remotes = {
-  cs: 'git@github.com:sdbs-cz/psy-high.cz.git',
-  en: 'git@github.com:sdbs-cz/psy-high.eu.git'
+deploy_paths = {
+  cs: 'cz',
+  en: 'eu'
 }
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.method = :ftp
   deploy.build_before = true
-  deploy.remote = deploy_remotes.fetch(BUILD_LANG, 'git@github.com:sdbs-cz/psy-high.git')
-  # deploy.branch = 'gh-pages'
-  # deploy.strategy = :submodule
+  deploy.host = ENV['FTP_HOST']
+  deploy.user = ENV['FTP_USER']
+  deploy.password = ENV['FTP_PASSWORD']
+  deploy.path = deploy_paths.fetch(BUILD_LANG) + build_root
 end
 
 
