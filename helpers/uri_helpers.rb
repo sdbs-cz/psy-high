@@ -7,6 +7,6 @@ module UriHelpers
     unless path.start_with?('/')
       path = '/' + path
     end
-    URI::HTTP.build(host: cname, path: path)
+    URI::HTTP.build(host: cname, path: build_root + path)
   end
 end
