@@ -8,5 +8,5 @@
     .location-gallery
       - (1..5).each do |i|
         - img = "#{i}.jpg"
-        %a.location-img{href: "images/location/f/#{img}"}
+        %a.location-img.js-overlay-image{href: "images/location/f/#{img}"}
           = image_tag "location/#{img}"
