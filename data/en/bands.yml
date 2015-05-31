@@ -67,11 +67,26 @@
   :embed: "//bandcamp.com/EmbeddedPlayer/album=4038574320/size=large/bgcol=fafafa/linkcol=3AB4C5/artwork=small/transparent=true/"
   :embed_height: 216
 :support:
+- :name: Fetch!
+  :genre: stoner noise rock
+  :location_cs: Praha, Česká republika
+  :location: Prague, Czech Republic
+  :url: https://fetchcz.bandcamp.com/album/parfum-et-koteka
 - :name: B4
   :genre: krautrock psychedelic
   :location_cs: Turnov, Česká republika
   :location: Turnov, Czech Republic
   :url: http://b4.3px.cz/
+- :name: At Bona Fide
+  :genre: noise-shoegaze
+  :location_cs: Ostrava, Česká republika
+  :location: Ostrava, Czech Republic
+  :url: http://bandzone.cz/atbonafide
+- :name: Kidney Trauma
+  :genre: noise-rock/shoegaze
+  :location_cs: Česká republika
+  :location: Czech Republic
+  :url: https://soundcloud.com/stoned-to-death-records/kidney-trauma-doplnit
 - :name: Saiga
   :genre: stoner rock
   :location_cs: Praha, Česká republika
@@ -82,18 +97,3 @@
   :location_cs: Praha, Česká republika
   :location: Prague, Czech Republic
   :url: http://bandzone.cz/sweeps04
-- :name: At Bona Fide
-  :genre: noise-shoegaze
-  :location_cs: Ostrava, Česká republika
-  :location: Ostrava, Czech Republic
-  :url: http://bandzone.cz/atbonafide
-- :name: Fetch!
-  :genre: stoner noise rock
-  :location_cs: Praha, Česká republika
-  :location: Prague, Czech Republic
-  :url: https://fetchcz.bandcamp.com/album/parfum-et-koteka
-- :name: Kidney Trauma
-  :genre: noise-rock/shoegaze
-  :location_cs: Česká republika
-  :location: Czech Republic
-  :url: https://soundcloud.com/stoned-to-death-records/kidney-trauma-doplnit
