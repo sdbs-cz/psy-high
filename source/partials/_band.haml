@@ -1,22 +1,33 @@
 -#.lup-item{class: "lup-item--#{band.id}", id: "b-#{band.id}"}
 .lup-item{id: "b-#{band.id}"}<>
-  %header.lup-header{class: "lup-b--#{band.id}"}<>
-    = link_to "#b-#{band.id}", class: "lup-l" do
-      %h2.lup-name= band.name
-      .lup-byline
-        %span.lup-genre
-          =band.genre
-        %br/
-        %span.lup-location
-          =band.location
-  .lup-det{class: "lup-b--#{band.id}"}
-    -# .lup-det-in{class: "lup-item--#{band.id}"}
-    .lup-desc
-      -if band.description?
-        %p= band.description
-      -if !band.embed? && band.provider?
-        %p= link_to band.provider, band.url, class: 'lup-det-l'
+  - if type == 'detail'
+    %header.lup-header{class: "lup-b--#{band.id}"}<>
+      = link_to "#b-#{band.id}", class: "lup-l" do
+        %h2.lup-name= band.name
+        .lup-byline
+          %span.lup-genre
+            =band.genre
+          %br/
+          %span.lup-location
+            =band.location
+    .lup-det{class: "lup-b--#{band.id}"}
+      -# .lup-det-in{class: "lup-item--#{band.id}"}
+      .lup-desc
+        -if band.description?
+          %p= band.description
+        -if !band.embed? && band.provider?
+          %p= link_to band.provider, band.url, class: 'lup-det-l'
 
-    -if band.embed?
-      .lup-embed
-        = embed_link_for(band, css_class: 'lup-det-l')
+      -if band.embed?
+        .lup-embed
+          = embed_link_for(band, css_class: 'lup-det-l')
+  - else
+    %header.lup-header{class: "lup-b--#{band.id}"}<>
+      = link_to "#{band.url}", :target => "_blank"  do
+        %h2.lup-name= band.name
+        .lup-byline
+          %span.lup-genre
+            =band.genre
+          %br/
+          %span.lup-location
+            =band.location

@@ -1,20 +1,13 @@
+# coding: utf-8
 
 module LineupHelpers
   def lineup_data(filter)
-    bands = bands(filter)
+    bands = ldata.bands[filter]
     last_i = bands.length - 1
     bands.each_with_index { |band, i|
       band[:last] = (i == last_i)
       band[:i] = i
     }.map
-  end
-
-  def bands(type)
-    if type == :major
-      ldata.bands.major + ldata.bands.support
-    else
-      ldata.bands[type]
-    end
   end
 
   # Generate dividing divs, up-to `arity`'s value
