@@ -47,8 +47,8 @@
 - :name: OvO
   :id: ovo
   :genre: doom sludge ritual
-  :location_cs: Itálie
-  :location: Italy
+  :location_cs: Milano, Itálie
+  :location: Milano, Italy
   :description_cs: Jakmile se vám tenhle nádhernej noise protlačí do krve, z celé vaší bytosti se najednou stane součást jejich znepokojivě nezastavitelnejch záměrů. Do čeho že vás to zatáhli si matně uvědomíte až dlouho potom, co koncert skončí.
   :description: Once their glorious noise pushes itself into your bloodstream, your being suddenly becomes a part of their unsettling and unstoppable designs. You won’t know what you’ve been dragged into until the show is over.
   :url: https://ovomusic.bandcamp.com/
@@ -66,3 +66,34 @@
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=4038574320/size=large/bgcol=fafafa/linkcol=3AB4C5/artwork=small/transparent=true/"
   :embed_height: 216
+:support:
+- :name: B4
+  :genre: krautrock psychedelic
+  :location_cs: Turnov, Česká republika
+  :location: Turnov, Czech Republic
+  :url: http://b4.3px.cz/
+- :name: Saiga
+  :genre: stoner rock
+  :location_cs: Praha, Česká republika
+  :location: Prague, Czech Republic
+  :url: http://saigarocks.bandcamp.com/
+- :name: Sweeps04
+  :genre: ambient industrial doom
+  :location_cs: Praha, Česká republika
+  :location: Prague, Czech Republic
+  :url: http://bandzone.cz/sweeps04
+- :name: At Bona Fide
+  :genre: noise-shoegaze
+  :location_cs: Ostrava, Česká republika
+  :location: Ostrava, Czech Republic
+  :url: http://bandzone.cz/atbonafide
+- :name: Fetch!
+  :genre: stoner noise rock
+  :location_cs: Praha, Česká republika
+  :location: Prague, Czech Republic
+  :url: https://fetchcz.bandcamp.com/album/parfum-et-koteka
+- :name: Kidney Trauma
+  :genre: noise-rock/shoegaze
+  :location_cs: Česká republika
+  :location: Czech Republic
+  :url: https://soundcloud.com/stoned-to-death-records/kidney-trauma-doplnit

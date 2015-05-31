@@ -66,3 +66,34 @@
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=4038574320/size=large/bgcol=fafafa/linkcol=3AB4C5/artwork=small/transparent=true/"
   :embed_height: 216
+:support:
+- :name: B4
+  :genre: krautrock psychedelic
+  :location: Turnov, Česká republika
+  :location_en: Turnov, Czech Republic
+  :url: http://b4.3px.cz/
+- :name: Saiga
+  :genre: stoner rock
+  :location: Praha, Česká republika
+  :location_en: Prague, Czech Republic
+  :url: http://saigarocks.bandcamp.com/
+- :name: Sweeps04
+  :genre: ambient industrial doom
+  :location: Praha, Česká republika
+  :location_en: Prague, Czech Republic
+  :url: http://bandzone.cz/sweeps04
+- :name: At Bona Fide
+  :genre: noise-shoegaze
+  :location: Ostrava, Česká republika
+  :location_en: Ostrava, Czech Republic
+  :url: http://bandzone.cz/atbonafide
+- :name: Fetch!
+  :genre: stoner noise rock
+  :location: Praha, Česká republika
+  :location_en: Prague, Czech Republic
+  :url: https://fetchcz.bandcamp.com/album/parfum-et-koteka
+- :name: Kidney Trauma
+  :genre: noise-rock/shoegaze
+  :location: Česká republika
+  :location_en: Czech Republic
+  :url: https://soundcloud.com/stoned-to-death-records/kidney-trauma-doplnit
