@@ -1,10 +1,10 @@
 %h1.se-header= t('lineup.header')
 
-%p.sched
-  = link_to t('schedule.link'), '/program.pdf', class: 'sched-l'
+//%p.sched
+//  = link_to t('schedule.link'), '/program.pdf', class: 'sched-l'
 
 .lup-wr--headliners<>
   = partial('partials/band', collection: lineup_data(:headliners), locals: {arity: 2})
 
-.lup-wr--major<>
-  = partial('partials/band', collection: lineup_data(:major), locals: {arity: 3})
+//.lup-wr--major<>
+//  = partial('partials/band', collection: lineup_data(:major), locals: {arity: 3})
