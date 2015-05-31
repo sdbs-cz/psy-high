@@ -31,6 +31,12 @@
 
 .f--submit
   text-align: center
+  .js-submit
+    background: $brownish
+    border: 2px solid $brownish
+    &:hover, &:focus, &:active
+      background-color: rgba($brownish, 0.2)
+      color: $c-fg-light
 
 +media($medium-screen-up)
   .tickets-b--shop

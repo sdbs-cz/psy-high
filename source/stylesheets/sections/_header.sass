@@ -33,9 +33,10 @@ $h-pad: 1rem
 
 .header-altl-l
   display: inline-block
-  +button-inverse($c-accent-light, 0.5)
+  +button-inverse($white, 0.5)
+  border: 2px solid white
   &:hover, &:focus, &:active
-    color: $c-fg-dark
+    color: $c-fg-light
 
 
 .header-b--byline
@@ -73,10 +74,13 @@ $h-pad: 1rem
 
 .btn-cta
   @extend %button
+  color: $black
+  background: $white
+  border: 2px solid white
   font-size: $size-gamma
   &:hover, &:focus, &:active
-    color: $c-fg-dark
-    background-color: rgba($c-accent-light, 0.9)
+    color: $black
+    background-color: rgba($white, 0.9)
 
 +media($medium-screen-up)
   .header-b--byline, .btn-cta
