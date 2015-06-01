@@ -2,7 +2,7 @@
 
 var LineupExpander = function(rootEl) {
   var DEFAULT_STATE = '#lineup';
-  var SEL_ITEM = '.lup-item',
+  var SEL_ITEM = '.lup-item--detail',
     SEL_CLICK_TGT = '.lup-l',
     SEL_EMBED_LINK = '.js-embed';
 

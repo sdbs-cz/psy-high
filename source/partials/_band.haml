@@ -1,6 +1,6 @@
 -#.lup-item{class: "lup-item--#{band.id}", id: "b-#{band.id}"}
-.lup-item{id: "b-#{band.id}"}<>
-  - if type == 'detail'
+- if type == 'detail'
+  .lup-item.lup-item--detail{id: "b-#{band.id}"}<>
     %header.lup-header{class: "lup-b--#{band.id}"}<>
       = link_to "#b-#{band.id}", class: "lup-l" do
         %h2.lup-name= band.name
@@ -17,11 +17,12 @@
           %p= band.description
         -if !band.embed? && band.provider?
           %p= link_to band.provider, band.url, class: 'lup-det-l'
-
+  
       -if band.embed?
         .lup-embed
           = embed_link_for(band, css_class: 'lup-det-l')
-  - else
+- else
+  .lup-item<>
     %header.lup-header{class: "lup-b--#{band.id}"}<>
       = link_to "#{band.url}", :target => "_blank"  do
         %h2.lup-name= band.name
