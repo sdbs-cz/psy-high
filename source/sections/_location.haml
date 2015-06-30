@@ -10,3 +10,12 @@
         - img = "#{i}.jpg"
         %a.location-img.js-overlay-image{href: "images/location/f/#{img}"}
           = image_tag "location/#{img}"
+
+%section.location-se--amenities
+  %h2.location-am--title.se-header= t('location.amenities.header')
+  .location-am--wr
+    - [:food, :bar, :accomodation, :parking].each do |am|
+      %section.location-am--s
+        %h3= t("location.amenities.#{am}.header")
+        :markdown
+          #{t("location.amenities.#{am}.desc")}

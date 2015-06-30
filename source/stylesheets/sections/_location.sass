@@ -7,7 +7,6 @@
 .se--location
   @extend %section
 
-
 .location-se--about
   +row
   margin-bottom: 20vh
@@ -22,9 +21,6 @@
 .location-txt--about
   @extend %location-txt
 
-.location-txt--transport
-  @extend %location-txt
-
 .location-img
   display: inline-block
   width: 49%
@@ -36,6 +32,20 @@
 .embed--map
   width: 100%
   max-height: 80vh
+
+.location-se--amenities
+  +row
+  @extend %location-txt
+
+.location-am--title
+  text-align: center
+
+.location-am--s
+  margin-bottom: 1.5em
+
+  +media($medium-screen-up)
+    +span-columns(4)
+    +omega(2n)
 
 +media($medium-screen-up)
   .wr--location
