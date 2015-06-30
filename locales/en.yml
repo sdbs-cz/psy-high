@@ -23,7 +23,8 @@ en:
     alt_locale: cs
   about:
     intro: |
-      Psy-High is an arts and culture experience based around the interplay of music, seminars, theatre, debates, readings and workshops. We also give a lot of attention to changing the location as much as possible in accordance with the main themes and concepts of the festival.  Psy-High 2015 will increase in length to four full days – two days just weren't enough to enjoy the event for most people.
+      Psy-High is an arts and culture experience based around the interplay of music, seminars, theatre, debates, readings and workshops.
+      We also give a lot of attention to changing the location as much as possible in accordance with the main themes and concepts of the festival.  Psy-High 2015 will increase in length to four full days – two days just weren't enough to enjoy the event for most people.
 
       The basics of why and how we make Psy-High happen stay the same: We do everything we can by our own hands, without profit and without sponsors - except for the growing number of people ready to fuel the event with their personal energy.
     vid:
@@ -63,7 +64,10 @@ en:
   location:
     header: Location
     description: |
-      We'll continue the string of amazing locations: Last year's “rocky cathedral” of the Saint Joseph quarry is followed by a wide, flooded quarry somewhere in the western parts of Czech Republic. We're still keeping the location a secret for now, but get ready for 13,000 m² of five-pointed lake surrounded by 7.5 hectars of awesomeness). You will receive the exact location through an e-mail after paying for and receiving your ticket. For purposes of planning, we will tell you this: the location lays in a 50 km radius from the city of Pilsen.
+      We'll continue the string of amazing locations: Last year's “rocky cathedral” of the Saint Joseph quarry is followed by a wide, flooded quarry somewhere in the western parts of Czech Republic.
+      We're still keeping the location a secret for now, but get ready for 13,000 m² of five-pointed lake surrounded by 7.5 hectars of awesomeness).
+      You will receive the exact location in an e-mail sent month before the festival.
+      For purposes of planning, we will tell you this: the location lays in a 50 km radius from the city of Pilsen.
     instructions: |
       ## How to get here
 
@@ -91,7 +95,7 @@ en:
       header: Tickets
       description: |
         We have decided to limit the number of tickets to 400, mainly due to our belief that Psy-High needs a smaller crowd in order to retain it's unique atmosphere.
-       
+
         This is the **last chance** to get the tickets! In this final wave, they're €28 each.
 
         For payment inside Czech republic, please order the tickets from the [Czech Psy-High website](http://www.psy-high.cz/2015/#tickets).
