@@ -88,6 +88,31 @@ cs:
       Parkování pouze ve městě, bez omezení.
 
       *Vstup psům je povolen, za předpokladu, že po nich bude uklizeno a že zůstanou pod dozorem.*
+
+    amenities:
+      header: Zázemí
+
+      food:
+        header: Strava
+        desc: |
+          Vegetariánská i pro masožravé, levnější i luxusnější, od snídaně až po půlnoční svačinu. Oblíbený grill Fu-Munchies doplní jeho vegetariánská obdoba a přibude i vývařovna [Food not bombs](http://food-not-bombs.cz/).
+      bar:
+        header: Bar
+        desc: |
+          Poučili jsme se z loňského roku. Bar má navýšenou kapacitu a odlehčí mu i samostatný výčep. Bar pojede téměř nonstop.
+
+      accomodation:
+        header: Ubytování
+        desc: |
+          - Stanové městečko v blízkosti (v ceně)
+          - Tekoucí voda (ale žádné sprchy)
+          - Chemické toalety
+
+      parking:
+        header: Parkování
+        desc: |
+          Omezená kapacita! Progresivní zpoplatnění (auto s čtyřmi lidmi nejnižší poplatek, auto s jedním člověkem nejvyšší). Přesné ceny poplatků pošleme v e-mailu s podrobnostmi.
+
   tickets:
     shop:
       header: Speciální nabídka

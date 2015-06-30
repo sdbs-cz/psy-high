@@ -86,6 +86,31 @@ en:
       Parking only in the city, no restrictions.
 
       *Dogs allowed, given that they'll be cleaned up after and kept watched.*
+
+    amenities:
+      header: Amenities
+
+      food:
+        header: Food
+        desc: |
+          For vegetarians and meat-eaters alike, sensibly priced or luxuriant and pricey, from breakfast to midnight snack… The famous Fu-Munchies grill will be accompanied by a similarly aimed vegetarian stand and larger field kitchen run by [Food not bombs](http://food-not-bombs.cz/).
+      bar:
+        header: Bar
+        desc: |
+          We learned a lot last year, so the bar will function almost all day and night, it will be much larger this year and there will be a separate beer tap.
+
+      accomodation:
+        header: Accomodation
+        desc: |
+          - Tent city in the vicinity (no extra fees)
+          - Equipped with water (no showers)
+          - Chemical toilets
+
+      parking:
+        header: Parking
+        desc: |
+          Limited capacity! Progressive parking fee (car full with 4 people – minimal fee, car with one person – maximal fee). Exact parking fee will be disclosed in an e-mail with other details.
+
   tickets:
     shop:
       header: Special offer
