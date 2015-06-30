@@ -81,32 +81,22 @@
   :genre: noise-shoegaze
   :location_cs: Ostrava, Česká Republika
   :location_en: Ostrava, Czech Republic
-  :url: http://bandzone.cz/atbonafide
-- :name: Kidney Trauma
-  :genre: noise-rock/shoegaze
-  :location_cs: Česká Republika
-  :location_en: Czech Republic
-  :url: https://soundcloud.com/stoned-to-death-records/kidney-trauma-doplnit
-- :name: Saiga
-  :genre: stoner rock
-  :location_cs: Praha, Česká Republika
-  :location_en: Prague, Czech Republic
-  :url: http://saigarocks.bandcamp.com/
-- :name: Sweeps04
-  :genre: ambient industrial doom
-  :location_cs: Praha, Česká Republika
-  :location_en: Prague, Czech Republic
-  :url: http://bandzone.cz/sweeps04
-- :name: Ursprung Trio
-  :genre: atmospheric improv
-  :location_cs: Schwandorf, Německo
-  :location_en: Schwandorf, Germany
-  :url: https://soundcloud.com/ursprungklang
+  :url: https://www.youtube.com/watch?v=bzjQfFvUA5k
 - :name: LO/VE
   :genre: art punk
   :location_cs: Praha, Česká Republika
   :location_en: Prague, Czech Republic
   :url: https://lovethecrew.bandcamp.com/
+- :name: Saiga
+  :genre: stoner rock
+  :location_cs: Praha, Česká Republika
+  :location_en: Prague, Czech Republic
+  :url: http://saigarocks.bandcamp.com/
+- :name: Kidney Trauma
+  :genre: noise-rock/shoegaze
+  :location_cs: Česká Republika
+  :location_en: Czech Republic
+  :url: https://soundcloud.com/stoned-to-death-records/kidney-trauma-doplnit
 - :name: White Wigwam
   :genre: psychedelic ambient
   :location_cs: Praha, Česká Republika
@@ -117,6 +107,16 @@
   :location_cs: Český Krumlov, Česká Republika
   :location_en: Český Krumlov, Czech Republic
   :url: http://lambdaband.bandcamp.com/album/space-express
+- :name: Ursprung Trio
+  :genre: atmospheric improv
+  :location_cs: Schwandorf, Německo
+  :location_en: Schwandorf, Germany
+  :url: https://soundcloud.com/ursprungklang
+- :name: Sweeps04
+  :genre: ambient industrial doom
+  :location_cs: Praha, Česká Republika
+  :location_en: Prague, Czech Republic
+  :url: http://bandzone.cz/sweeps04
 - :name: Skrze řeku
   :genre: psychedelic rock
   :location_cs: Ostrava, Česká Republika
