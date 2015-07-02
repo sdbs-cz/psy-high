@@ -9,15 +9,15 @@
             =band.genre
           %br/
           %span.lup-location
-            =band.location
+            =td(band, :location)
     .lup-det{class: "lup-b--#{band.id}"}
       -# .lup-det-in{class: "lup-item--#{band.id}"}
       .lup-desc
-        -if band.description?
-          %p= band.description
+        -if td?(band, :description)
+          %p= td(band, :description)
         -if !band.embed? && band.provider?
           %p= link_to band.provider, band.url, class: 'lup-det-l'
-  
+
       -if band.embed?
         .lup-embed
           = embed_link_for(band, css_class: 'lup-det-l')
@@ -31,4 +31,4 @@
             =band.genre
           %br/
           %span.lup-location
-            =band.location
+            =td(band, :location)

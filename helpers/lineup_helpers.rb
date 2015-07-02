@@ -2,7 +2,7 @@
 
 module LineupHelpers
   def lineup_data(filter)
-    bands = ldata.bands[filter]
+    bands = data.bands[filter]
     last_i = bands.length - 1
     bands.each_with_index { |band, i|
       band[:last] = (i == last_i)
