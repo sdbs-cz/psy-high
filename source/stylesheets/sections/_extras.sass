@@ -3,9 +3,6 @@
   padding: $section-offset 0 $section-offset
 
 .se--extras
-  @extend %section
-  padding: 2rem 4rem
-  background: rgba(250,250,250,0.8)
 
 %ex-se
   +text-background
@@ -15,14 +12,8 @@
   +media($medium-screen-up)
     +span-columns(4)
 
-.ex-se--talks, .ex-se--ws,
-.ex-se--read,
-.ex-se--food
+.ex-se
   @extend %ex-se
-
-.ex-se--food
-  +fill-parent
-  +row
 
 +media($medium-screen-up)
   .ex-se--ws

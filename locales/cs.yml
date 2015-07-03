@@ -47,29 +47,49 @@ cs:
     desc: |
       Mimohudební program zažije velký posun a přibude na jeho významu v celku: větší počet seminářů, debat, cvičení a workshopů, ve kterých dojde na témata jako jsou intersubjektivita, právo na sebeurčení, archaic revival (návrat archaismu), aktivismus, účastná kultura, okultismus a obecně na dávku konceptů a myšlenek z aktuální i klasické kontrakultury.
 
-    talks: Přednášky
-    workshops: Workshopy
-    reading:
-      header: "Básně na Psy-High&nbsp;– autorská čtení"
-      desc: >
-        V průběhu festivalu před vás se svými texty před&shy;stoupí básníci Petra Strá,
-        Janele z Liků, Karolína Frühbauerová, Jaroslav Žváček, Martin Burian a Shst.
-        O akustický doprovod vybraných interpretů se postará Daniel Mutinský.
-    food:
-      header: Občerstvení
-      trava:
-        header: <a href="https://www.facebook.com/divokatrava">Divoká tráva</a>
-        desc: Plný sortiment veganských dobrot od našich přátel.
-      kafe:
-        header: <a href="https://www.facebook.com/kavarnaKafeKafka">Kafe!Kafka</a>
-        desc: "Místní legendární pojízdná kávárna & čajovna."
-      munchies:
-        header: Fu-Munchies
-        desc: Pro masožravce máme připravený gril.
-      bar:
-        header: Bar
-        desc: Žízeň budete moct uhasit i u našeho baru.
+    talks:
+      header: Přednášky
+      desc: |
+        - Lucidní snění
+        - Historie změněných stavů vědomí a současný psychedelický výzkum
+        - Otevrena diskuze: Současná klinicka psychiatrie a výzkum v ČR
+        - Úvod do teorie 8 okruhů vědomí
+        - Magie, alchymie, theurgie a mystika
+        - Meditace a vokalizace
+        - Kritické myšlení a hermeneutika
 
+    workshops:
+      header: Workshopy / Akce / Cvičení
+      desc: |
+        - Fungiculture
+        - Meditace
+        - Joga
+        - Recy knihy
+        - Hudební nástroje po svém
+        - Sítotisk
+        - Typografie
+        - Tvorba z hlíny
+        - Lucerny
+        - a další…
+
+    reading:
+      header: Čtení
+      desc: |
+        - Petra Strá
+        - Básnik Ticho
+        - Adam Adámo Plzák
+        - Miroslav Sosoi
+        - Nutellka Nalžičku
+
+    shaping:
+      header: Instalace v prostoru
+      desc: |
+        - [The Cosmik Kollektiv](http://www.cosmikkollectiv.org/) – DE/CHE
+        - [Chaos Company](http://www.chaoscompany.cz/ )
+        - [Lesmír](http://lesmir.org/page/lesm-r )
+        - [JNTD](https://www.facebook.com/janatomdelam)
+        - [SDBS](http://sdbs.cz/)
+        - a ostatní
 
   location:
     header: Místo konání
