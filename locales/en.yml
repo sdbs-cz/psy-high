@@ -34,33 +34,60 @@ en:
     header: Line-up
     desc: |
       Expect a tighter line-up aimed at all kinds of psychedelia-inspired music. There will be more than 30 bands performing at P-H, here’s a small sample:
+
+    sensoria:
+      header: Sensoria – Bar Maldoror
+      desc: |
+        There will be a unique mix of genres playing at the bar, be sure to check it out.
+
+        This program is coproduced by Amalgam / [Letmo Productions](http://www.letmo.net/), [Altershapes](http://altershapes.org/), and [AVA](http://www.avavava.cz/).
+
   extras:
     header: Extra
     desc: |
       There will be a lot of new lectures, debates and workshops (some of them in English) that will address themes like intersubjectivity, the human right for self-determination, activism, archaic revival, partnership culture and occultism.
 
-    talks: Lectures
-    workshops: Workshops
-    reading:
-      header: "Poems at Psy-High&nbsp;– Author Readings"
+    talks:
+      header: Lectures in English
       desc: |
-        During the festival you can hear poems from Petra Strá, Janele z Liků, Karelina Fruhbauerova, Jaroslav Žváček, Martin Burian and Shst. Music accompaniment of selected artists will be provided by Daniel Mutinský. These readings are not very english-friendly, but we promise it is going to be amazing anyway.
+        - Magick, alchemy, theurgy and mystika (a brief intro)
+        - The 8 Circuits model of consciousness (a brief intro)
+        - Flicker - the dream machines
+        - Lucid dreaming (a brief intro, not confirmed yet)
+        - Critical thought and hermeneutics (a brief intro, not confirmed yet)
 
-    food:
-      header: Nourishment
-      trava:
-        header: >
-          <a href="https://www.facebook.com/divokatrava">Divoká tráva</a> (Wild&nbsp;Grass)
-        desc: Full range of vegan delicacies from our good friends.
-      kafe:
-        header: <a href="https://www.facebook.com/kavarnaKafeKafka">Kafe!Kafka</a>
-        desc: "Legendary local mobile café & tea room."
-      munchies:
-        header: Fu-Munchies
-        desc: Carnivores may prefer our grill.
-      bar:
-        header: Bar
-        desc: Quench your thirst at our bar.
+    workshops:
+      header: Workshops
+      desc: |
+        - Guided Meditation
+        - Books Recycled
+        - Yoga
+        - Make Your Own Music Instruments
+        - Silkscreen Printing
+        - Typography
+        - Art of Clay
+        - Lanterns Workshop
+        - and more…
+
+    # reading:
+    #   header: Čtení
+    #   desc: |
+    #     - Petra Strá
+    #     - Básnik Ticho
+    #     - Adam Adámo Plzák
+    #     - Miroslav Sosoi
+    #     - Nutellka Nalžičku
+
+    shaping:
+      header: Shaping
+      desc: |
+        - [The Cosmik Kollektiv](http://www.cosmikkollectiv.org/) – DE/CHE
+        - [Chaos Company](http://www.chaoscompany.cz/ )
+        - [Lesmír](http://lesmir.org/page/lesm-r )
+        - [JNTD](https://www.facebook.com/janatomdelam)
+        - [SDBS](http://sdbs.cz/)
+        - and others
+
   location:
     header: Location
     description: |

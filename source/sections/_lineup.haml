@@ -8,3 +8,9 @@
 
 .lup-wr--major<>
   = partial('partials/band', collection: lineup_data(:support), locals: {arity: 3, type: 'link'})
+
+%section.lup-wr--sensoria
+  %h2.sensoria--header.se-header= t('lineup.sensoria.header')
+  .sensoria--desc
+    :markdown
+      #{t('lineup.sensoria.desc')}
