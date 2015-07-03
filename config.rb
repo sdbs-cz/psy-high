@@ -60,7 +60,7 @@ activate :deploy do |deploy|
   deploy.host = ENV['FTP_HOST']
   deploy.user = ENV['FTP_USER']
   deploy.password = ENV['FTP_PASSWORD']
-  deploy.path = deploy_paths.fetch(BUILD_LANG, 'cs') + build_root
+  deploy.path = deploy_paths.fetch(BUILD_LANG, :cs) + build_root
 end
 
 
