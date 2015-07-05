@@ -2,6 +2,8 @@ language: ruby
 cache:
   bundler: true
   apt: true
+  directories:
+  - build/
 rvm:
 - 2.2.2
 bundler_args: "--without data"
