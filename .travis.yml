@@ -1,4 +1,5 @@
 language: ruby
+sudo: false
 cache:
   bundler: true
   apt: true
@@ -19,6 +20,9 @@ env:
   - secure: bYBZteQLMzKmiDkXRmUsFxnrTpC80WQrgfjGYjixtsGjombg+O71ZF/hoec4egwvsAFuwekUx2eOjJ1Y+NjVNYdPHaWkUWKPjAqCMYR+U3RfVh8hV3LAh+cw/0GV381YALWS+TSu04Y/BXZJXf712v2I9c8MPNLoydOKPs3DSIQ=
   - secure: e1IWdn37+yLU229MRul4zw+50x1hRIXWcsFne8kgShH/mLqSpf5jj0xQ0NpmeAjNUh5dj7uYHFkPp846BqArwy8mURhKuLGsZ8AOCPFKH4E76KiDumh0yo4igEXhHY5dtaW9tMBr6yWiXwoe0MdV57Pt/ImemNSYe+hPVVYeSVQ=
 before_script:
-- sudo apt-get install lftp
 - echo "set ssl:verify-certificate no" >> ~/.lftprc
 script: bundle exec middleman deploy
+addons:
+  apt:
+    packages:
+    - lftp
