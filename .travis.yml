@@ -19,4 +19,4 @@ env:
 before_script:
 - sudo apt-get install lftp
 - echo "set ssl:verify-certificate no" >> ~/.lftprc
-script: middleman deploy
+script: bundle exec middleman deploy
