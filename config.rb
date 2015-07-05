@@ -56,7 +56,7 @@ deploy_paths = {
 require 'lib/middleman-deploy/methods/lftp'
 activate :deploy do |deploy|
   deploy.method = :lftp
-  # deploy.build_before = true
+  deploy.build_before = true
   deploy.host = ENV['FTP_HOST']
   deploy.user = ENV['FTP_USER']
   deploy.password = ENV['FTP_PASSWORD']
