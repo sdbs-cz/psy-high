@@ -5,7 +5,6 @@
 # require 'normalize-scss'
 # require 'susy'
 require 'lib/custom_sass'
-
 activate :neat
 # activate :bourbon
 
@@ -54,13 +53,16 @@ deploy_paths = {
   en: 'eu'
 }
 
+require 'lib/middleman-deploy/methods/lftp'
 activate :deploy do |deploy|
-  deploy.method = :ftp
-  deploy.build_before = true
+  deploy.method = :lftp
+  # deploy.build_before = true
   deploy.host = ENV['FTP_HOST']
   deploy.user = ENV['FTP_USER']
   deploy.password = ENV['FTP_PASSWORD']
   deploy.path = deploy_paths.fetch(BUILD_LANG, :cs) + build_root
+  deploy.clean = true
+  deploy.flags = '--verbose'
 end
 
 
