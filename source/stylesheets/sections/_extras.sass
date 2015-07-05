@@ -4,34 +4,22 @@
 
 .se--extras
 
-%ex-se
+.ex-se
   +text-background
   +pad(1.5em default)
   margin-bottom: 1.5em
 
-  +media($medium-screen-up)
-    +span-columns(4)
-
-.ex-se
-  @extend %ex-se
-
 +media($medium-screen-up)
-  .ex-se--ws
-    +omega
-    float: right
-  .ex-food-it
+  .ex-se
     +span-columns(4)
-  .ex-food-it--kafe
-    +omega
-
-+media($large-screen-up)
-  .ex-food-it
-    +span-columns(3)
+  // instead of +omega
+  .ex-se:nth-child(2n)
+    margin-right: 0
+    float: right
 
 .ex-h
   text-align: center
   padding-bottom: emm(1, $size-beta)
-
 
 .ex-it
   padding-bottom: 1em
