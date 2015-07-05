@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.2.2
+bundler_args: --without data
+branches:
+  only:
+    - master
+env:
+  - BUILD_LANG=cs
+  - BUILD_LANG=en
+script: middleman build
