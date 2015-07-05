@@ -44,7 +44,6 @@ if BUILD_LANG.blank?
   activate :i18n, :mount_at_root => :cs
   dev_build = true
 else # assume production build
-  proxy '/CNAME', '/partials/CNAME.txt'
   activate :i18n, :langs => [BUILD_LANG]
 end
 
@@ -124,7 +123,6 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
-# set :cname, 'example.com'
 
 # Build-specific configuration
 configure :build do
