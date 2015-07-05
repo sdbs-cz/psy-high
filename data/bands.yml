@@ -87,11 +87,21 @@
   :location_cs: Praha, Česká Republika
   :location_en: Prague, Czech Republic
   :url: https://lovethecrew.bandcamp.com/
+- :name: Made by the Fire
+  :location_cs: Plzeň, Česká Republika
+  :location_en: Pilsen, Czech Republic
+  :genre: instrumental post screamo
+  :url: https://madebythefire.bandcamp.com/
 - :name: Saiga
   :genre: stoner rock
   :location_cs: Praha, Česká Republika
   :location_en: Prague, Czech Republic
   :url: http://saigarocks.bandcamp.com/
+- :name: India
+  :location_cs: Česká Republika
+  :location_en: Czech Republic
+  :genre: space kraut rock
+  :url: https://stoned-to-death.bandcamp.com/album/india-kidney-trauma-split-mc
 - :name: Kidney Trauma
   :genre: noise-rock/shoegaze
   :location_cs: Česká Republika
@@ -109,8 +119,8 @@
   :url: http://lambdaband.bandcamp.com/album/space-express
 - :name: Ursprung Trio
   :genre: atmospheric improv
-  :location_cs: Schwandorf, Německo
-  :location_en: Schwandorf, Germany
+  :location_cs: Bamberk, Německo
+  :location_en: Bamberg, Germany
   :url: https://soundcloud.com/ursprungklang
 - :name: Sweeps04
   :genre: ambient industrial doom
