@@ -91,6 +91,12 @@ cs:
         - [SDBS](http://sdbs.cz/)
         - a ostatní
 
+    other:
+      header: Další
+      desc: |
+        - [Tetování: Míša Šarmová](https://www.facebook.com/tattoo.sarming)
+        - [Dreamachine](https://en.wikipedia.org/wiki/Dreamachine)
+
   location:
     header: Místo konání
     description: |

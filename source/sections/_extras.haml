@@ -2,25 +2,29 @@
 
 -#%p.sched
   =# link_to t('schedule.link'), '/program.pdf', class: 'sched-l'
-
-.ex-se.ex-se--talks
-  %h2.ex-h= t('extras.talks.header')
-  :markdown
-    #{t('extras.talks.desc')}
-
-.ex-se.ex-se--ws
-  %h2.ex-h= t('extras.workshops.header')
-  :markdown
-    #{t('extras.workshops.desc')}
-
-- unless t('extras.reading.header', default: '').blank?
-  .ex-se.ex-se--read
-    %h2.ex-h= t('extras.reading.header')
+.ex-wr--se
+  .ex-se.ex-se--talks
+    %h2.ex-h= t('extras.talks.header')
     :markdown
-      #{t('extras.reading.desc')}
+      #{t('extras.talks.desc')}
 
-.ex-se.ex-se--shaping
-  %h2.ex-h= t('extras.shaping.header')
-  :markdown
-    #{t('extras.shaping.desc')}
+  .ex-se.ex-se--ws
+    %h2.ex-h= t('extras.workshops.header')
+    :markdown
+      #{t('extras.workshops.desc')}
 
+  - unless t('extras.reading.header', default: '').blank?
+    .ex-se.ex-se--read
+      %h2.ex-h= t('extras.reading.header')
+      :markdown
+        #{t('extras.reading.desc')}
+
+  .ex-se.ex-se--shaping
+    %h2.ex-h= t('extras.shaping.header')
+    :markdown
+      #{t('extras.shaping.desc')}
+
+  .ex-se.ex-se--other
+    %h2.ex-h= t('extras.other.header')
+    :markdown
+      #{t('extras.other.desc')}

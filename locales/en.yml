@@ -69,15 +69,6 @@ en:
         - Lanterns Workshop
         - and more…
 
-    # reading:
-    #   header: Čtení
-    #   desc: |
-    #     - Petra Strá
-    #     - Básnik Ticho
-    #     - Adam Adámo Plzák
-    #     - Miroslav Sosoi
-    #     - Nutellka Nalžičku
-
     shaping:
       header: Shaping
       desc: |
@@ -87,6 +78,12 @@ en:
         - [JNTD](https://www.facebook.com/janatomdelam)
         - [SDBS](http://sdbs.cz/)
         - and others
+
+    other:
+      header: Others
+      desc: |
+        - [Tattoo: Míša Šarmová](https://www.facebook.com/tattoo.sarming
+        - [Dreamachine](https://en.wikipedia.org/wiki/Dreamachine)
 
   location:
     header: Location
