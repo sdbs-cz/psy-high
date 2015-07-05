@@ -7,7 +7,7 @@ cache:
   - build/
 rvm:
 - 2.2.2
-bundler_args: "--without data"
+bundler_args: "--without data development"
 branches:
   only:
   - master
