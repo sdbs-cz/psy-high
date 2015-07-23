@@ -122,6 +122,23 @@
 .lup-b--kamni
   background-position: 0 -80px
 
+.lup-header.lup-b--kamni
+  position: relative
+
+.lup-header.lup-b--kamni::before
+  position: absolute
+  text-transform: uppercase
+  background: $brownish
+  color: $c-fg-dark
+  font-size: $size-gamma
+  padding: 8px
+  right: 0
+  pointer-events: none
+  \:lang(en) &
+    content: 'Cancelled'
+  \:lang(cs) &
+    content: 'Zrušeno'
+
 .lup-b--pozvakowski
   background-position: 0 -170px
 
