@@ -3,7 +3,7 @@
   .lup-item.lup-item--detail{id: "b-#{band.id}"}<>
     %header.lup-header{class: "lup-b--#{band.id}"}<>
       = link_to "#b-#{band.id}", class: "lup-l" do
-        %h2.lup-name= band.name
+        %h2.lup-name= td(band, :name)
         .lup-byline
           %span.lup-genre
             =band.genre
