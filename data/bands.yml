@@ -1,23 +1,18 @@
 ---
 :headliners:
-- :name: Kamni
-  :id: kamni
-  :genre: stoner doom
-  :location_cs: Moskva, Rusko
-  :location_en: Moscow, Russia
+- :name: Spökraket
+  :id: spokraket
+  :genre: shoegaze / kraut / noise rock
+  :location_cs: Åarhus, Dánsko
+  :location_en: Åarhus, Denmark
   :description_cs: |
-    3 týdny před začátkem festivalu nám Kamni oznámili, že nedorazí. Když jsme se to dověděli, absolutně nám to vyrazilo dech. Na vině je prý nepředvídaná situace v práci některých členů. Nejvíc ze všeho nás mrzí, že se o tom dovídáme teď, mohli jsme věnovat víc času sháněním náhrady, ale v průběhu posledních 3 měsíců vše vypadalo v pořádku a zaskočilo nás to zcela nepřipravené. Snažili jsme se kapelu přimět, abychom se nějak společně pokusili problém vyřešit, ale vše k ničemu.
-
-    Cenu útěchy v podobě jiné kapely nyní mermomocí hledáme, držte palce. Máme nějaké nadějné kandidáty, brzy budeme vědět víc. Moc se vám omlouváme, se situací nemůžeme nic moc jiného dělat. Mrzí nás to.
+    Pomezí kraut, noise a shoegaze ve svém třemi kytarami vybaveném, severskou mlhou zahaleném přednesu předvedou dánští Spörkraket. Blízcí známí Narcosatanicos neváhali a na poslední chvíli kývli na vystoupení po tom, co Kamni na poslední chvíli odřekli koncert. Spörkraket se mimo jiné pišní i komplet diy produkcí, všechny nahrávky nahrávali, mixovali a masterovali sami. Na Psy-High chtěli účinkovat už v roce 2013 a 2014, a nikdy jsme to nezvládli sešroubovat dohromady, letos to konečně vyjde.
   :description_en: |
-    Few days back (3 weeks from the fest) Kamni wrote us, that they will not be able to arrive. When we learned this, we were renderred speechless.  Apparently some unforseeable issues in the workplace of several members is to blame. The worst thing is, that had we known earlier, we could have given much more time to getting a stand-in band. Everything seemed fine on both sides for the last 3 months, so this came completely out of the blue. We tried to persuade the band to somehow try to make it work afterall, but with no success.
-
-    We are trying our best to get a kickass foreign band to ease the pain, wish us luck. We have some hot candidates, we will let you know soon. We are very sorry, we just cannot do anything with the situation.
-
-  :url: https://kamni.bandcamp.com/album/a-t-o-m
+    Danish Spörkraket will come with their three-guitars-riden trip balancing between kraut, noise and shoegaze. These close friends of Narcosatanicos did not hesitate a minute, after Kamni cancelled their performance, standing in. Spörkraket have a completely diy operation going with all their records being recorded, mixed and mastered by themselves. They wished to play on Psy-High since 2013, but we were never able to put it together, so finally it comes up!
+  :url: https://spoekraket.bandcamp.com/album/in-a-witch-forest
   :provider: Bandcamp
-  :embed: "//bandcamp.com/EmbeddedPlayer/album=2085648779/size=large/bgcol=fafafa/linkcol=3AB4C5/artwork=small/transparent=true/"
-  :embed_height: 275
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=738320848/size=large/bgcol=fafafa/linkcol=3AB4C5/artwork=small/transparent=true/"
+  :embed_height: 439
 - :name: Pozvakowski
   :id: pozvakowski
   :genre: experimental, noise rock
@@ -73,6 +68,23 @@
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=4038574320/size=large/bgcol=fafafa/linkcol=3AB4C5/artwork=small/transparent=true/"
   :embed_height: 216
+- :name: Kamni
+  :id: kamni
+  :genre: stoner doom
+  :location_cs: Moskva, Rusko
+  :location_en: Moscow, Russia
+  :description_cs: |
+    3 týdny před začátkem festivalu nám Kamni oznámili, že nedorazí. Když jsme se to dověděli, absolutně nám to vyrazilo dech. Na vině je prý nepředvídaná situace v práci některých členů. Nejvíc ze všeho nás mrzí, že se o tom dovídáme teď, mohli jsme věnovat víc času sháněním náhrady, ale v průběhu posledních 3 měsíců vše vypadalo v pořádku a zaskočilo nás to zcela nepřipravené. Snažili jsme se kapelu přimět, abychom se nějak společně pokusili problém vyřešit, ale vše k ničemu.
+
+    Cenu útěchy v podobě jiné kapely nyní mermomocí hledáme, držte palce. Máme nějaké nadějné kandidáty, brzy budeme vědět víc. Moc se vám omlouváme, se situací nemůžeme nic moc jiného dělat. Mrzí nás to.
+  :description_en: |
+    Few days back (3 weeks from the fest) Kamni wrote us, that they will not be able to arrive. When we learned this, we were renderred speechless.  Apparently some unforseeable issues in the workplace of several members is to blame. The worst thing is, that had we known earlier, we could have given much more time to getting a stand-in band. Everything seemed fine on both sides for the last 3 months, so this came completely out of the blue. We tried to persuade the band to somehow try to make it work afterall, but with no success.
+
+    We are trying our best to get a kickass foreign band to ease the pain, wish us luck. We have some hot candidates, we will let you know soon. We are very sorry, we just cannot do anything with the situation.
+  :url: https://kamni.bandcamp.com/album/a-t-o-m
+  :provider: Bandcamp
+  :embed: "//bandcamp.com/EmbeddedPlayer/album=2085648779/size=large/bgcol=fafafa/linkcol=3AB4C5/artwork=small/transparent=true/"
+  :embed_height: 275
 :support:
 - :name: Fetch!
   :genre: stoner noise rock
