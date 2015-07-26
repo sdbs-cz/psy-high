@@ -68,19 +68,6 @@
   :provider: Bandcamp
   :embed: "//bandcamp.com/EmbeddedPlayer/album=4038574320/size=large/bgcol=fafafa/linkcol=3AB4C5/artwork=small/transparent=true/"
   :embed_height: 216
-- :name: Kamni
-  :id: kamni
-  :genre: stoner doom
-  :location_cs: Moskva, Rusko
-  :location_en: Moscow, Russia
-  :description_cs: |
-    3 týdny před začátkem festivalu nám Kamni oznámili, že nedorazí. Když jsme se to dověděli, absolutně nám to vyrazilo dech. Na vině je prý nepředvídaná situace v práci některých členů. Nejvíc ze všeho nás mrzí, že se o tom dovídáme teď, mohli jsme věnovat víc času sháněním náhrady, ale v průběhu posledních 3 měsíců vše vypadalo v pořádku a zaskočilo nás to zcela nepřipravené. Snažili jsme se kapelu přimět, abychom se nějak společně pokusili problém vyřešit, ale vše k ničemu.
-  :description_en: |
-    Few days back (3 weeks from the fest) Kamni wrote us, that they will not be able to arrive. When we learned this, we were renderred speechless.  Apparently some unforseeable issues in the workplace of several members is to blame. The worst thing is, that had we known earlier, we could have given much more time to getting a stand-in band. Everything seemed fine on both sides for the last 3 months, so this came completely out of the blue. We tried to persuade the band to somehow try to make it work afterall, but with no success.
-  :url: https://kamni.bandcamp.com/album/a-t-o-m
-  :provider: Bandcamp
-  :embed: "//bandcamp.com/EmbeddedPlayer/album=2085648779/size=large/bgcol=fafafa/linkcol=3AB4C5/artwork=small/transparent=true/"
-  :embed_height: 275
 :support:
 - :name: Fetch!
   :genre: stoner noise rock
