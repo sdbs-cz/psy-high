@@ -172,7 +172,7 @@ cs:
       ok: Za okamžik obdržíte e-mail s informací o registraci. Těšíme se na vás!
       error: 'Při odesílání došlo k chybě, zkuste to prosím znovu nebo se <a href="mailto:tickets@sdbs.cz">nám ozvěte</a>.'
       invalid: 'Registraci nebylo možné dokončit, zkontrolujte prosím zadané údaje.'
-      soldout: 'Kompletně vyprodáno!'
+      soldout: 'Kompletně vyprodáno! Na místě nebudou k dispozici žádné vstupenky. Zkuste nám napsat a domluvit se individuálně přes <a href="mailto:tickets@sdbs.cz">tickets@sdbs.cz</a>'
 
   partners:
     header: Partneři

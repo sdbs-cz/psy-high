@@ -157,7 +157,7 @@ en:
       ok: 'Thanks, you will receive further information in your e-mail. See you soon!'
       error: 'Submission failed, please try again or <a href="mailto:tickets@sdbs.cz">contact us</a>.'
       invalid: 'The form cannot be submitted, please, check your entry and and try again.'
-      soldout: 'Completely sold out!'
+      soldout: 'Completely sold out! There will be no tickets available on the spot. Try to reach us through <a href="mailto:tickets@sdbs.cz">tickets@sdbs.cz</a>, we are open to squeezing you in.'
 
   partners:
     header: Partners
