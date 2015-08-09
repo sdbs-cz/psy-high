@@ -125,6 +125,7 @@ function ticketsCount(cb) {
 var $form = document.getElementById('tickets-f');
 var $fieldset = document.getElementById('tickets-f-set');
 var $flashElm = $form.querySelector('.js-flash');
+var $inputs = document.getElementById('tickets-inputs');
 
 // On load: Hit API server to check if any tickets are available
 ticketsCount(function(err, result) {
@@ -132,8 +133,8 @@ ticketsCount(function(err, result) {
     TicketsForm($form, $flashElm);
   }
   else {
-    $fieldset.setAttribute('disabled', true);
     setFlashMessage($flashElm, 'soldout');
+    $inputs.classList.add('js-hide');
   }
 })
 
