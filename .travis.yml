@@ -5,8 +5,12 @@ cache:
   apt: true
   directories:
   - build/
+addons:
+  apt:
+    packages:
+    - lftp
 rvm:
-- 2.2.2
+- 2.3
 bundler_args: "--without data development"
 branches:
   only:
@@ -16,13 +20,9 @@ env:
   - BUILD_LANG=cs
   - BUILD_LANG=en
   global:
-  - secure: aCCb45GaB75AtaKLT9sYaVeteV3V7njXz5CgD4+mgbDKAYXhcwkaC2xwq8ZwZNw4nMt8gbgd6vFqOUCE+RoBd6UFhU7e2ryPsBTYvltRXPzBwVHzq3ElmsDIAzHRFNsQaJSDE8+OFUwxnwP+6Kzle9boMf9ffaBaxe/6V533sfU=
-  - secure: bYBZteQLMzKmiDkXRmUsFxnrTpC80WQrgfjGYjixtsGjombg+O71ZF/hoec4egwvsAFuwekUx2eOjJ1Y+NjVNYdPHaWkUWKPjAqCMYR+U3RfVh8hV3LAh+cw/0GV381YALWS+TSu04Y/BXZJXf712v2I9c8MPNLoydOKPs3DSIQ=
-  - secure: e1IWdn37+yLU229MRul4zw+50x1hRIXWcsFne8kgShH/mLqSpf5jj0xQ0NpmeAjNUh5dj7uYHFkPp846BqArwy8mURhKuLGsZ8AOCPFKH4E76KiDumh0yo4igEXhHY5dtaW9tMBr6yWiXwoe0MdV57Pt/ImemNSYe+hPVVYeSVQ=
+  - secure: MKL0KjiO8SPCQdXVZGhGSO9FbGb9iHibEUSCJZzK4s8QGLP/B7a61aQJDk0xUZKIh287bl1zKzi6ZRzw5KMaZsEe4+hqSB2q3hQhw30H+Bb93zvvWDi53FaFKLG1QmI4rE+PSeFNTcWrHYeiDVdWnbTNZLDmOy5djuWYoDUvxsg=
+  - secure: IojssJ8HmJ5BP93Sdittz5qGua4UlgHKOODbvMhsw5JbXneBmtp/pvEAjuSxJ5nVm9TJIsJu5T33CrRFPz3vWGPGpoDEvTLEtpaQEHRU4yHpVe0dza6t+ldlfmivoKV7+cl6tn3ym56HASiianDgeHIJ63+4OCXPJsvTLvptkCs=
+  - secure: LC3qWQYK0mlCeNZfmChPSK2gfPlM7c8fCHlR/UIKedT2Ebywq2WDRwun/CwpPlJjfwSsGTRKQWYFpU2afMiZwvxMOYmo0lZ/7HhwHkMN3fpG3pnkhXU7gANCbSLJXJFiIInLLndBr12KeAcYhGyU0O/Z8f0Fx7Zg7CPDr1qAodA=
 before_script:
 - echo "set ssl:verify-certificate no" >> ~/.lftprc
 script: bundle exec middleman deploy
-addons:
-  apt:
-    packages:
-    - lftp
