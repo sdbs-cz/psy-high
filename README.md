@@ -1,12 +1,10 @@
-# Website for Psy-High 2015
-
-See it live [in English](http://www.psy-high.en/2015/) and [in Czech](http://www.psy-high.cz/2015/).
+# Website for Psy-High 2017
 
 ## Development
 
 ### Requirements
 
-* Ruby 2.0+
+* Ruby 2.4+
 * Bundler
 * lftp (for deployment)
 
@@ -36,7 +34,7 @@ Set the following environment variables:
 * FTP_USER
 * FTP_PASSWORD
 
-Files are uploaded to `/cz/2015` (Czech) or `/eu/2015` (English) folders respectively.
+Files are uploaded to `/cz/2017` (Czech) or `/eu/2017` (English) folders respectively.
 
 Either Czech or English version is deployed, depending on `BUILD_LANG` environment variable, for example:
 
