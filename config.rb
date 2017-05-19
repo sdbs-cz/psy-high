@@ -5,8 +5,9 @@
 # require 'normalize-scss'
 # require 'susy'
 require 'lib/custom_sass'
-activate :neat
+# activate :neat
 # activate :bourbon
+activate :sprockets
 
 # Change Compass configuration
 # compass_config do |config|

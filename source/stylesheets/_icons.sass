@@ -1,9 +1,13 @@
-@import compass/css3
 //
 // Icon Font: fontcustom
 //
 
 
-+font-face(fontcustom, font-files('fontcustom.woff', 'fontcustom.ttf', 'fontcustom.svg'), 'fontcustom.eot', normal, normal)
+$font_file: '../fonts/fontcustom'
+
+@font-face
+  font-family: 'fontcustom'
+  src: url("#{$font_file}.eot")
+  src: url("#{$font_file}.eot?#iefix") format('embedded-opentype'), url("#{$font_file}.woff") format('woff'), url("#{$font_file}.ttf")  format('truetype')
 
 $icons: (bandzone: '\62'/* b */, down: '\2193'/* ↓ */, fb: '\66'/* f */, gplus: '\67'/* g */, lastfm: '\6c'/* l */, left: '\2190'/* ← */, menu: '\2630'/* ☰ */, nyx: '\6e'/* n */, play: '\25b6'/* ▶ */, right: '\2192'/* → */, up: '\2191'/* ↑ */, )
