@@ -2,8 +2,7 @@
   .location-txt--about
     %h1.se-header= t('location.header')
 
-    :markdown
-      #{ t('location.description') }
+    =markdown t('location.description')
 
     .location-gallery
       - (0..12).each do |i|
@@ -17,5 +16,4 @@
     - [:food, :bar, :accomodation, :parking].each do |am|
       %section.location-am--s
         %h3= t("location.amenities.#{am}.header")
-        :markdown
-          #{t("location.amenities.#{am}.desc")}
+        =markdown t("location.amenities.#{am}.desc")

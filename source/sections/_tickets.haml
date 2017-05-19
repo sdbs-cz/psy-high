@@ -8,8 +8,7 @@
 
 .tickets-b.tickets-b--order
   %h2.se-header= t('tickets.order.header')
-  :markdown
-    #{ t('tickets.order.description') }
+  =markdown t('tickets.order.description')
 
   = form_tag 'http://progrestinate.com/ticketpro/actionAdd.php', id: 'tickets-f', class: 'tickets-f', method: 'post' do
     .js-flash.js-hide{data: { ok: t('tickets.flash.ok'), error: t('tickets.flash.error'), invalid: t('tickets.flash.invalid'), soldout: t('tickets.flash.soldout')} }

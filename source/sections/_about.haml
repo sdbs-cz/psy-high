@@ -7,8 +7,7 @@
         - image_tag('about-vid.jpg', alt: "Psy-High '14 Report")
 
     .about-intro-txt
-      :markdown
-        #{ t('about.intro')}
+      =markdown t('about.intro')
   .about-more-wr
     #about-more.about-more.js-hide.js-more{data: {category: 'About', label: 'More'}}
       =# partial "sections/about_text_#{I18n.locale}"
