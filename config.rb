@@ -53,6 +53,7 @@ deploy_paths = {
   en: 'eu'
 }
 
+=begin
 if BUILD_LANG
   require 'lib/middleman-deploy/methods/lftp'
   activate :deploy do |deploy|
@@ -66,6 +67,7 @@ if BUILD_LANG
     deploy.flags = '--verbose'
   end
 end
+=end
 
 ###
 # Helpers
