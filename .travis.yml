@@ -1,5 +1,5 @@
-language: ruby
 sudo: false
+dist: trusty
 cache:
   bundler: true
   apt: true
@@ -10,7 +10,7 @@ addons:
     packages:
     - lftp
 rvm:
-- 2.3
+- 2.4
 bundler_args: "--without data development"
 branches:
   only:
@@ -25,4 +25,3 @@ env:
   - secure: LC3qWQYK0mlCeNZfmChPSK2gfPlM7c8fCHlR/UIKedT2Ebywq2WDRwun/CwpPlJjfwSsGTRKQWYFpU2afMiZwvxMOYmo0lZ/7HhwHkMN3fpG3pnkhXU7gANCbSLJXJFiIInLLndBr12KeAcYhGyU0O/Z8f0Fx7Zg7CPDr1qAodA=
 before_script:
 - echo "set ssl:verify-certificate no" >> ~/.lftprc
-script: bundle exec middleman deploy
