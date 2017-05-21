@@ -2,42 +2,8 @@
 %article
 
   .about-intro
-    .about-intro-vid
-      = youtube_embed('GI177IRrx9A', 'about-vid--intro') do
-        - image_tag('about-vid.jpg', alt: "Psy-High '14 Report")
-
     .about-intro-txt
       =markdown t('about.intro')
   .about-more-wr
     #about-more.about-more.js-hide.js-more{data: {category: 'About', label: 'More'}}
-      =# partial "sections/about_text_#{I18n.locale}"
-
-      .about-s
-        %h2.about-h Psy-High 2014
-        .about-txt
-          :markdown
-            * [Foto: /-\\](https://www.flickr.com/photos/100241479@N08/sets/72157650194192922/)
-            * [Foto: Vice](http://www.vice.com/cs/read/lidi-a-psi-z-planety-psy-high-896)
-            * [Foto: FullMoon Zine](http://www.fullmoonzine.cz/galerie/psy-high-2014-22-8-2014-lom-u-sv-josefa-ho-ice)
-            * [Foto: The Aardvark](http://www.the-aardvark.cz/psy-high-2014-foto)
-            * [Report: The Aardvark](http://www.the-aardvark.cz/psy-high-2014-i)
-            * [Report: Marast Music](http://www.marastmusic.com/Clanky/PSY-HIGH-2014-patek)
-            * [Report: WWWar](http://wiwontwor.com/2014/08/25/psy-high-14-910/)
-
-        = youtube_embed('9IbjqNvLpOc', 'about-vid') do
-          - image_tag('about/vid-14inv.jpg', alt: "Psy-High '14 Invitation")
-
-        = youtube_embed('oZ8LyCmS8fM', 'about-vid about-vid--omega') do
-          - image_tag('about/vid-14teas.jpg', alt: "Psy-High '14 “experience” teaser")
-      .about-s
-        %h2.about-h Psy-High 2013
-        .about-txt
-          :markdown
-            * [Foto: /-\\](https://secure.flickr.com/photos/100241479@N08/collections/72157635581784951)
-            * [Report: Psychedelic.cz](http://psychedelic.cz/ohlednuti-psy-high-2013-hell-yes/)
-
-        = youtube_embed('6Kscs_B5Pds', 'about-vid') do
-          - image_tag('about/vid-13exp.jpg', alt: "Psy-High '13 “expectations” teaser")
-
-        = youtube_embed('w5-nF0GzCLQ', 'about-vid') do
-          - image_tag('about/vid-13.jpg', alt: 'Psy-High report 2013')
+      =markdown t('about.more')

@@ -1,15 +1,13 @@
 %h1.se-header= t('lineup.header')
 
+// která třída??
+=markdown t('lineup.desc')
+
 //%p.sched
 //  = link_to t('schedule.link'), '/program.pdf', class: 'sched-l'
 
-.lup-wr--headliners<>
-  = partial('partials/band', collection: lineup_data(:headliners), locals: {arity: 2, type: 'detail'})
-
-.lup-wr--major<>
-  = partial('partials/band', collection: lineup_data(:support), locals: {arity: 3, type: 'link'})
-
-%section.lup-wr--sensoria
-  %h2.sensoria--header.se-header= t('lineup.sensoria.header')
-  .sensoria--desc
-    =markdown t('lineup.sensoria.desc')
+//.lup-wr--headliners<>
+//  = partial('partials/band', collection: lineup_data(:headliners), locals: {arity: 2, type: 'detail'})
+//
+//.lup-wr--major<>
+//  = partial('partials/band', collection: lineup_data(:support), locals: {arity: 3, type: 'link'})

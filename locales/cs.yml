@@ -23,126 +23,64 @@ cs:
     alt_locale: en
   about:
     intro: |
-      Psy-High je umělecko-kulturní zážitek s celistvě pojatým programem, ve kterém spoluhrají hudba, semináře, divadlo, debaty, předčítání, cvičení. Důraz je v neposlední řadě kladen na samotné prostředí události, které je přetvořené ku obrazu koncepce festivalu. Psy-High je příležitost věnovat se v jedinečné atmosféře monumentálního prostoru a za doprovodu psychedelií poučené hudby zásadním otázkám současné kontrakultury.
+      Psy-High je festival psychedelické kultury, na kterém se snažíme kromě širokého programu (hudba, semináře, divadlo, debaty, předčítání, cvičení, workshopy) nabídnout především jiný prožitek, nejen skrze jedinečné prostředí a atmosféru. Na úpravách prostoru pracuje skupina stavařů, architektů, výtvarníků a designérů, od zkušených po sebezapřená městská dítka. Jakmile uvidíte, poznáte, že tohle není úplně normální akce/party/festival. Psy High pořádáme zásadně bez sponzorů a vlastníma rukama.
 
-      Oproti [druhému ročníku](/2014/) došlo k několika změnám. Protože považujeme za nutné dopřát všem zůčastněným větší prostor nasát výjimečnou atmosféru, a synergii s Psy High a jeho idejemi posunout dále, rozhodli jsme se dobu konání festival rozšířit na čtyři plnohodnotné dny.
+      **Principy dočasné autonomní zóny Psy-High 2017:**
 
-      Základní východisko Psy High zůstává stejné i tento rok. Děláme ho vlastníma rukama, bez myšlenek na zisk a bez sponzorů – tedy kromě rostoucího počtu těch, kdo živí Psy-High svojí osobní energií.
-    vid:
-      header: Další videa
+      1. Zpomal
+         1. Neběhejte, nespěchejte, nekřičte, nehlučte.
+      1. Dobře se starej o sebe i o ostatní
+         1. Dávejte pozor na pitný režim, bezpečnost, důstojnost, pořádek a náladu kolem sebe.
+      1. Vypni to
+         1. Nepoužívejte mobily ani jinou elektroniku
+      1. Nahraď svůj automatismus
+         1. Zkus se zbavit svého každodenního způsobu vnímání
+
+    more: |
+      Tematicky je čtvrtý ročník P-H věnovaný elementu ohně, prometheánské mytologii a dalším souvisejícím konceptům. Hlavní myšlenky utvářející PH jsou už tradičně "účastná kultura" (snaha zapojit každého co nejvíc do dění, smazat rozdíl mezi návštěvníky a pořadateli), "dark green spirituality" (snaha vnímat hlubší významy přírody, nejen ekologicko-rekreační), "obnova archaismu" (snaha o reinterpretaci šamanistických a tribalistických principů), "ontologický indeterminismus" (snaha nepovažovat žádnou konkrétní vizi reality za danou) a další. Tenhle ideový mix P-H funguje díky inspiraci konceptem Dočasné Autonomní Zóny, tedy vymezeného prostoru ve kterém na nějakou dobu fungují jiná pravidla, než na jaká jsme zvyklí z každodenního života.
+
+      **Opravdu se účastníš jen tehdy, zapojíš-li se.**
+
+      Sháníme dobrovolníky na stavbu, info/merch, bary, safety watch a další.
+
+      - 2-3 zcela volné dny
+      - být něčeho takového opravdu součástí nenahradíš.
+      - ozvěte se na [pomoc@sdbs.cz](mailto:pomoc@sdbs.cz)
+
   lineup:
     header: Hudba
     desc: |
-      Hudebně vás čeká vytříbenější zaměření na psychedelii napříč škálou jejích žánrů. Dramaturgickou ochutnávku si můžete dopřát poslechem prvního výběru z téměř 30 vystupujících kapel:
+      Mix nejrůznějších žánrů s jedinou spojitostí: psychedelie a jiné stavy hudebního (po)vědomí. Stoner, psych rock, doom, drone, shoe-gaze, jazzová avantgarda a nespočet žánrů elektronické hudby. 
 
-    sensoria:
-      header: Sensorium
-      desc: |
-        Blízko baru uslyšíte jedinečný mix žánrů, které nejsou v hlavním hudebním programu zastoupeny.
-
-        Program zajistí koprodukce Amalgam / [Letmo Productions](http://www.letmo.net/), [Altershapes](http://altershapes.org/) a [AVA](http://www.avavava.cz/).
-
+      Dvě jedinečné scény: hlavní stage s masivním zvukem a kontaktní, semknutější Sensorium s čtyř-kanálovým zvukem.
   extras:
-    header: Nejen hudba…
+    header: Mimo ní
     desc: |
-      Mimohudební program zažije velký posun a přibude na jeho významu v celku: větší počet seminářů, debat, cvičení a workshopů, ve kterých dojde na témata jako jsou intersubjektivita, právo na sebeurčení, archaic revival (návrat archaismu), aktivismus, účastná kultura, okultismus a obecně na dávku konceptů a myšlenek z aktuální i klasické kontrakultury.
-
-    talks:
-      header: Přednášky
-      desc: |
-        - Lucidní snění
-        - Historie změněných stavů vědomí a současný psychedelický výzkum
-        - Otevrena diskuze: Současná klinicka psychiatrie a výzkum v ČR
-        - Úvod do teorie 8 okruhů vědomí
-        - Magie, alchymie, theurgie a mystika
-        - Meditace a vokalizace
-        - Kritické myšlení a hermeneutika
-
-    workshops:
-      header: Workshopy / Akce / Cvičení
-      desc: |
-        - Meditace
-        - Joga
-        - Recy knihy
-        - Hudební nástroje po svém
-        - Sítotisk
-        - Typografie
-        - Tvorba z hlíny
-        - Lucerny
-        - Dumpster diving
-        - a další…
-
-    reading:
-      header: Čtení
-      desc: |
-        - Petra Strá
-        - Básnik Ticho
-        - Adam Adámo Plzák
-        - Miroslav Sosoi
-        - Nutellka Nalžičku
-        - Janele z Liků
-        - Lucie Rušková
-        - Nůžka
-
-    shaping:
-      header: Instalace v prostoru
-      desc: |
-        - [The Cosmik Kollektiv](http://www.cosmikkollectiv.org/) – DE/CHE
-        - [Chaos Company](http://www.chaoscompany.cz/ )
-        - [Lesmír](http://lesmir.org/page/lesm-r )
-        - [JNTD](https://www.facebook.com/janatomdelam)
-        - [SDBS](http://sdbs.cz/)
-        - a ostatní
-
-    other:
-      header: Další
-      desc: |
-        - [Tetování: Míša Šarmanová](https://www.facebook.com/tattoo.sarming)
-        - [Dreamachine](https://en.wikipedia.org/wiki/Dreamachine)
-        - [PirateBox](https://en.wikipedia.org/wiki/PirateBox)
+      Přednášky, workshopy, divadlo, cvičení, instalace, dream-machines, knihovnička...
 
   location:
-    header: Místo konání
+    header: Lokace
     description: |
-      Na loňskou zemitou, chrámovou atmosféru lomu U sv. Josefa naváže pokřtění(první kulturní akce) zatopeného lomu v západních Čechách. Lom se rozpíná přes 7,5 hektaru a jeho plocha je korunovaná 13 000 m² pěticípé, průzračné vodní plochy.
-      Přesnou lokaci prozatím nechceme zveřejňovat. Pokud místo poznáváte z fotografií, prosíme o diskrétnost.
-      Přesnou lokaci se dozvíte e-mailem měsíc před začátkem festivalu.
-      Pro potřeby plánování prozradíme, že lokace se nachází do 50 km od Plzně.
-    instructions: |
-      ## Doprava
-
-      GPS
-      : [50.3758897°N, 15.6457500°E](http://mapy.cz/s/cavt){:target="_blank"}
-
-      Vlak
-      : [Hořice v Podkrkonoší](http://jizdnirady.idnes.cz/vlakyautobusymhdvse/spojeni/?date=22.08.2014&time=17%3a00&t=Ho%c5%99ice+v+Podkrkono%c5%a1%c3%ad&tc=100003&byarr=true)
-
-      Autobus
-      : [Hořice, aut.nádr.](http://jizdnirady.idnes.cz/vlakyautobusymhdvse/spojeni/?date=22.08.2014&time=17%3a00&t=Ho%c5%99ice+%5bJC%5d%2c%2caut.n%c3%a1dr.&tc=200003&byarr=true)
-
-      Spolujízda
-      : Najděte si spolujezdce přes [Facebook skupinu](https://www.facebook.com/groups/1438441283110360/) nebo přes [Jízdomat](http://www.jizdomat.cz/psy-high-14).
-
-      Parkování pouze ve městě, bez omezení.
-
-      *Vstup psům je povolen, za předpokladu, že po nich bude uklizeno a že zůstanou pod dozorem.*
+      Rozhodli jsme se změnit přístup a pro finální, poslední PH jít cestou poučenější a znovu využít lokaci z roku 2015. V mnohém jsme naše vize před dvěma roky promarnili a podcenili jsme prostor. I proto zdviháme podruhé výzvu tohoto nenahraditelného koutu, který žádná z nově prozkoumaných lokalit (přes 200!) neměla šanci předčit.
+      
+      Lom se rozpíná přes 7,5 hektaru a jeho plocha je korunovaná 13 000 m² pěticípé, průzračné minerální vodní plochy. Přesnou lokaci se dozvíte e-mailem měsíc před začátkem festivalu. Pro potřeby plánování prozradíme, že lokace se nachází do 50 km od Plzně.
 
     amenities:
       header: Zázemí
+      desc: |
+        Berte s sebou jen to nejnutnější!
 
       food:
-        header: Strava
+        header: Občerstvení
         desc: |
-          Vegetariánská i pro masožravé, levnější i luxusnější, od snídaně až po půlnoční svačinu. Oblíbený grill Fu-Munchies doplní jeho vegetariánská obdoba a přibude i vývařovna [Food not bombs](http://food-not-bombs.cz/).
-      bar:
-        header: Bar
-        desc: |
-          Poučili jsme se z loňského roku. Bar má navýšenou kapacitu a odlehčí mu i samostatný výčep. Bar pojede téměř nonstop.
+          Několik barů, čajovna, kavárna, Food not bombs (vegan), FU-Munchies (maso), noMAD’s chilli (vegan grill).
+        postscriptum: |
+          Opět bude možné napéct sladké, které od vás vykoupíme za výrobní cenu! Detaily přijdou v účastnickém e-mailu.
 
       accomodation:
-        header: Ubytování
+        header: Spaní
         desc: |
-          - Stanové městečko v blízkosti (v ceně)
+          - Stanové městečko (nebo vsaďte na přízeň lomu)
           - Tekoucí voda (ale žádné sprchy)
           - Chemické toalety
 
@@ -159,13 +97,14 @@ cs:
     order:
       header: Lístky
       description: |
-        Z pragmatických důvodů omezíme počet lístků na 400 kusů. Vysoký zájem v loňském roce nás sice těší, ale zároveň i tíží, protože křehká atmosféra akcí jako je Psy-High (organizovaných amatérsky a z nadšení) podle nás potřebuje pomalejší růst a nechceme se stát davovou akcí.
+        Z pragmatických důvodů omezíme počet lístků na 420 kusů. Křehká atmosféra akcí jako je Psy-High (organizovaných amatérsky a z nadšení) vyžaduje intimnější prostředí.
 
-        Toto je **poslední možnost** koupit lístky! V této finální vlně jsou k dostání za 720 Kč.
+        Ceny lístků nejsou rozděleny dle časových vln prodeje. Dáváme vám možnost vybrat si kolik platíte. Každá cenová úroveň má však omezenou dostupnost.
 
-        Pro platbu ze zahraničí lístky objednejte z [anglické verze webu](http://www.psy-high.eu/2015/#tickets).
+        Pro platbu ze zahraničí lístky objednejte z anglické verze webu.
 
-        Předprodejní aplikaci jsme si programovali sami a nevylučujeme potíže s některými e-mail poskytovateli. Pokud vám přišel nesrozumitelný e-mail či je něco jiného v nepořádku, prosím, ozvěte se nám na [tickets@sdbs.cz](mailto:tickets@sdbs.cz).
+        Předprodejní aplikaci jsme si programovali sami a nevylučujeme potíže s některými e-mail poskytovateli a další problémy. Pokud vám přišel nesrozumitelný e-mail či je něco jiného v nepořádku, prosím zachovejte trpělivost, ozvěte se nám na [tickets@sdbs.cz](mailto:tickets@sdbs.cz).
+
     amount: Počet lístků
     submit: Objednat lístky
     flash:
