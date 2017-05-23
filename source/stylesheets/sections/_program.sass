@@ -1,10 +1,23 @@
 // Probably a temporary file
 .wr--program
+  @extend %section-wrapper
   background: image-url('program-bg.jpg') #aeaeae repeat-y center top
+  // min-height: 100vh
+  padding: $section-offset 0
 .wr--lineup, .wr--extras
   // @extend %bg-pattern
   @extend %section
 
+.se--program
+  @extend %section
+
+.se-header--program
+  padding-bottom: $section-offset
+
+.program-txt
+  +text-background
+  +pad
+  margin-bottom: 2rem
 
 +media($medium-screen-up)
   .se--lineup
@@ -12,3 +25,6 @@
   .se--extras
     +shift(1 of 12)
     +span-columns(10 of 12)
+
+  .program-txt
+    +span-columns(4)

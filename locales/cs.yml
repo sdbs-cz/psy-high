@@ -50,7 +50,8 @@ cs:
       * být něčeho takového opravdu součástí nenahradíš.
 
       Ozvěte se na [pomoc@sdbs.cz](mailto:pomoc@sdbs.cz)
-
+  program:
+    header: Program
   lineup:
     header: Hudba
     desc: |
