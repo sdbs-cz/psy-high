@@ -60,13 +60,13 @@
   };
 
 
-// We look for all the internal links in the documents and attach the smoothscroll function
-document.addEventListener("DOMContentLoaded", function () {
-    var links = document.querySelectorAll('.js-scroll');
-    forEach(links, function(link){
-      link.addEventListener('click', scrollLinkHandler, false);
-    });
-});
+  // We look for all the internal links in the documents and attach the smoothscroll function
+  document.addEventListener('DOMContentLoaded', function () {
+      var links = document.querySelectorAll('.js-scroll');
+      forEach(links, function(link){
+        link.addEventListener('click', scrollLinkHandler, false);
+      });
+  });
 
 })();
 
