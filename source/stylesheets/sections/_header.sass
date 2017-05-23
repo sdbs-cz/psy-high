@@ -2,7 +2,7 @@ $header-logo: image-url('header-logo.png') center / contain no-repeat
 
 .wr--header
   @extend %section-wrapper
-  +inverse-colors
+  // +inverse-colors
   +clearfix
   // Fallback
   // background: image-url('header-logo.png') center no-repeat $c-bg-shade
@@ -44,7 +44,9 @@ $h-pad: 1rem
   text-align: right
   // +position(absolute, $h-pad $h-pad null null)
   float: right
-  text-shadow: 0 0 2px $c-bg-dark
+  color: $c-fg-dark
+  text-shadow: 0 0 5px $c-bg-dark, 0 0 2px $c-bg-dark, 0 0 1px $c-bg-dark
+  font-weight: bold
 
 .h--bot
   text-align: center
