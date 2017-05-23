@@ -2,17 +2,35 @@
 .soc-l
   color: $c-fg-dark
   text-decoration: none
-  &:hover, &:focus
-    color: $c-fg-alt
+  border-radius: 100%
+  &:hover, &:focus, &:active
+    color: $c-fg-light
+    &:after
+      background-color: $c-bg-light
+  &:active
+    color: $c-accent-light
 
 .soc-l
   display: inline-block
   margin: 0 0.5rem
   font-size: 0
+  position: relative
   &:before
     +icon-base
     line-height: 1
     font-size: 3rem
+    position: relative
+    z-index: 2
+  &:after
+    content: ''
+    display: block
+    width: 2rem
+    height: 2rem
+
+    position: absolute
+    top: 0.5rem
+    left: 0.5rem
+    z-index: 1
   span
     display: none
 
