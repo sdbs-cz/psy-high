@@ -9,7 +9,6 @@
 //= require lib/_scrollspy
 //= require _classes
 //= require _scroll
-//= require _nav
 //= require _more
 //= require _overlays
 //= require _lineup
