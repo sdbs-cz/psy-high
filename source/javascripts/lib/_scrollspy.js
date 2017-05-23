@@ -7,8 +7,9 @@ var ScrollSpy = function(sections, options){
         var lastVisible;
         for (var i = 0; i < _sections.length; i++) {
             var section = _sections[i];
-            var offset = section.offsetTop;
-
+            // FIXME: there's something fishy because offset is always 1px off both in Fx and Chrome
+            // perhaps this is some miscalculation in scrollTop?
+            var offset = section.offsetTop - 1;
             if(offset <= scrollY) {
                 // If the element's top edge is above
                 // the viewport, store it as active
