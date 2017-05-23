@@ -32,7 +32,7 @@ activate :sprockets
 
 ignore '/partials/*'
 
-set :build_root, '/2015'
+set :build_root, '/2017'
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
