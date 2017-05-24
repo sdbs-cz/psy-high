@@ -48,27 +48,6 @@ else # assume production build
   activate :i18n, :langs => [BUILD_LANG]
 end
 
-deploy_paths = {
-  cs: 'cz',
-  en: 'eu'
-}
-
-=begin
-if BUILD_LANG
-  require 'lib/middleman-deploy/methods/lftp'
-  activate :deploy do |deploy|
-    deploy.method = :lftp
-    deploy.build_before = true
-    deploy.host = ENV['FTP_HOST']
-    deploy.user = ENV['FTP_USER']
-    deploy.password = ENV['FTP_PASSWORD']
-    deploy.path = deploy_paths.fetch(BUILD_LANG) + build_root
-    deploy.clean = true
-    deploy.flags = '--verbose'
-  end
-end
-=end
-
 ###
 # Helpers
 ###

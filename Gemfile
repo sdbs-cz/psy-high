@@ -3,7 +3,6 @@
 source 'http://rubygems.org'
 
 gem 'middleman', '~>4.2'
-# gem 'middleman-deploy'
 gem 'middleman-sprockets'
 
 gem 'haml'
