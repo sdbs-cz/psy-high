@@ -104,15 +104,8 @@ en:
 
         The tickets will not be released in waves - you can choose the ticket price that feels right for you, but there is a limited number of tickets in each price category.
 
-        (We made the ticket sale app ourselves, so there are no guarantees on how it will behave in contact with some e-mail service providers and such. If you happen to receive an incomprehensible e-mail or two, please stay calm and let us know at tickets@sdbs.cz.)
-    amount: Amount
-    submit: Order tickets
-    flash:
-      ok: 'Thanks, you will receive further information in your e-mail. See you soon!'
-      error: 'Submission failed, please try again or <a href="mailto:tickets@sdbs.cz">contact us</a>.'
-      invalid: 'The form cannot be submitted, please, check your entry and and try again.'
-      soldout: 'Completely sold out! There will be no tickets available on the spot. Try to reach us through <a href="mailto:tickets@sdbs.cz">tickets@sdbs.cz</a>, we are open to squeezing you in.'
-
+        <small>We made the ticket sale app ourselves, so there are no guarantees on how it will behave in contact with some e-mail service providers and such. If you happen to receive an incomprehensible e-mail or two, please stay calm and let us know at [tickets@sdbs.cz](mailto:tickets@sdbs.cz).</small>
+      link: Order tickets
   partners:
     header: Partners
     media: For media exposure we wish to thank

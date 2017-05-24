@@ -12,54 +12,8 @@
   +pad
   +text-background
 
-.tickets-l--shop
+.tickets-l--wr
   text-align: center
   padding-top: 2rem
   a
     +button-external
-
-.tickets-f
-  margin: 2rem auto 0
-  max-width: 25rem
-
-.tickets-f-row
-  margin-bottom: 0
-
-.f--ticket_amount
-  input
-    max-width: 3.5em
-
-.f--submit
-  text-align: center
-  .js-submit
-    background: $brownish
-    border: 2px solid $brownish
-    &:hover, &:focus, &:active
-      background-color: rgba($brownish, 0.2)
-      color: $c-fg-light
-
-+media($medium-screen-up)
-  .tickets-b--shop
-    +span-columns(4)
-
-  .tickets-b--order
-    // +span-columns(4)
-    // +omega
-    // +shift(4)
-
-+media($large-screen-up)
-  .tickets-b--shop
-    +span-columns(5)
-
-  .tickets-b--order
-    +span-columns(8)
-    +shift(2)
-
-  .tickets-f-row
-    +row
-
-  .f--ticket_email
-    +span-columns(5 of 8)
-  .f--ticket_amount
-    +span-columns(3 of 8)
-    +omega

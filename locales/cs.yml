@@ -103,23 +103,14 @@ cs:
     order:
       header: Lístky
       description: |
-        Účastnický poplatek platí všichni - hlavní organizátoři, vystupující, pracující, prostě všichni (prací si na svůj poplatek můžou vydělat samozřejmě). Zvýšená cena vstupného oproti loňskému roku obstará zdroje na posílení stavby, infrastruktury, programu, živení dobrovolníků atp.
+        Účastnický poplatek platí všichni – hlavní organizátoři, vystupující, pracující, prostě všichni (prací si na svůj poplatek můžou vydělat samozřejmě). Zvýšená cena vstupného oproti loňskému roku obstará zdroje na posílení stavby, infrastruktury, programu, živení dobrovolníků atp.
 
         Počet lístků omezíme na 420 kusů. Křehká atmosféra akcí jako je Psy-High (organizovaných amatérsky a z nadšení) si žádá intimnější prostředí.
 
         Ceny lístků nejsou rozděleny podle časových vln prodeje. Dáváme vám možnost vybrat si, kolik platíte, ale v každé cenové kategorii je jen určitý počet lístků.
 
-        Pro platbu ze zahraničí lístky objednejte z [anglické verze webu](http://www.psy-high.eu).
-
-        (Předprodejní aplikaci jsme si programovali sami, takže nevylučujeme potíže s některými poskytovateli e-mailových služeb (a další problémy). Pokud vám přišel nesrozumitelný e-mail nebo je něco jiného v nepořádku, prosím zachovejte klid, zapněte trpělivost a ozvěte se nám na tickets@sdbs.cz.)
-
-    amount: Počet lístků
-    submit: Objednat lístky
-    flash:
-      ok: Za okamžik obdržíte e-mail s informací o registraci. Těšíme se na vás!
-      error: 'Při odesílání došlo k chybě, zkuste to prosím znovu nebo se <a href="mailto:tickets@sdbs.cz">nám ozvěte</a>.'
-      invalid: 'Registraci nebylo možné dokončit, zkontrolujte prosím zadané údaje.'
-      soldout: 'Kompletně vyprodáno! Na místě nebudou k dispozici žádné vstupenky. Zkuste nám napsat a domluvit se individuálně přes <a href="mailto:tickets@sdbs.cz">tickets@sdbs.cz</a>'
+        <small>Předprodejní aplikaci jsme si programovali sami, takže nevylučujeme potíže s některými poskytovateli e-mailových služeb (a další problémy). Pokud vám přišel nesrozumitelný e-mail nebo je něco jiného v nepořádku, prosím zachovejte klid, zapněte trpělivost a ozvěte se nám na [tickets@sdbs.cz](mailto:tickets@sdbs.cz).</small>
+      link: Objednat lístky
 
   partners:
     header: Partneři
