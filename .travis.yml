@@ -21,8 +21,6 @@ env:
   - BUILD_LANG=cs DEPLOY_PATH='cz/2017'
   - BUILD_LANG=en DEPLOY_PATH='eu/2017'
   - BUILD_LANG=''
-  global:
-  - DEPLOY_SUFFIX=2017
 script:
   - bundle exec middleman build --verbose
 before_deploy:
@@ -40,4 +38,5 @@ deploy:
     skip_cleanup: true
     on:
       branch: 2017
+      condition: "! -z $BUILD_LANG"
 
