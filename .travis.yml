@@ -15,19 +15,18 @@ bundler_args: "--without data development"
 branches:
   only:
   - master
+  - 2017
 env:
   matrix:
-  - BUILD_LANG=cs
-  - BUILD_LANG=en
+  - BUILD_LANG=cs DEPLOY_PATH='cz/2017'
+  - BUILD_LANG=en DEPLOY_PATH='eu/2017'
   - BUILD_LANG=''
   global:
-  - secure: MKL0KjiO8SPCQdXVZGhGSO9FbGb9iHibEUSCJZzK4s8QGLP/B7a61aQJDk0xUZKIh287bl1zKzi6ZRzw5KMaZsEe4+hqSB2q3hQhw30H+Bb93zvvWDi53FaFKLG1QmI4rE+PSeFNTcWrHYeiDVdWnbTNZLDmOy5djuWYoDUvxsg=
-  - secure: IojssJ8HmJ5BP93Sdittz5qGua4UlgHKOODbvMhsw5JbXneBmtp/pvEAjuSxJ5nVm9TJIsJu5T33CrRFPz3vWGPGpoDEvTLEtpaQEHRU4yHpVe0dza6t+ldlfmivoKV7+cl6tn3ym56HASiianDgeHIJ63+4OCXPJsvTLvptkCs=
-  - secure: LC3qWQYK0mlCeNZfmChPSK2gfPlM7c8fCHlR/UIKedT2Ebywq2WDRwun/CwpPlJjfwSsGTRKQWYFpU2afMiZwvxMOYmo0lZ/7HhwHkMN3fpG3pnkhXU7gANCbSLJXJFiIInLLndBr12KeAcYhGyU0O/Z8f0Fx7Zg7CPDr1qAodA=
-before_script:
-  - echo "set ssl:verify-certificate no" >> ~/.lftprc
+  - DEPLOY_SUFFIX=2017
 script:
-  - bundle exec middleman build
+  - bundle exec middleman build --verbose
+before_deploy:
+  - echo "set ssl:verify-certificate no" >> ~/.lftprc
 deploy:
   - provider: pages
     skip_cleanup: true
@@ -36,3 +35,9 @@ deploy:
     on:
       branch: master
       condition: $BUILD_LANG = ''
+  - provider: script
+    script: script/deploy
+    skip_cleanup: true
+    on:
+      branch: 2017
+
