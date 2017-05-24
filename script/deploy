@@ -29,5 +29,5 @@ if [ ! -d "$build_dir" ]; then
 fi
 
 
-lftp_cmd="mirror --reverse --verbose --delete $build_dir $DEPLOY_PATH; quit"
+lftp_cmd="mirror --reverse --verbose --scan-all-first --ignore-time --delete $build_dir $DEPLOY_PATH; quit"
 lftp -e "$lftp_cmd" "$DEPLOY_TARGET"
