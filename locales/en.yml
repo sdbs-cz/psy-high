@@ -1,12 +1,12 @@
 ---
-en:
+cs:
   cname: www.psy-high.eu
   meta:
     description: |
       An art-and-culture festival of everything psychedelic and mystical, weird and magickal
   nav:
     about: Psy-High
-    program: Program
+    program: Programme
     location: Location
     tickets: Tickets
   social:
@@ -23,136 +23,88 @@ en:
     alt_locale: cs
   about:
     intro: |
-      Psy-High is an arts and culture experience based around the interplay of music, seminars, theatre, debates, readings and workshops.
-      We also give a lot of attention to changing the location as much as possible in accordance with the main themes and concepts of the festival.  Psy-High 2015 will increase in length to four full days – two days just weren't enough to enjoy the event for most people.
+      Psy-High is a festival of psychedelic culture with a focus not just on the programme (music, seminars, theatre, debates, readings, exercise, workshops) but also on creating a unique environment and atmosphere. A group of builders, architects, artists and designers is at work changing the location, including experienced professionals and masters as well as keen amateurs and wild talents. It’s hard to explains, but as soon as you arrive, you’ll surely see it at once - this isn’t your typical event/party/festival. Also, we make Psy-High happen strictly without the aid of any sponsors and with our own hands only (so we appreciate all help we can get and you should send us an e-mail if you feel like joining in).
 
-      The basics of why and how we make Psy-High happen stay the same: We do everything we can by our own hands, without profit and without sponsors - except for the growing number of people ready to fuel the event with their personal energy.
-    vid:
-      header: More video
+      ## Principles of the Psy-High 2017 Temporary Autonomous Zone:
+      Slow down
+      : Don’t run, hurry, holler or make too much noise
+      
+      Take good care of yourself and others
+      : Drink a lot of water, stay aware of possible hazards, uphold basic dignity, keep surroundings and moods nice and welcoming
+      
+      Turn it all off
+      : Do not use phones or any other electronics
+      
+      Avoid automatism
+      : Try thinking and feeling beyond everyday life
 
+    more: |
+      The theme of the fourth Psy-High is elemental fire, Promethean mythology and their related conceptual terrain - and because 2017 is the final year, you can expect even more ritualistic and psychedelic projects than ever before.
+
+      The main ideas that shape P-H in the long run are: “partnership culture” (trying to offer everyone a chance to contribute, erasing the lines between attendees and organizers), “dark green spirituality” (trying to perceive the deeper meaning of nature, beyond ecological-recreational), “archaic revival” (trying to reinterpret shamanistic and tribalistic principles) and “ontological indeterminism” (trying to understand that no specific vision of reality is hard set).
+
+      On location, this cocktail of ideals works thanks to the inspiring concept of the Temporary Autonomous Zone, which means creating a dedicated space where there are weirder rules at work than the ones we’re used to from our everyday lives...
+
+      ## So you want to really experience P-H? Well, that means helping out!
+      
+      We are always looking for volunteers to help out with construction, info/merch, bars, safety watch and more. Get in touch: [pomoc@sdbs.cz](mailto:pomoc@sdbs.cz)
+
+  program:
+    header: Programme
   lineup:
     header: Line-up
     desc: |
-      Expect a tighter line-up aimed at all kinds of psychedelia-inspired music. There will be more than 30 bands performing at P-H, here’s a small sample:
+      As usual, the music at P-H will be a mosaic of many genres, all connected by the theme of psychedelia and altered states of musical consciousness. Stoner, psych rock, doom, drone, shoe-gaze, avantgarde jazz and a countless range of electronic music genres.
 
-    sensoria:
-      header: Sensorium
-      desc: |
-        There will be a unique mix of genres playing at the bar, be sure to check it out.
-
-        This program is coproduced by Amalgam / [Letmo Productions](http://www.letmo.net/), [Altershapes](http://altershapes.org/), and [AVA](http://www.avavava.cz/).
+      Two unique scenes: A main stage with truly massive sound arrangements as well as a smaller, more intimate Sensorium stage with four-channel sound.
 
   extras:
-    header: Extra
+    header: Other stuff
     desc: |
-      There will be a lot of new lectures, debates and workshops (some of them in English) that will address themes like intersubjectivity, the human right for self-determination, activism, archaic revival, partnership culture and occultism.
-
-    talks:
-      header: Lectures in English
-      desc: |
-        - Magick, alchemy, theurgy and mystika (a brief intro)
-        - The 8 Circuits model of consciousness (a brief intro)
-        - Flicker - the dream machines
-        - Lucid dreaming (a brief intro, not confirmed yet)
-        - Critical thought and hermeneutics (a brief intro, not confirmed yet)
-
-    workshops:
-      header: Workshops
-      desc: |
-        - Fungiculture
-        - Guided Meditation
-        - Yoga
-        - Books Recycled
-        - Make Your Own Music Instruments
-        - Silkscreen Printing
-        - Typography
-        - Art of Clay
-        - Lanterns Workshop
-        - Dumpster diving
-        - and more…
-
-    shaping:
-      header: Shaping
-      desc: |
-        - [The Cosmik Kollektiv](http://www.cosmikkollectiv.org/) – DE/CHE
-        - [Chaos Company](http://www.chaoscompany.cz/ )
-        - [Lesmír](http://lesmir.org/page/lesm-r )
-        - [JNTD](https://www.facebook.com/janatomdelam)
-        - [SDBS](http://sdbs.cz/)
-        - and others
-
-    other:
-      header: Others
-      desc: |
-        - [Tattoo: Míša Šarmanová](https://www.facebook.com/tattoo.sarming)
-        - [Dreamachine](https://en.wikipedia.org/wiki/Dreamachine)
-        - [PirateBox](https://en.wikipedia.org/wiki/PirateBox)
+      Seminars, theatre, debates, readings, exercise, workshops, art installations, a library of weird tomes and important scientific papers, strategically placed chill-points, dream machines, secret interzones...
 
   location:
-    header: Location
+    header: The location
     description: |
-      We'll continue the string of amazing locations: Last year's “rocky cathedral” of the Saint Joseph quarry is followed by a wide, flooded quarry somewhere in the western parts of Czech Republic.
-      We're still keeping the location a secret for now, but get ready for 13,000 m² of five-pointed lake surrounded by 7.5 hectars of awesomeness).
-      You will receive the exact location in an e-mail sent month before the festival.
-      For purposes of planning, we will tell you this: the location lays in a 50 km radius from the city of Pilsen.
-    instructions: |
-      ## How to get here
+      We searched far and wide to find the perfect location for P-H 2017, but none seemed to fit our expectations (and we met a lot of shocked faces when we explained exactly how many fires we want to have there) so we’re returning to the amazing location of P-H 2015. It’s an old quarry (7.5 hectars) with 13 000 square meters of lake that happens to be shaped like a five-pointed star (oh yeah).
 
-      GPS
-      : [50.3758897°N, 15.6457500°E](https://www.google.com/maps/place/50%C2%B022%2733.2%22N+15%C2%B038%2744.7%22E/@50.3746712,15.642467,16z){:target="_blank"}
-
-      Train
-      : [Hořice v Podkrkonoší](http://jizdnirady.idnes.cz/vlakyautobusymhdvse/spojeni/?date=22.08.2014&time=17%3a00&t=Ho%c5%99ice+v+Podkrkono%c5%a1%c3%ad&tc=100003&byarr=true&lng=E)
-
-      Autobus
-      : [Hořice, aut.nádr.](http://jizdnirady.idnes.cz/vlakyautobusymhdvse/spojeni/?date=22.08.2014&time=17%3a00&t=Ho%c5%99ice+%5bJC%5d%2c%2caut.n%c3%a1dr.&tc=200003&byarr=true&lng=E)
-
-      Carpooling & Travel Parties
-      : Find some fellow travellers to share a car or a group train ticket via [our Facebook group](https://www.facebook.com/groups/1438441283110360/).
-
-      Parking only in the city, no restrictions.
-
-      *Dogs allowed, given that they'll be cleaned up after and kept watched.*
+      We will reveal the specific location by e-mail one month before the festival (but for planning purposes, you should know that it’s less than 50 km away from the city of Pilsen). This is the first time our team is revisiting a P-H location, so we plan on using the psychotopological know-how from 2015 and pushing our shaping skills to the limits!
 
     amenities:
       header: Amenities
+      desc: |
+        Only pack the necessary stuff! We pride ourselves on providing whatever you need.
 
       food:
-        header: Food
+        header: Food and refreshments
         desc: |
-          For vegetarians and meat-eaters alike, sensibly priced or luxuriant and pricey, from breakfast to midnight snack… The famous Fu-Munchies grill will be accompanied by a similarly aimed vegetarian stand and larger field kitchen run by [Food not bombs](http://food-not-bombs.cz/).
-      bar:
-        header: Bar
-        desc: |
-          We learned a lot last year, so the bar will function almost all day and night, it will be much larger this year and there will be a separate beer tap.
+          A few bars, a calm tea room and a caffeine intake station.
+
+          Food not bombs (vegan), FU-Munchies (meat), noMAD’s chilly (vegan grill + hot stuff).
+        postscriptum: |
+          Once again, let us know if you want to bake something nice and sweet for P-H. We will buy your cakes, brownies and anything else, then store and sell it (details will arrive via e-mail). 
 
       accomodation:
-        header: Accomodation
+        header: Sleeping
         desc: |
-          - Tent city in the vicinity (no extra fees)
-          - Equipped with water (no showers)
-          - Chemical toilets
+          There will be a classic tent city near the festival grounds - and you can always look for a nice spot in the quarry.
 
       parking:
-        header: Parking
+        header: Parkování
         desc: |
-          Limited capacity! Progressive parking fee (car full with 4 people – minimal fee, car with one person – maximal fee). Exact parking fee will be disclosed in an e-mail with other details.
+          Limited capacity! A progressive fee system is in place (a spot for a car filled with four people costs less than for a car with just one guy in it)
 
   tickets:
-    shop:
-      header: Special offer
-      description: |
-        Be a part of Psy-High by buying our unique hand-made artifacts and special-offer packages.
     order:
       header: Tickets
       description: |
-        We have decided to limit the number of tickets to 400, mainly due to our belief that Psy-High needs a smaller crowd in order to retain it's unique atmosphere.
-
-        This is the **last chance** to get the tickets! In this final wave, they're €28 each.
-
-        For payment inside Czech republic, please order the tickets from the [Czech Psy-High website](http://www.psy-high.cz/2015/#tickets).
-
-        We built the presale app ourselves and we cannot eliminate the possibility of malfunction with certain e-mail providers. If you receive an unreadable e-mail, or anything else is not right, please contact us at [tickets@sdbs.cz](mailto:tickets@sdbs.cz).
+        Everyone has to buy a ticket (the organizers, performers, volunteers, everyone) but you can always pay for it by helping out.
+ 
+        For pragmatic reasons, the number of tickets is limited to 420. The fragile and intense atmosphere of events like Psy-High (made possible by the hard work of amateurs and enthusiasts) requires a smaller crowd.
+ 
+        The tickets will not be released in waves - you can choose the ticket price that feels right for you, but there is a limited number of tickets in each price category.
+ 
+        (We made the ticket sale app ourselves, so there are no guarantees on how it will behave in contact with some e-mail service providers and such. If you happen to receive an incomprehensible e-mail or two, please stay calm and let us know at tickets@sdbs.cz.)
     amount: Amount
     submit: Order tickets
     flash:
