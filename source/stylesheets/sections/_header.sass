@@ -33,8 +33,7 @@ $h-pad: 1rem
 
 .header-altl-l
   display: inline-block
-  +button-inverse($white, 0.5)
-  border: 2px solid white
+  @extend %button
   &:hover, &:focus, &:active
     color: $c-fg-light
 
