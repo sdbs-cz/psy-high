@@ -1,5 +1,5 @@
 ---
-cs:
+en:
   cname: www.psy-high.eu
   meta:
     description: |
@@ -28,13 +28,13 @@ cs:
       ## Principles of the Psy-High 2017 Temporary Autonomous Zone:
       Slow down
       : Don’t run, hurry, holler or make too much noise
-      
+
       Take good care of yourself and others
       : Drink a lot of water, stay aware of possible hazards, uphold basic dignity, keep surroundings and moods nice and welcoming
-      
+
       Turn it all off
       : Do not use phones or any other electronics
-      
+
       Avoid automatism
       : Try thinking and feeling beyond everyday life
 
@@ -46,7 +46,7 @@ cs:
       On location, this cocktail of ideals works thanks to the inspiring concept of the Temporary Autonomous Zone, which means creating a dedicated space where there are weirder rules at work than the ones we’re used to from our everyday lives...
 
       ## So you want to really experience P-H? Well, that means helping out!
-      
+
       We are always looking for volunteers to help out with construction, info/merch, bars, safety watch and more. Get in touch: [pomoc@sdbs.cz](mailto:pomoc@sdbs.cz)
 
   program:
@@ -82,7 +82,7 @@ cs:
 
           Food not bombs (vegan), FU-Munchies (meat), noMAD’s chilly (vegan grill + hot stuff).
         postscriptum: |
-          Once again, let us know if you want to bake something nice and sweet for P-H. We will buy your cakes, brownies and anything else, then store and sell it (details will arrive via e-mail). 
+          Once again, let us know if you want to bake something nice and sweet for P-H. We will buy your cakes, brownies and anything else, then store and sell it (details will arrive via e-mail).
 
       accomodation:
         header: Sleeping
@@ -90,7 +90,7 @@ cs:
           There will be a classic tent city near the festival grounds - and you can always look for a nice spot in the quarry.
 
       parking:
-        header: Parkování
+        header: Parking
         desc: |
           Limited capacity! A progressive fee system is in place (a spot for a car filled with four people costs less than for a car with just one guy in it)
 
@@ -99,11 +99,11 @@ cs:
       header: Tickets
       description: |
         Everyone has to buy a ticket (the organizers, performers, volunteers, everyone) but you can always pay for it by helping out.
- 
+
         For pragmatic reasons, the number of tickets is limited to 420. The fragile and intense atmosphere of events like Psy-High (made possible by the hard work of amateurs and enthusiasts) requires a smaller crowd.
- 
+
         The tickets will not be released in waves - you can choose the ticket price that feels right for you, but there is a limited number of tickets in each price category.
- 
+
         (We made the ticket sale app ourselves, so there are no guarantees on how it will behave in contact with some e-mail service providers and such. If you happen to receive an incomprehensible e-mail or two, please stay calm and let us know at tickets@sdbs.cz.)
     amount: Amount
     submit: Order tickets
