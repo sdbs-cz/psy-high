@@ -7,6 +7,7 @@ module UriHelpers
     unless path.start_with?('/')
       path = '/' + path
     end
-    URI::HTTP.build(host: cname, path: config[:build_root] + path)
+    klass = config[:https] ? URI::HTTPS : URI::HTTP
+    klass.build(host: cname, path: config[:build_root] + path)
   end
 end
