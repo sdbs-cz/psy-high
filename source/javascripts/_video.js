@@ -12,6 +12,15 @@ if (window.mobilecheck()){
     }
   }
   
-  window.addEventListener("resize", adaptVideo);
+  var toResize = false;
+  window.addEventListener("resize", function(){
+    toResize = true;
+  });
+  setInterval(function() {
+      if ( toResize ) {
+          toResize = false;
+          adaptVideo();
+      }
+  }, 250);
   adaptVideo();
 }
