@@ -12,4 +12,5 @@
 //= require _more
 //= require _overlays
 //= require _lineup
+//= require _video
 //= require tpl/_end
